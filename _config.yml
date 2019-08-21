@@ -10,9 +10,6 @@ description:
 baseurl:  
 url:  
 absolute_url:  
-github: 
-linkedin: 
-twitter: 
 
 google_analytics: 
 
@@ -54,5 +51,3 @@ defaults:
     values:
       layout: layout-recipes
       permalink: /recipes/:title/
-  
-gebruiker: "Jan, Pieter, Katrien"

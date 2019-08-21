@@ -4,14 +4,14 @@
 		<span></span>
 		<span></span>
 	</button>  	
-	<a href="{{ site.baseurl }}/" class="logo">{{ site.title }}</a>
+	<a href="/" class="logo">{{ site.title }}</a>
 	<div class="navbox-panel" id="navPanel">
 		<ul class="navbar">
 		{% assign pages = site.pages | sort:"weight" %}
 		{% for p in pages %}
 		{% if p.nav %}
 			<li {% if p.url == page.url %} class="active" {% endif %}>
-				<a href="{{ p.url | prepend: site.baseurl }}" class="nav-link">{{ p.title | downcase }}</a>
+				<a href="{{ p.url }}" class="nav-link">{{ p.title | downcase }}</a>
 			</li>
 		{% endif %}
 		{% endfor %}

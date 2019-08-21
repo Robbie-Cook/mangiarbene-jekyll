@@ -11,11 +11,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum illo ducimu
 
 api endpoints
 
-[/api/recipes.json]({{ site.baseurl }}/api/books.json) 
+[/api/recipes.json](/api/books.json) 
 
-[/api/books.json]({{ site.baseurl }}/api/recipes.json )
+[/api/books.json](/api/recipes.json )
 
-[/api/blog.json]({{ site.baseurl }}/api/blog.json)
+[/api/blog.json](/api/blog.json)
 
 consume in React
 

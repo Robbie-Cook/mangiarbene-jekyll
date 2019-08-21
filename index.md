@@ -24,12 +24,12 @@ quote: Science in the Kitchen and the Art of Eating Well
 {% endcapture %}
 
 <div class="home-img">
-    <img src="{{ site.baseurl }}/img/artisjok.jpg" alt="">
+    <img src="/img/artisjok.jpg" alt="">
     {% comment %} <div class="theart">
         <p>The art of eating well</p>
     </div> {% endcomment %}
     <div class="theart">
-        <a href='{{ site.baseurl }}/books/{{ page.quote | slugify }}'>The art of eating well</a>
+        <a href='/books/{{ page.quote | slugify }}'>The art of eating well</a>
     </div>       
 </div>
 <div class="home-quote">
@@ -39,7 +39,7 @@ quote: Science in the Kitchen and the Art of Eating Well
     <br>
     <p style="font-size: 16px; margin-bottom: 48px;">    
         <b>Pellegrino Artusi</b> 
-        <a href="{{ site.baseurl }}/books/{{ page.quote | slugify }}">– {{ page.quote }}</a>
+        <a href="/books/{{ page.quote | slugify }}">– {{ page.quote }}</a>
     </p>
 </div>
 
@@ -96,10 +96,10 @@ quote: Science in the Kitchen and the Art of Eating Well
 <p class="pl-2em">database</p>
 <div class="home-database">
 
-<a href="{{ site.baseurl }}/recipes" class="nav-link">
+<a href="/recipes" class="nav-link">
     <h3>{{ numberOfRecipes }} recipes </h3>    
 </a>
-<a href="{{ site.baseurl }}/books" class="nav-link">
+<a href="/books" class="nav-link">
     <p>{{ numberOfBooks }} books</p>   
 </a>
 </div>

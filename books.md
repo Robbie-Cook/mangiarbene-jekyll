@@ -20,7 +20,7 @@ kitchen:
     {% for book in books %}
         {% if kitchen == book.kitchen %}
         <div class="book">
-        <a href="{{ site.baseurl }}{{ book.url }}">
+        <a href="{{ book.url }}">
             <h3>
                 <b>{{ book.year}}</b> {{ book.title }}
             </h3> 

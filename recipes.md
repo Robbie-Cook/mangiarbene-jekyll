@@ -20,14 +20,14 @@ dishes:
         {% for recipe in site.recipes %}
         {% if dish == recipe.dish %}
         <div class="recipe">
-        <a href="{{ site.baseurl }}/recipes/{{ recipe.title | slugify }}">
+        <a href="/recipes/{{ recipe.title | slugify }}">
             <h3 class="rood">{{ recipe.title }} {{ recipe.index }}</h3> 
         </a>
             <div class="credits">
                 <h5>
                     {{ recipe.product }} 
                     <span>
-                    <a href="{{ site.baseurl }}/books/{{ recipe.book | slugify }}">
+                    <a href="/books/{{ recipe.book | slugify }}">
                         {{ recipe.book }}
                         <!-- <b>{{ recipe.page }}</b> -->
                     </a>

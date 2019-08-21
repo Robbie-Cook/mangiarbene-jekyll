@@ -1,6 +1,6 @@
 ---
 layout: layout-blog
-category: Information
+category: Mangiarbene
 books: 
 - The complete nose to tail
 recipes:

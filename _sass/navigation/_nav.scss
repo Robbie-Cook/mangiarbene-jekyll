@@ -122,17 +122,6 @@
     bottom: 1px;
 }
 
-// .hamburger span {
-//     display: block;
-//     position: absolute;
-//     left: 0;
-//     width: 100%;
-//     height: 3px;
-//     background-color: $brand-color;
-//     -webkit-transition: all .25s .1s;
-//     transition: all .25s .1s;
-// }
-
 .hamburger.navbox--menu-open  span:nth-child(2) {
     width: 0;
     opacity: 0;
