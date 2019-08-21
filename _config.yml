@@ -1,0 +1,58 @@
+# Welcome to Jekyll! The static website generator.
+
+port: 4000
+livereload: true
+reload_port: 5678
+
+title: MangiarBene
+email: 
+description: 
+baseurl:  
+url:  
+absolute_url:  
+github: 
+linkedin: 
+twitter: 
+
+google_analytics: 
+
+# Build settings
+markdown: kramdown
+
+exclude: [
+README.md,
+Gemfile,
+Gemfile.lock,
+]
+
+gems:
+  - jekyll-sitemap
+  - jekyll-autoprefixer
+
+autoprefixer:
+  only_production: true
+# $ JEKYLL_ENV=production bundle exec jekyll build
+
+collections:
+  books:
+    output: true
+  recipes:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "books"
+    values:
+      layout: layout-books
+      permalink: /books/:title/
+  -
+    scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: layout-recipes
+      permalink: /recipes/:title/
+  
+gebruiker: "Jan, Pieter, Katrien"

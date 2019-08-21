@@ -1,0 +1,51 @@
+---
+layout: page
+---
+
+<div class="layout-blog">
+  <h2>{{ page.title }}</h2>  
+</div>
+
+
+<p>{{ page.date | date_to_long_string }}</p>  
+
+<div class="blog">
+  <div class="blog-post">
+    {{ content }}
+  </div>
+</div>
+
+<div class="blog-links">
+  {% if page.books %}
+  <p>Books</p>
+  {% for blog_book in page.books %}
+  {% for book in site.books %}
+  {% if blog_book == book.title %}
+  <a href='{{ site.baseurl }}/books/{{ book.title | slugify}}'>
+      <h5>{{ book.title }}</h5>
+  </a>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% endif %}
+
+  <br>
+
+  {% if page.recipes %}
+  <p>Recipes</p>
+  {% for blog_recipe in page.recipes %}
+  {% for recipe in site.data.recipes %}
+  {% if blog_recipe == recipe.title %}
+  <a href='{{ site.baseurl }}/recipes/{{ recipe.title | slugify}}'>
+      <h5>{{ recipe.title }} {{ recipe.index }}</h5>
+  </a>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% endif %}
+</div>
+
+
+
+ 
+

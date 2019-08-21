@@ -1,0 +1,58 @@
+---
+layout: page
+quote: Science in the Kitchen and the Art of Eating Well
+---
+
+<div class="layout-recipes">
+    <h1 class="mb-0">{{ page.title }}</h1>
+    {% comment %} <h5>{{ page.product }}</h5> {% endcomment %}
+</div>
+
+<div class="recipe-recipe">
+    <div class="recipe-recipe_ingredients">
+        <span>ingredients</span>
+        <p>You must use</p>
+        <p>The finest ingredients</p>
+        <p>As your raw materials</p>
+        <p>For these will make you shine</p>        
+    </div>
+    <div class="recipe-recipe_method">
+        <span>method</span>
+        <ol>
+            <li>Passion</li>
+            <li>Care</li>
+            <li>Precision of method</li>
+            <li>Will generally suffice</li>    
+        </ol>
+    </div>
+</div>
+
+<p style="font-size: 16px; margin-top: 2rem;">    
+    <b>Pellegrino Artusi</b> 
+    <a href="{{ site.baseurl }}/">– Science in the Kitchen and the Art of Eating Well</a>
+</p>
+{% comment %} {% for item in page.fresh %}
+    <p>{{ item.item }} {{ item.quantity }} {{ item.unit }}</p>
+{% endfor %}
+{% for item in page.stock %}
+    <p>{{ item.item }} {{ item.quantity }} {{ item.unit }}</p>
+{% endfor %} {% endcomment %}
+<br>
+<hr>
+
+<a class="zwart" href='{{ site.basurl }}/books/{{ page.book | slugify }}'>
+<div class="recipe-box">
+    <div class="recipe-box_image">
+        <img src="{{ site.baseurl}}/img/books/{{ page.book | slugify }}_title.jpg" alt="">
+    </div>
+    <div class="recipe-box_credits">
+            {% for book in site.books %}
+            {% if book.title == page.book %}
+                <h6>{{  book.title }}</h6>    
+                <p>{{  book.author }}</p>     
+                <p>{{  book.content | truncatewords: 20 }}</p>     
+            {% endif %}
+            {% endfor %}           
+    </div>
+</div>
+</a>

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "nl" }}">
+{% include head.html %}
+<body>
+<main class="main" aria-label="Content">
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
+</main>
+<script src="{{ site.baseurl }}/js/main.js?{{site.time | date: '%s%N'}}"></script>
+</body>
+</html>
+

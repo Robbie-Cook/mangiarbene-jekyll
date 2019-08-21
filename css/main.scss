@@ -1,0 +1,74 @@
+---
+# Sass powered by Jekyll, the static website generator.
+---
+@charset "utf-8";
+
+$sans: "Poppins", Helvetica, Arial, sans-serif;
+$mono: "Fira Mono";
+$serif: "rufina";
+$fontsize:   18px;
+$smaller:  $fontsize * 0.875;
+$bigger:  $fontsize * 1.125;
+$lineheight: 1.5;
+$spacing: 36px;
+
+// Min-width of the content area
+$on-palm:      769px;
+$on-tablet:    1024px;
+$on-laptop:    1200px;
+
+
+$text-color:       #111;
+$bg-color: #fdfdfd;
+
+$tshadow:          0px 0px 25px #323331;
+
+$zwart:            #111;
+$wit:              #fdfdfd;
+
+$brand:            rgb(219, 50, 38);
+$brand-color:      rgb(255,0,0);
+$rood:             rgb(255,0,0);
+$geel:             rgb(245,217,30);
+$groen:            rgb(34,131,33);
+$gras:             #22C214;
+$limoen:           #C48911;
+$aqua:             #009fe3;
+$blauw:            #2282E1;
+$oceaan:           rgb(0,101,128);
+$paars:            rgb(85,26,139);
+$oranje:           rgb(232,106,12);
+$ossen:            rgb(184,2,1);
+$bruin:            rgb(142,53,56);
+$fuchsia:          rgb(232,12,122);
+
+$text-dec:         lighten($aqua, 10%);
+
+$grijs-60:         rgb(100,100,100);
+$grijs-50:         rgb(127,127,127);
+$grijs-40:         rgb(178,178,178);
+$grijs-20:         rgb(200,200,200);
+$grijs-10:         rgb(230,230,230);
+
+@import "basics/base",
+        "basics/typo",
+        "basics/color",
+        "basics/grid",
+        "basics/kramdown",
+        "basics/poppins",
+        "navigation/footer",
+        "navigation/header",
+        "navigation/nav",
+        "pages/blog",
+        "pages/books",
+        "pages/home",
+        "pages/recipes"
+;
+
+// body {
+//         background-color: red;
+// }
+
+
+
+

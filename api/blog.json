@@ -1,0 +1,22 @@
+---
+layout: null
+---
+
+[ 
+    {% for recipe in site.posts %}
+        {
+            "title": "{{ recipe.title }}",
+            "category": "{{ recipe.category }}",
+            "date": "{{ recipe.date }}",
+            "url": "{{ recipe.url }}",{% assign p = recipe.book | slugify %}{% assign my_recipe = "" | split: "" %}{% for booktitle in site.books %}{% assign detitel = booktitle.title | slugify %}{% if p == detitel %}{% assign itemtitle = "" | split: "" %}{% assign itemtitle = itemtitle | push: booktitle %}{% assign my_recipe = my_recipe | push: itemtitle %} {% endif %}{% endfor %}
+            "books"       : [ 
+                {% for b in recipe.books %}"{{ b }}"{% unless forloop.last %},{% endunless %}{% endfor %}
+            ],
+            "recipes"       : [ 
+                {% for r in recipe.recipes %}"{{ r }}"{% unless forloop.last %},{% endunless %}{% endfor %}
+            ],
+            "content"  : {{ recipe.content | jsonify }}
+
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+
+]

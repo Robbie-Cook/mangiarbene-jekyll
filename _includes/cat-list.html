@@ -1,0 +1,9 @@
+<h1>Catalogue</h1>
+
+<div class="catalogue">  <!-- _page.scss -->
+{% for t in site.catalogue %}
+	<a href="{{ site.basurl }}/{{ t.link }}">
+		<li class="catalogue-list">{{ t.title | capitalize }}</li>
+	</a>
+{% endfor %}
+</div>

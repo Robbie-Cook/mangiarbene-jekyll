@@ -1,0 +1,27 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>{% if page.head %}{{ page.head | append: ' | ' }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="og:title" content="{{ site.title | escape }}">
+  <meta name="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="og:site_name" content="{{ site.url }}">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="twitter:site" content="">
+<!-- typekit -->
+  <link rel="stylesheet" href="https://use.typekit.net/xyv8bqb.css">
+<!-- jQuery 1.11.2 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- fira -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/barberboy/fira/3.1.1/fira.css">
+<!-- main.css -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?{{site.time | date: '%s%N'}}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
+<!-- livereload -->
+  <!-- {% if jekyll.environment != "production" %} -->
+  <!-- <script src="http://localhost:35729/livereload.js"></script> -->
+  <!-- {% endif %} -->
+</head>
+

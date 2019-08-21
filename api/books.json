@@ -1,0 +1,27 @@
+---
+layout: null
+---
+
+[ 
+    {% for book in site.books %}
+        {
+            "index": "{{ book.index }}",
+            "title": "{{ book.title }}",
+            "author": "{{ book.author }}",
+            "publisher": "{{ book.publisher }}",
+            "year": "{{ book.year }}",
+            "kitchen": "{{ book.kitchen }}",
+            "url": "{{ book.url }}",{% assign p = book.title | slugify %}{% assign my_recipe = "" | split: "" %}{% for recipetitle in site.recipes %}{% assign detitel = recipetitle.book | slugify %}{% if p == detitel %}            {% assign itemtitle = "" | split: "" %}            {% assign itemtitle = itemtitle | push: recipetitle %}         {% assign my_recipe = my_recipe | push: itemtitle %} {% endif %}{% endfor %}
+            "recipes"       : [ {% for therecipe in my_recipe %}  
+                {
+                    "index"    : "{{ therecipe[0].index }}",
+                    "title"    : "{{ therecipe[0].title }}",
+                    "page"    : "{{ therecipe[0].page }}",
+                    "product"    : "{{ therecipe[0].product }}",
+                    "dish"    : "{{ therecipe[0].dish }}"
+                }{% unless forloop.last %},{% endunless %}{% endfor %}
+            ]
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+    
+    
+]
