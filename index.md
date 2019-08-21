@@ -105,10 +105,10 @@ quote: Science in the Kitchen and the Art of Eating Well
 </div>
 
 <p class="pl-2em">api endpoints</p>
-<a href='{{ site.basurl }}/api/books.json'>api.roozen.nl/api/books.json</a>
+<a href='{{ site.basurl }}/api/books.json'>/api/books.json</a>
 <br><br>
-<a href='{{ site.basurl }}/api/recipes.json'>api.roozen.nl/api/recipes.json</a>
+<a href='{{ site.basurl }}/api/recipes.json'>/api/recipes.json</a>
 <br><br>
-<a href='{{ site.basurl }}/api/blog.json'>api.roozen.nl/api/blog.json</a>
+<a href='{{ site.basurl }}/api/blog.json'>/api/blog.json</a>
 <p class="pl-2em">consume in React</p>
 <a href='https://mangiarbene.io'>mangiarbene.io</a>

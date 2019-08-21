@@ -11,12 +11,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum illo ducimu
 
 api endpoints
 
-[api.roozen.nl/api/recipes.json](https://api.roozen.nl/api/books.json) 
+[/api/recipes.json]({{ site.baseurl }}/api/books.json) 
 
-[api.roozen.nl/api/books.json](https://api.roozen.nl/api/recipes.json )
+[/api/books.json]({{ site.baseurl }}/api/recipes.json )
 
-[api.roozen.nl/api/blog.json](https://api.roozen.nl/api/blog.json)
+[/api/blog.json]({{ site.baseurl }}/api/blog.json)
 
 consume in React
 
 (mangiarbene.io)
+
