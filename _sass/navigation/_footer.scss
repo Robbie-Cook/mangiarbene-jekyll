@@ -39,7 +39,7 @@
 
 .logo-footer {
     a {
-        color: $paars;
+        color: $brand;
         font-size: 24px;
         font-weight: 600;        
     }
@@ -53,7 +53,7 @@
 }
 
 .footer-social {
-    color: $paars;   
+    color: $brand;   
     padding-top: 2em; 
     padding-bottom: 6em; 
 }
@@ -67,7 +67,7 @@
     }
     i.fa-github,
     i.fa-circle {
-        color: $paars;
+        color: $brand;
         font-size: 2em;
     }
     i.fa-linkedin,

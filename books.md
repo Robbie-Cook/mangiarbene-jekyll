@@ -12,13 +12,12 @@ kitchen:
 - english
 - usa
 ---
-
 <div class="books">
-{% for kitchen in page.kitchen %}
+{%- for kitchen in page.kitchen -%}
     <p class="kitchen-title">{{ kitchen }}</p>
-    {% assign books = site.books | sort: "year" %}
-    {% for book in books %}
-        {% if kitchen == book.kitchen %}
+    {%- assign books = site.books | sort: "year" -%}
+    {%- for book in books -%}
+        {%- if kitchen == book.kitchen -%}
         <div class="book">
         <a href="{{ book.url }}">
             <h3>
@@ -29,14 +28,7 @@ kitchen:
                 <h5>{{ book.author }}</h5>
             </div>        
         </div>
-        {% endif %}
-    {% endfor %}
-{% endfor %}
-
-<!-- {% for book in site.books %}
-    {{ book.index }}
-    {% if forloop.last %}x{{ book.index }}{% endif %}         
-{% endfor %} -->
+        {%- endif -%}
+    {%- endfor -%}
+{%- endfor -%}
 </div>
-
-

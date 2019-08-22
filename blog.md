@@ -14,7 +14,7 @@ permalink: /blog/
         <h3>{{ post.title }}</h3>
     </a>
     <p class="summary">
-        <!-- {{ post.category }} -->
+        {{ post.category }}
         <span class="date">
         {{ post.date | date: '%B %d, %Y' }}
         </span>
@@ -32,7 +32,7 @@ permalink: /blog/
         <h3>{{ post.title }}</h3>
     </a>
     <p class="summary">
-        <!-- {{ post.category }} -->
+        {{ post.category }}
         <span class="date">
         {{ post.date | date: '%B %d, %Y' }}
         </span>

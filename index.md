@@ -9,25 +9,21 @@ dishes:
 - basics
 quote: Science in the Kitchen and the Art of Eating Well
 ---
-{% capture numberOfBooks %}
-{% assign books = site.books | sort: "index" %}
-{% for book in books %}
+{%- capture numberOfBooks -%}
+{%- assign books = site.books | sort: "index" -%}
+{%- for book in books -%}
     {% if forloop.last %}{{ book.index }}{% endif %}
-{% endfor %}
-{% endcapture %}
+{%- endfor -%}
+{%- endcapture -%}
 
-{% capture numberOfRecipes %}
-{% assign recipes = site.data.recipes | sort: "index" %}
-{% for recipe in recipes %}
+{%- capture numberOfRecipes -%}
+{%- assign recipes = site.data.recipes | sort: "index" -%}
+{%- for recipe in recipes -%}
     {% if forloop.last %}{{ recipe.index }}{% endif %}
-{% endfor %}
-{% endcapture %}
-
+{%- endfor -%}
+{%- endcapture -%}
 <div class="home-img">
     <img src="/img/artisjok.jpg" alt="">
-    {% comment %} <div class="theart">
-        <p>The art of eating well</p>
-    </div> {% endcomment %}
     <div class="theart">
         <a href='/books/{{ page.quote | slugify }}'>The art of eating well</a>
     </div>       
@@ -42,60 +38,55 @@ quote: Science in the Kitchen and the Art of Eating Well
         <a href="/books/{{ page.quote | slugify }}">– {{ page.quote }}</a>
     </p>
 </div>
-
 <hr>
 <br>
-
+<!-- latest post -->
 <p class="pl-2em">latest post</p>
 <div class="home-post">
-    {% for post in site.posts limit: 1 %}
-        <a href="{{ post.url }}">
-            <h3>{{ post.title }}</h3>
-        </a>
-        <p class="summary">
-            <!-- {{ post.category }} -->
-            <span class="date">
-            {{ post.date | date: '%B %d, %Y' }}
-            </span>
-        </p>
-        <!-- {{ post.excerpt }} -->
-    {% endfor %}
+{%- for post in site.posts limit: 1 -%}
+    <a href="{{ post.url }}">
+        <h3>{{ post.title }}</h3>
+    </a>
+    <p class="summary">
+        <span class="date">
+        {{ post.date | date: '%B %d, %Y' }}
+        </span>
+    </p>
+{%- endfor -%}
 </div>
-
-
+<!-- recipe of the day -->
 <p class="pl-2em">recipe of the day</p>
 <div class="recipe">
-    {% assign min = 0 %}
-    {% assign max = numberOfRecipes %}
-    {% assign diff = max | minus: min %}
-    {% assign randomNumber = site.time | date: "%s" | modulo: diff | plus: min %}
-    {% for recipe in site.data.recipes %}
-        {% if recipe.index == randomNumber %}
-        <a href="{{ site.basurl}}/recipes/{{ recipe.title | slugify }}">
-            <h3>{{ recipe.title }} {{ recipe.index }}</h3>
-        </a>
-        {% endif %}
-    {% endfor %}
+{%- assign min = 0 -%}
+{%- assign max = numberOfRecipes -%}
+{%- assign diff = max | minus: min -%}
+{%- assign randomNumber = site.time | date: "%s" | modulo: diff | plus: min -%}
+{%- for recipe in site.data.recipes -%}
+    {%- if recipe.index == randomNumber -%}
+    <a href="{{ site.basurl}}/recipes/{{ recipe.title | slugify }}">
+        <h3>{{ recipe.title }} {{ recipe.index }}</h3>
+    </a>
+    {%- endif -%}
+{%- endfor -%}
 </div>
-
+<!-- book of the day -->
 <p class="pl-2em">book of the day</p>
 <div class="home-book">
-    {% assign min = 0 %}
-    {% assign max = numberOfBooks %}
-    {% assign diff = max | minus: min %}
-    {% assign randomNumber = site.time | date: "%s" | modulo: diff | plus: min %}
-    {% for book in site.books %}
-        {% if book.index == randomNumber %}
-        <a href="{{ site.basurl}}/books/{{ book.title | slugify }}">
-            <h3>{{ book.title }}</h3>
-        </a>
-        {% endif %}
-    {% endfor %}
+{%- assign min = 0 -%}
+{%- assign max = numberOfBooks -%}
+{%- assign diff = max | minus: min -%}
+{%- assign randomNumber = site.time | date: "%s" | modulo: diff | plus: min -%}
+{%- for book in site.books -%}
+    {%- if book.index == randomNumber -%}
+    <a href="{{ site.basurl}}/books/{{ book.title | slugify }}">
+        <h3>{{ book.title }}</h3>
+    </a>
+    {%- endif -%}
+{%- endfor -%}
 </div>
-
+<!-- database -->
 <p class="pl-2em">database</p>
 <div class="home-database">
-
 <a href="/recipes" class="nav-link">
     <h3>{{ numberOfRecipes }} recipes </h3>    
 </a>
@@ -103,7 +94,6 @@ quote: Science in the Kitchen and the Art of Eating Well
     <p>{{ numberOfBooks }} books</p>   
 </a>
 </div>
-
 <p class="pl-2em">api endpoints</p>
 <a href='{{ site.basurl }}/api/books.json'>/api/books.json</a>
 <br><br>

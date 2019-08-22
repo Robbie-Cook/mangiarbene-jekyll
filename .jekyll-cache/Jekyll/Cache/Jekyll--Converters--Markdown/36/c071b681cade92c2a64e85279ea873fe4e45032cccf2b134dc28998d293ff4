@@ -1,27 +1,8 @@
-I"�n<div class="recipes">
-    
-    <p class="dish-title">starter</p>
-    <div class="dish">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/ceasar-salad">
-            <h3 class="rood">Ceasar salad 8</h3> 
-        </a>
+I"�\<div class="recipes"><p class="dish-title">starter</p>
+    <div class="dish"><div class="recipe">
+            <a href="/recipes/ceasar-salad">
+                <h3 class="rood">Ceasar salad 8</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     lettuce 
@@ -33,22 +14,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/gazpacho">
-            <h3 class="rood">Gazpacho 37</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/gazpacho">
+                <h3 class="rood">Gazpacho 37</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     tomato 
@@ -60,26 +29,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/knolselderij-en-appelsoep">
-            <h3 class="rood">Knolselderij en appelsoep 27</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/knolselderij-en-appelsoep">
+                <h3 class="rood">Knolselderij en appelsoep 27</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     knolselderij 
@@ -91,24 +44,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/paddenstoelensoep">
-            <h3 class="rood">Paddenstoelensoep 19</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/paddenstoelensoep">
+                <h3 class="rood">Paddenstoelensoep 19</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     champignons 
@@ -120,18 +59,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/paprikasoup">
-            <h3 class="rood">Paprikasoup 41</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/paprikasoup">
+                <h3 class="rood">Paprikasoup 41</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     paprika 
@@ -143,20 +74,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/ribollita">
-            <h3 class="rood">Ribollita 45</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/ribollita">
+                <h3 class="rood">Ribollita 45</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     cavallo nero 
@@ -168,14 +89,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/risotto-alla-lodigiana">
-            <h3 class="rood">Risotto alla Lodigiana 24</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/risotto-alla-lodigiana">
+                <h3 class="rood">Risotto alla Lodigiana 24</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     rice 
@@ -187,16 +104,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/rocket-in-roasted-beef">
-            <h3 class="rood">Rocket in roasted beef 4</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/rocket-in-roasted-beef">
+                <h3 class="rood">Rocket in roasted beef 4</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     rocket 
@@ -208,24 +119,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/tarte-tatin-van-witlof">
-            <h3 class="rood">Tarte tatin van witlof 28</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/tarte-tatin-van-witlof">
+                <h3 class="rood">Tarte tatin van witlof 28</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     witlof 
@@ -237,18 +134,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/vichissoise">
-            <h3 class="rood">Vichissoise 36</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/vichissoise">
+                <h3 class="rood">Vichissoise 36</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     leek 
@@ -260,23 +149,11 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-    </div>
-    
-    <p class="dish-title">aside</p>
-    <div class="dish">
-        
-        
-        <div class="recipe">
-        <a href="/recipes/aardappelpuree-met-mierikswortel">
-            <h3 class="rood">Aardappelpuree met mierikswortel 38</h3> 
-        </a>
+        </div></div><p class="dish-title">aside</p>
+    <div class="dish"><div class="recipe">
+            <a href="/recipes/aardappelpuree-met-mierikswortel">
+                <h3 class="rood">Aardappelpuree met mierikswortel 38</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     mierikswortel 
@@ -288,34 +165,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/garlicky-kale">
-            <h3 class="rood">Garlicky kale 9</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/garlicky-kale">
+                <h3 class="rood">Garlicky kale 9</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     kale 
@@ -327,18 +180,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/gepofte-andijvie">
-            <h3 class="rood">Gepofte andijvie 26</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/gepofte-andijvie">
+                <h3 class="rood">Gepofte andijvie 26</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     andijvie 
@@ -350,14 +195,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/haricot-vert-met-peultjes">
-            <h3 class="rood">Haricot vert met peultjes 32</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/haricot-vert-met-peultjes">
+                <h3 class="rood">Haricot vert met peultjes 32</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     haricot verts 
@@ -369,22 +210,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/kosheri">
-            <h3 class="rood">Kosheri 33</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/kosheri">
+                <h3 class="rood">Kosheri 33</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     linzen 
@@ -396,26 +225,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/panzanella">
-            <h3 class="rood">Panzanella 42</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/panzanella">
+                <h3 class="rood">Panzanella 42</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     tomato 
@@ -427,18 +240,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/priselli-con-prosciutto">
-            <h3 class="rood">Priselli con prosciutto 48</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/priselli-con-prosciutto">
+                <h3 class="rood">Priselli con prosciutto 48</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     doperwten 
@@ -450,20 +255,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/roasted-potatoes">
-            <h3 class="rood">Roasted potatoes 16</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/roasted-potatoes">
+                <h3 class="rood">Roasted potatoes 16</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     potato 
@@ -475,55 +270,11 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </div>
-    
-    <p class="dish-title">main</p>
-    <div class="dish">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/caneloni-met-spinazie-en-ricotta">
-            <h3 class="rood">Caneloni met spinazie en ricotta 18</h3> 
-        </a>
+        </div></div><p class="dish-title">main</p>
+    <div class="dish"><div class="recipe">
+            <a href="/recipes/caneloni-met-spinazie-en-ricotta">
+                <h3 class="rood">Caneloni met spinazie en ricotta 18</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     spinazie 
@@ -535,16 +286,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/chicken-saté">
-            <h3 class="rood">Chicken saté 7</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/chicken-saté">
+                <h3 class="rood">Chicken saté 7</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     chicken 
@@ -556,22 +301,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/gehaktballetjes-met-salie">
-            <h3 class="rood">Gehaktballetjes met salie 14</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/gehaktballetjes-met-salie">
+                <h3 class="rood">Gehaktballetjes met salie 14</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     rund 
@@ -583,22 +316,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/kip-met-dragon-en-citroen">
-            <h3 class="rood">Kip met dragon en citroen 13</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/kip-met-dragon-en-citroen">
+                <h3 class="rood">Kip met dragon en citroen 13</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     lemon 
@@ -610,18 +331,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/linguine-con-sardine">
-            <h3 class="rood">Linguine con sardine 43</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/linguine-con-sardine">
+                <h3 class="rood">Linguine con sardine 43</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     sardine 
@@ -633,14 +346,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/lovage-burger">
-            <h3 class="rood">Lovage burger 11</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/lovage-burger">
+                <h3 class="rood">Lovage burger 11</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     lovage 
@@ -652,30 +361,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/ragù-alla-bolognese">
-            <h3 class="rood">Ragù alla bolognese 25</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/ragù-alla-bolognese">
+                <h3 class="rood">Ragù alla bolognese 25</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     rund 
@@ -687,26 +376,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/sea-bass-with-potato-and-fennel">
-            <h3 class="rood">Sea bass with potato and fennel 3</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/sea-bass-with-potato-and-fennel">
+                <h3 class="rood">Sea bass with potato and fennel 3</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     sea bass 
@@ -718,16 +391,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/spicy-roasted-squash">
-            <h3 class="rood">Spicy roasted squash 39</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/spicy-roasted-squash">
+                <h3 class="rood">Spicy roasted squash 39</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     pumpkin 
@@ -739,16 +406,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/thaise-rundercurry">
-            <h3 class="rood">Thaise rundercurry 35</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/thaise-rundercurry">
+                <h3 class="rood">Thaise rundercurry 35</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     rund 
@@ -760,14 +421,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/tomato-sauce">
-            <h3 class="rood">Tomato sauce 40</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/tomato-sauce">
+                <h3 class="rood">Tomato sauce 40</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     tomato 
@@ -779,27 +436,11 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-    </div>
-    
-    <p class="dish-title">desert</p>
-    <div class="dish">
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/applepie">
-            <h3 class="rood">Applepie 17</h3> 
-        </a>
+        </div></div><p class="dish-title">desert</p>
+    <div class="dish"><div class="recipe">
+            <a href="/recipes/applepie">
+                <h3 class="rood">Applepie 17</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     apple 
@@ -811,18 +452,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/bread-pudding">
-            <h3 class="rood">Bread pudding 31</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/bread-pudding">
+                <h3 class="rood">Bread pudding 31</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     bread 
@@ -834,56 +467,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/panna-cotta">
-            <h3 class="rood">Panna cotta 10</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/panna-cotta">
+                <h3 class="rood">Panna cotta 10</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     milk 
@@ -895,18 +482,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/pears-in-red-and-white-wine">
-            <h3 class="rood">Pears in red and white wine 23</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/pears-in-red-and-white-wine">
+                <h3 class="rood">Pears in red and white wine 23</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     pear 
@@ -918,32 +497,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/sinaasappel-amandeltaart">
-            <h3 class="rood">Sinaasappel-amandeltaart 34</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/sinaasappel-amandeltaart">
+                <h3 class="rood">Sinaasappel-amandeltaart 34</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     sinaasappel 
@@ -955,37 +512,11 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </div>
-    
-    <p class="dish-title">basics</p>
-    <div class="dish">
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/bechamel-sauce">
-            <h3 class="rood">Bechamel sauce 12</h3> 
-        </a>
+        </div></div><p class="dish-title">basics</p>
+    <div class="dish"><div class="recipe">
+            <a href="/recipes/bechamel-sauce">
+                <h3 class="rood">Bechamel sauce 12</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     milk 
@@ -997,14 +528,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/bois-boudran-sauce">
-            <h3 class="rood">Bois Boudran-sauce 15</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/bois-boudran-sauce">
+                <h3 class="rood">Bois Boudran-sauce 15</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     chalot 
@@ -1016,16 +543,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/candied-citrus-peel">
-            <h3 class="rood">Candied citrus peel 1</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/candied-citrus-peel">
+                <h3 class="rood">Candied citrus peel 1</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     lemon 
@@ -1037,20 +558,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/donkere-universele-bouillon">
-            <h3 class="rood">Donkere universele bouillon 6</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/donkere-universele-bouillon">
+                <h3 class="rood">Donkere universele bouillon 6</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     chicken 
@@ -1062,26 +573,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/harissa">
-            <h3 class="rood">Harissa 22</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/harissa">
+                <h3 class="rood">Harissa 22</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     paprika 
@@ -1093,14 +588,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/ingemaakte-citroenen">
-            <h3 class="rood">Ingemaakte citroenen 21</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/ingemaakte-citroenen">
+                <h3 class="rood">Ingemaakte citroenen 21</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     lemon 
@@ -1112,24 +603,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/membrillo">
-            <h3 class="rood">Membrillo 2</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/membrillo">
+                <h3 class="rood">Membrillo 2</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     quince 
@@ -1141,14 +618,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/mother">
-            <h3 class="rood">Mother 29</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/mother">
+                <h3 class="rood">Mother 29</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     wheat flour 
@@ -1160,36 +633,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/salsa-verde">
-            <h3 class="rood">Salsa verde 46</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/salsa-verde">
+                <h3 class="rood">Salsa verde 46</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     parsly 
@@ -1201,14 +648,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/saté-sauce">
-            <h3 class="rood">Saté sauce 5</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/saté-sauce">
+                <h3 class="rood">Saté sauce 5</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     peanut 
@@ -1220,28 +663,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/white-sourdough-loaf">
-            <h3 class="rood">White sourdough loaf 30</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/white-sourdough-loaf">
+                <h3 class="rood">White sourdough loaf 30</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     wheat flour 
@@ -1253,14 +678,10 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-        
-        <div class="recipe">
-        <a href="/recipes/zhoug">
-            <h3 class="rood">Zhoug 20</h3> 
-        </a>
+        </div><div class="recipe">
+            <a href="/recipes/zhoug">
+                <h3 class="rood">Zhoug 20</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     green pepper 
@@ -1272,11 +693,5 @@
                     </span>
                 </h5>
             </div>
-        </div>
-        
-        
-    </div>
-        
-</div>
-
+        </div></div></div>
 :ET

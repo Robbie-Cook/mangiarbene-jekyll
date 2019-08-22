@@ -12,17 +12,16 @@ dishes:
 - desert
 - basics
 ---
-
 <div class="recipes">
-    {% for dish in page.dishes %}
+    {%- for dish in page.dishes -%}
     <p class="dish-title" >{{ dish }}</p>
     <div class="dish">
-        {% for recipe in site.recipes %}
-        {% if dish == recipe.dish %}
+        {%- for recipe in site.recipes -%}
+        {%- if dish == recipe.dish -%}
         <div class="recipe">
-        <a href="/recipes/{{ recipe.title | slugify }}">
-            <h3 class="rood">{{ recipe.title }} {{ recipe.index }}</h3> 
-        </a>
+            <a href="/recipes/{{ recipe.title | slugify }}">
+                <h3 class="rood">{{ recipe.title }} {{ recipe.index }}</h3> 
+            </a>
             <div class="credits">
                 <h5>
                     {{ recipe.product }} 
@@ -35,10 +34,8 @@ dishes:
                 </h5>
             </div>
         </div>
-        {% endif %}
-        {% endfor %}
+        {%- endif -%}
+        {%- endfor -%}
     </div>
-    {% endfor %}    
+    {%- endfor -%}    
 </div>
-
-

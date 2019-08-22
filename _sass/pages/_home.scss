@@ -12,7 +12,7 @@
 		border-radius: 50%;
 	}
 	.theart {
-		color: $paars;
+		color: $brand;
 		p {
 			border-bottom: 1px solid rgb(173, 173, 173);
 			padding-top: 16px;			
@@ -26,14 +26,14 @@
 			margin-left: 1em;
 			// padding-top: 16px;			
 			font-weight: 400;
-			color: $paars;
+			color: $brand;
 		}
 	}
 }
 .home-quote {
     margin-bottom: 2rem;
 	span {
-		color: $paars;
+		color: $brand;
 		border-bottom: 1px solid rgb(173, 173, 173);
 		padding-bottom: 1px;
 	}
