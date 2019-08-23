@@ -1,0 +1,29 @@
+I"÷<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum illo ducimus. Doloremque excepturi fugit nemo modi minima quas ratione voluptatum, animi exercitationem architecto, in mollitia totam, alias rerum earum.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum illo ducimus. Doloremque excepturi fugit nemo modi minima quas ratione voluptatum, animi exercitationem architecto, in mollitia totam, alias rerum earum.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum illo ducimus. Doloremque excepturi fugit nemo modi minima quas ratione voluptatum, animi exercitationem architecto, in mollitia totam, alias rerum earum.</p>
+
+<p>api endpoints</p>
+
+<!-- [/api/recipes.json](/api/books.json) 
+
+[/api/books.json](/api/recipes.json )
+
+[/api/blog.json](/api/blog.json) -->
+
+<p><a href="https://trim-seahorse.cloudvent.net/api/recipes.json" target="_blank" rel="noopener noreferrer">
+/api/recipes.json
+</a>
+<a href="https://trim-seahorse.cloudvent.net/api/books.json" target="_blank" rel="noopener noreferrer">
+/api/books.json
+</a>
+<a href="https://trim-seahorse.cloudvent.net/api/blog.json" target="_blank" rel="noopener noreferrer">
+/api/blog.json
+</a></p>
+
+<p>consume in React</p>
+
+<p>(mangiarbene.io)</p>
+
+:ET

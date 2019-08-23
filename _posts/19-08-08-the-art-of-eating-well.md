@@ -14,5 +14,4 @@ His tone is that of a friendly advisor - humorous and nonchalant. He indulges in
 
 Artusi's masterpiece is not merely a popular cookbook; it is a landmark work in Italian culture. This English edition (first published by Marsilio Publishers in 1997) features a delightful introduction by Luigi Ballerini that traces the fascinating history of the book and explains its importance in the context of Italian history and politics. 
 
-Source / Read more [University Of Toronto Press](https://utorontopress.com/us/science-in-the-kitchen-and-the-art-of-eating-well-4
-link: University Of Toronto Press)
+Source / Read more <a href="https://utorontopress.com/us/science-in-the-kitchen-and-the-art-of-eating-well-4" target="_blank" rel="noopener noreferrer">University Of Toronto Press</a>

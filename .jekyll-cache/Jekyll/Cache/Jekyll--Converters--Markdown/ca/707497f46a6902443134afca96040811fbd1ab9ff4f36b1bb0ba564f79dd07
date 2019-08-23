@@ -1,0 +1,23 @@
+I"<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum illo ducimus. Doloremque excepturi fugit nemo modi minima quas ratione voluptatum, animi exercitationem architecto, in mollitia totam, alias rerum earum.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum illo ducimus. Doloremque excepturi fugit nemo modi minima quas ratione voluptatum, animi exercitationem architecto, in mollitia totam, alias rerum earum.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum illo ducimus. Doloremque excepturi fugit nemo modi minima quas ratione voluptatum, animi exercitationem architecto, in mollitia totam, alias rerum earum.</p>
+
+<p>api endpoints</p>
+
+<!-- [/api/recipes.json](/api/books.json) 
+
+[/api/books.json](/api/recipes.json )
+
+[/api/blog.json](/api/blog.json) -->
+
+<p><a href="/development/2019/08/21/jekyll-api-endpoint-demo.html/api/blog.json" target="_blank" rel="noopener noreferrer">
+/api/books.json
+</a></p>
+
+<p>consume in React</p>
+
+<p>(mangiarbene.io)</p>
+
+:ET
