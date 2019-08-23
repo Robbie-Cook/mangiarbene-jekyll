@@ -1,6 +1,6 @@
 ---
 layout: layout-blog
-category: Mangiarbenex
+category: Mangiarbene
 books: 
 - Science in the Kitchen and the Art of Eating Well
 ---
