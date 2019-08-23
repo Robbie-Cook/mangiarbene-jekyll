@@ -21,9 +21,9 @@ layout: null
                     "dish"    : "{{ therecipe[0].dish }}"
                 }{% unless forloop.last %},{% endunless %}{% endfor %}
             ],
-            "text"  : "{{ book.text }}"
-
+            "text"  : "{{ book.text }}",
+            "content"  : {{ book.content | jsonify }}
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     
     
-]
+"content"  : {{ book.content | jsonify }}
