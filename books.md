@@ -21,7 +21,7 @@ kitchen:
         <div class="book">
         <a href="{{ book.url }}">
             <h3>
-                <b>{{ book.year}}</b> {{ book.title }}
+                <span>{{ book.year}}</span> {{ book.title }}
             </h3> 
         </a>        
             <div class="credits">

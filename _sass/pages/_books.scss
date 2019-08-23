@@ -21,9 +21,10 @@
     margin-bottom: 0;  
     color: $blauw;
   }
-  b {
-    font-family: monospace;
-    font-size: 32px;
+  span {
+    font-family: $mono;
+    font-weight: 600;
+    font-size: 26px;
     color: black;
   }  
 }

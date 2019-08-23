@@ -20,7 +20,9 @@ layout: null
                     "product"    : "{{ therecipe[0].product }}",
                     "dish"    : "{{ therecipe[0].dish }}"
                 }{% unless forloop.last %},{% endunless %}{% endfor %}
-            ]
+            ],
+            "text"  : "{{ book.text }}"
+
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     
     
