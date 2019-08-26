@@ -1,4 +1,4 @@
-I"Ö<div class="blog">
+I"ˆ<div class="blog">
 <p class="post-chapeau">latest</p>
 
     <div class="blog-post">
@@ -11,7 +11,7 @@
         August 21, 2019
         </span>
     </p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum illo ducimus. Doloremque excepturi fugit nemo modi minima quas ratione voluptatum, animi exercitationem architecto, in mollitia totam, alias rerum earum.</p>
+    <p>One of the best so called â€˜unusual use cases of Jekyllâ€™ is learning the basics of web development: html, css and JavaScript. But as the JavaScript part is growing in your application the need of a package manager like npm comes around and with that we reach the limits of using Jekyll. Although not impossible the production environment might becomes too complicated using two different compilers at the same time. Yet it we donâ€™t have to say goodbye to Jekyll at this point at all. It is very well possible to use Jekyll in creating API endpoints that can be consumed by other website generators. In this demo I will show the combination with React.</p>
 
     </div>
 
