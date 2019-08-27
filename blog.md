@@ -20,6 +20,9 @@ permalink: /blog/
         </span>
     </p>
     {{ post.excerpt }}
+    <a href="{{ post.url }}">
+        <p>Read more...</p>
+    </a>
     </div>
 {% endfor %}
 </div>
@@ -37,7 +40,6 @@ permalink: /blog/
         {{ post.date | date: '%B %d, %Y' }}
         </span>
     </p>
-    {{ post.excerpt }}
     </div>
 {% endfor %}
 </div>

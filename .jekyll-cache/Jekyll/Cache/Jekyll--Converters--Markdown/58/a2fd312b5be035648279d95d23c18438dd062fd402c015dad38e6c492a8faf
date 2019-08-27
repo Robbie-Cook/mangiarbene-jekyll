@@ -1,0 +1,75 @@
+I"�<p>One of the best so called <strong>unusual use cases of Jekyll</strong> is learning the basics of web development: html, css and JavaScript. But as the JavaScript part is growing in your application the need of a package manager like npm comes around and with that we reach the limits of using Jekyll. Although not impossible to integrate with npm, the production environment might becomes too complicated using two different compilers at the same time. Yet it we don’t have to say goodbye to Jekyll at this point at all.</p>
+
+<blockquote>
+  <p>It is very well possible to use Jekyll in creating API endpoints that can be consumed by other website generators. In this demo I will show the combination with React.</p>
+</blockquote>
+
+<h2 id="mangiarbene">MangiarBene</h2>
+
+<p>We start with a simple Jekyll website <strong>MangiarBene</strong> that constraints of two collections (‘cookbooks’ and ‘recipes’) as well as a blog from which this actual post is the ‘latest’.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.── _books
+├── _config.yml
+├── _includes
+├── _layouts
+├── _posts
+├── _recipes
+├── _sass
+├── _site
+├── blog.md
+├── books.md
+├── index.md
+└── recipes.html
+</code></pre></div></div>
+
+<p>In Jekyll, we can call the recipes of a book, using the condition:</p>
+
+<p><strong>recipe.book == page.title</strong></p>
+
+<p>Likewise we can call the book of a recipe:</p>
+
+<p><strong>book.title == page.book</strong></p>
+
+<p>Both result in a data schema that is similar to the many-to-many-relationships used in non-relational databases like MongoDB. So what if in Jekyll we could use this technique to create a json file that contains the same structure. And we sure can!</p>
+
+<p>Create a folder ‘api’ with files for blog, books and recipes, like so:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── api
+|   ├── blog.json
+|   ├── books.json
+|   └── recipes.json
+</code></pre></div></div>
+
+<p>Now there is only one problem here, fortunatly with a simple solution. In order to achieve valid json, the last iteration cannot end with a comma. And because the if statement filters from an array, and therefore not all iterations will become valid, a comma cannot be avoided here.</p>
+
+<p>In Liquid you can eleminate the last comma, like so:</p>
+
+<p>This wil not work in case the last forloop is not valid to the condition. In other words the last forloop which is valid to the condition might not be the last forloop of the forloop as a whole.</p>
+
+<p>The solution is to create a new empty array, while using the push method to gather the desired content. This way we get rid of the conditional statement.</p>
+
+<p>Finally check if the json is valid go to https://jsonlint.com/.</p>
+
+<p>I published the result on Github and Cloudcannon.</p>
+
+<p>Now we can use the json file calling: [trim-seahorse.cloudvent.net(https://trim-seahorse.cloudvent.net/)</p>
+
+<p>Jekyll api endpoints</p>
+
+<p><a href="https://trim-seahorse.cloudvent.net/api/recipes.json" target="_blank" rel="noopener noreferrer">
+/api/recipes.json
+</a>
+<br />
+<a href="https://trim-seahorse.cloudvent.net/api/books.json" target="_blank" rel="noopener noreferrer">
+/api/books.json
+</a>
+<br />
+<a href="https://trim-seahorse.cloudvent.net/api/blog.json" target="_blank" rel="noopener noreferrer">
+/api/blog.json
+</a></p>
+
+<p>consume in React</p>
+
+<p>(mangiarbene.io)</p>
+
+:ET

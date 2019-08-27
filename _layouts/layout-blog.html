@@ -4,7 +4,7 @@ layout: page
 <div class="layout-blog">
   <h2>{{ page.title }}</h2>  
 </div>
-<p>{{ page.date | date_to_long_string }}</p>  
+<p><a class="pieterroozen" href="https://roozen.nl" target="_blank"  rel="noopener noreferrer">{{ page.author }}</a> – {{ page.date | date_to_long_string }}</p>  
 <div class="blog">
   <div class="blog-post kramdown">
     {{ content }}

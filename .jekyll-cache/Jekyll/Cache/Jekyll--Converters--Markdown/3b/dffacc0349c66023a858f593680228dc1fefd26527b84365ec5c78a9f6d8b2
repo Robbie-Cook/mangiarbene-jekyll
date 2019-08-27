@@ -1,0 +1,110 @@
+I"�&<p>Life can be good. After <a href="http://blog.publysher.nl/2013/08/infra-as-repo-adding-salt-master.html">my previous success in provisioning a master/minion set-up</a>, the next logical step was
+to introduce a separate master VM. This post explains how I did it. It will be a relatively short post, because it
+turned out to be ridiculously easy.</p>
+
+<h2 id="the-goal">The goal</h2>
+
+<blockquote>
+  <p>Given the current single-server master/minion setup, I want to recreate the same situation with two different
+machines: one Salt master which only functions as a Salt master, and one Salt minion that runs Nginx.</p>
+</blockquote>
+
+<p>How hard can this be?</p>
+
+<h2 id="a-second-vm">A second VM</h2>
+
+<p><a href="http://www.vagrantup.com">Vagrant</a> is built to provision multiple VMs from the same file, so I started by using that feature:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># ...</span>
+<span class="c1"># SALT is the salt master</span>
+<span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">define</span> <span class="ss">:salt</span> <span class="k">do</span> <span class="o">|</span><span class="n">node</span><span class="o">|</span>
+    <span class="n">set_network</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="s1">'10.1.14.50'</span><span class="p">,</span> <span class="sx">%w(salt.intranet salt)</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="c1"># NGINX01 is a web server</span>
+<span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">define</span> <span class="ss">:nginx01</span> <span class="k">do</span> <span class="o">|</span><span class="n">node</span><span class="o">|</span>
+    <span class="n">set_network</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="s1">'10.1.14.100'</span><span class="p">,</span> <span class="sx">%w(nginx01.intranet nginx01)</span><span class="p">)</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>The <code class="highlighter-rouge">set_network</code> function is an expanded version of the <code class="highlighter-rouge">set_host_aliases</code> function from the <a href="http://blog.publysher.nl/2013/08/infra-as-repo-adding-salt-master.html">previous post</a>.
+And that’s it – running <code class="highlighter-rouge">vagrant up</code> will now spin up two virtual machines on my local computer, each with their own
+IP address and host names.</p>
+
+<h2 id="provisioning-the-master">Provisioning the master</h2>
+
+<p>The Salt machine is meant to be provisioned as a salt master. I already knew how to do that, so this was easily
+implemented:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># SALT is the salt master</span>
+<span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">define</span> <span class="ss">:salt</span> <span class="k">do</span> <span class="o">|</span><span class="n">node</span><span class="o">|</span>
+    <span class="n">set_network</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="s1">'10.1.14.50'</span><span class="p">,</span> <span class="sx">%w(salt.intranet salt)</span><span class="p">)</span>
+    <span class="n">node</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">synced_folder</span> <span class="s1">'salt/roots/'</span><span class="p">,</span> <span class="s1">'/srv/'</span>
+
+    <span class="c1"># Salt-master provisioning</span>
+    <span class="n">node</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">provision</span> <span class="ss">:salt</span> <span class="k">do</span> <span class="o">|</span><span class="n">salt</span><span class="o">|</span>
+        <span class="n">salt</span><span class="p">.</span><span class="nf">bootstrap_script</span> <span class="o">=</span> <span class="s1">'lib/salt-bootstrap/bootstrap-salt.sh'</span>
+
+        <span class="n">salt</span><span class="p">.</span><span class="nf">install_master</span> <span class="o">=</span> <span class="kp">true</span>
+        <span class="n">salt</span><span class="p">.</span><span class="nf">run_highstate</span> <span class="o">=</span> <span class="kp">false</span>
+
+        <span class="n">salt</span><span class="p">.</span><span class="nf">minion_key</span> <span class="o">=</span> <span class="s1">'build/keys/salt.intranet.pem'</span>
+        <span class="n">salt</span><span class="p">.</span><span class="nf">minion_pub</span> <span class="o">=</span> <span class="s1">'build/keys/salt.intranet.pub'</span>
+
+        <span class="n">salt</span><span class="p">.</span><span class="nf">master_key</span> <span class="o">=</span> <span class="s1">'build/keys/master.pem'</span>
+        <span class="n">salt</span><span class="p">.</span><span class="nf">master_pub</span> <span class="o">=</span> <span class="s1">'build/keys/master.pub'</span>
+
+        <span class="n">salt</span><span class="p">.</span><span class="nf">seed_master</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">'salt.intranet'</span> <span class="o">=&gt;</span> <span class="s1">'build/keys/salt.intranet.pub'</span><span class="p">,</span>
+            <span class="s1">'nginx01.intranet'</span> <span class="o">=&gt;</span> <span class="s1">'build/keys/nginx01.intranet.pub'</span>
+        <span class="p">}</span>
+    <span class="k">end</span>
+
+    <span class="c1"># And explicitly call the highstate on this one</span>
+    <span class="n">node</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">provision</span> <span class="ss">:shell</span><span class="p">,</span> <span class="ss">:inline</span> <span class="o">=&gt;</span> <span class="s1">'sleep 60; salt-call state.highstate'</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>If this looks vaguely familiar, you’ve obviously read my <a href="http://blog.publysher.nl/2013/08/infra-as-repo-adding-salt-master.html">previous post</a>. If not, go ahead and read it.
+The only difference is the addition of a new public/private key-pair for this machine.</p>
+
+<p>This resulted in my master VM being provisioned as a Salt master and Nginx server. Wait. Nginx server? The <code class="highlighter-rouge">top.sls</code>
+file needed a little tweaking as well.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">base</span><span class="pi">:</span>
+    <span class="s1">'</span><span class="s">nginx01.intranet'</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">nginx</span></code></pre></figure>
+
+<p>Now my VM was provisioned as desired.</p>
+
+<h2 id="provisioning-the-minion">Provisioning the minion</h2>
+
+<p>I told you it was easy:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">   
+<span class="c1"># NGINX01 is a web server</span>
+<span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">define</span> <span class="ss">:nginx01</span> <span class="k">do</span> <span class="o">|</span><span class="n">node</span><span class="o">|</span>
+    <span class="n">set_network</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="s1">'10.1.14.100'</span><span class="p">,</span> <span class="sx">%w(nginx01.intranet nginx01)</span><span class="p">)</span>
+
+    <span class="c1"># Salt-minion provisioning</span>
+    <span class="n">node</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">provision</span> <span class="ss">:salt</span> <span class="k">do</span> <span class="o">|</span><span class="n">salt</span><span class="o">|</span>
+        <span class="n">salt</span><span class="p">.</span><span class="nf">bootstrap_script</span> <span class="o">=</span> <span class="s1">'lib/salt-bootstrap/bootstrap-salt.sh'</span>
+        <span class="n">salt</span><span class="p">.</span><span class="nf">run_highstate</span> <span class="o">=</span> <span class="kp">true</span>
+        <span class="n">salt</span><span class="p">.</span><span class="nf">minion_key</span> <span class="o">=</span> <span class="s1">'build/keys/nginx01.intranet.pem'</span>
+        <span class="n">salt</span><span class="p">.</span><span class="nf">minion_pub</span> <span class="o">=</span> <span class="s1">'build/keys/nginx01.intranet.pub'</span>
+    <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>And that’s it. Calling <code class="highlighter-rouge">vagrant up</code> now spins up two VMs: one salt master and one minion that runs as an Nginx server.</p>
+
+<p>Mission Accomplished!</p>
+
+<h2 id="deploying-to-digital-ocean">Deploying to Digital Ocean</h2>
+
+<p><a href="http://www.imdb.com/title/tt0084967/quotes?item=qt0378851">I love it when a plan comes together</a>. You know the drill: <code class="highlighter-rouge">vagrant up --provider=digital_ocean</code> and we’re good to go.
+Reclining in my comfy chair I could see my two machines come up somewhere in a hosting center in New York.</p>
+
+<p><strong>WARNING</strong>: <a href="https://www.digitalocean.com/?refcode=8d8ff680bec5">Digital Ocean</a> VMs cost money. Since I started this series, I’ve built up a bill of $2.60.
+Don’t try this if you’re really really really broke. In all other cases, they provide good value for money.</p>
+
+<p><em>Don’t forget: <a href="https://github.com/publysher/infra-example-nginx">my infra is a repo</a>, so go ahead and fork it</em></p>
+
+:ET
