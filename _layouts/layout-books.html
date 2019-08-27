@@ -28,7 +28,7 @@ layout: page
 <div class="book-links">
     {%- for recipe in site.data.recipes -%}
     {%- if recipe.book == page.title -%}
-    <a href="{{ site.basurl}}/recipes/{{ recipe.title | slugify }}">
+    <a href="/recipes/{{ recipe.title | slugify }}">
     <h5>{{ recipe.title }} {{ recipe.index }}</h5>
     </a>
     {%- endif -%}

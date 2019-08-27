@@ -16,11 +16,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum illo ducimu
 
 <p class="pl-2em">api endpoints</p>
 
-<a href='{{ site.basurl }}/api/books.json'>mangiarbene.roozen.nl/api/books.json</a>
+<a href='/api/books.json'>mangiarbene.roozen.nl/api/books.json</a>
 <br><br>
-<a href='{{ site.basurl }}/api/recipes.json'>mangiarbene.roozen.nl/api/recipes.json</a>
+<a href='/api/recipes.json'>mangiarbene.roozen.nl/api/recipes.json</a>
 <br><br>
-<a href='{{ site.basurl }}/api/blog.json'>mangiarbene.roozen.nl/api/blog.json</a>
+<a href='/api/blog.json'>mangiarbene.roozen.nl/api/blog.json</a>
 
 <p class="pl-2em">consume in React</p>
 <a href='https://mangiarbene.io'>mangiarbene.io</a>
