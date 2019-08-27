@@ -33,8 +33,10 @@ autoprefixer:
 collections:
   books:
     output: true
+    permalink: /books/:path/
   recipes:
     output: true
+    permalink: /recipes/:path/
 
 defaults:
   -

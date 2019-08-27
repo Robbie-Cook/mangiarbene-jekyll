@@ -1,4 +1,4 @@
-I"—<div class="home-img">
+I"Ü<div class="home-img">
     <img src="/img/artisjok.jpg" alt="" />
     <div class="theart">
         <a href="/books/science-in-the-kitchen-and-the-art-of-eating-well">The art of eating well</a>
@@ -29,14 +29,12 @@
     </p></div>
 <!-- recipe of the day -->
 <p class="pl-2em">recipe of the day</p>
-<div class="recipe"><a href="/recipes/rag√π-alla-bolognese">
-        <h3>Rag√π alla bolognese 25</h3>
+<div class="recipe"><a href="/recipes/panzanella">
+        <h3>Panzanella 42</h3>
     </a></div>
 <!-- book of the day -->
 <p class="pl-2em">book of the day</p>
-<div class="home-book"><a href="//books/Jeruzalem/">
-        <h3>Jeruzalem</h3>
-    </a></div>
+<div class="home-book"></div>
 <!-- database -->
 <p class="pl-2em">database</p>
 <div class="home-database">
@@ -57,4 +55,6 @@
 <p><a href="https://api.roozen.nl" target="_blank" rel="noopener noreferrer">
 https://api.roozen.nl
 </a></p>
+
+<p>x</p>
 :ET

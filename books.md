@@ -1,4 +1,5 @@
 ---
+layout: page
 title: books
 permalink: /books/
 layout: page
