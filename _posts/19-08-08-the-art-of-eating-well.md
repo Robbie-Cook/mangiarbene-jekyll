@@ -3,6 +3,9 @@ layout: layout-blog
 category: Mangiarbene
 books: 
 - Science in the Kitchen and the Art of Eating Well
+author: University of Toronto Press
+source: University of Toronto Press
+source_url: "https://utorontopress.com/us/science-in-the-kitchen-and-the-art-of-eating-well-4"
 ---
 First published in 1891, Pellegrino Artusi's La scienza in cucina e l'arte di mangier bene has come to be recognized as the most significant Italian cookbook of modern times. 
 

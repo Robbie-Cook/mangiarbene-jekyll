@@ -6,6 +6,7 @@ books:
 recipes:
 - Mother
 - White sourdough loaf
+author: Wikipedia
 source: Wikipedia
 source_url: "https://en.wikipedia.org/wiki/Sourdough"
 ---

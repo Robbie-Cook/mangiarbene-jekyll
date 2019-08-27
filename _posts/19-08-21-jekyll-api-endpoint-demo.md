@@ -4,6 +4,8 @@ layout: layout-blog
 category: Development
 url: "https://trim-seahorse.cloudvent.net"
 author: Pieter Roozen
+source: ""
+source_url: ""
 ---
 
 One of the best so called **unusual use cases of Jekyll** is learning the basics of web development: HTML, CSS and JavaScript. But as the JavaScript part is growing in your application the need of a package manager like npm comes around and with that we reach the limits of using Jekyll. Although not impossible to integrate with npm, the production environment might become too complicated using two different compilers at the same time. Yet we don't have to say goodbye to Jekyll at this point at all. 
