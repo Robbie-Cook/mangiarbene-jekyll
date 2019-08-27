@@ -2,7 +2,7 @@
 index: 6
 title: Donkere universele bouillon
 product: chicken
-book: Appetites
+book: Appetites a cookbook
 page: 260
 dish: basics
 tags:

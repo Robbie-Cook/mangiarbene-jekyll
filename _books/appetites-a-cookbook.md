@@ -1,5 +1,5 @@
 ---
-title: Appetites
+title: Appetites a cookbook
 author: Anthony Bourdain
 publisher: HarperCollins
 year: 2016

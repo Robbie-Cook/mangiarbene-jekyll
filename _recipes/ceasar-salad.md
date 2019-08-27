@@ -2,7 +2,7 @@
 index: 8
 title: Ceasar salad
 product: lettuce
-book: Appetites
+book: Appetites a cookbook
 page: 23
 dish: starter
 tags:

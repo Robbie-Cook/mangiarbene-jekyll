@@ -2,7 +2,7 @@
 index: 7
 title: Chicken saté
 product: chicken
-book: Appetites
+book: Appetites a cookbook
 page: 109
 dish: main
 tags:
