@@ -105,4 +105,3 @@ quote: Science in the Kitchen and the Art of Eating Well
 https://api.roozen.nl
 </a>
 
-x

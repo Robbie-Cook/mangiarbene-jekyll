@@ -10,7 +10,7 @@ source_url: ""
 
 One of the best so called **unusual use cases of Jekyll** is learning the basics of web development: HTML, CSS and JavaScript. But as the JavaScript part is growing in your application the need of a package manager like npm comes around and with that we reach the limits of using Jekyll. Although not impossible to integrate with npm, the production environment might become too complicated using two different compilers at the same time. Yet we don't have to say goodbye to Jekyll at this point at all. 
 
->It is very well possible to use Jekyll in creating API endpoints that can be consumed by other website generators. In this demo I will show the combination with React.
+>It is very well possible to use Jekyll in creating API endpoints that can be consumed by other website generators. In this demo I will show the combination with React. That way you are completely free in your development, while enjoying the bennefits of a simple, static and blog-aware Jekyll application, this time as a real backend.
 
 ## MangiarBene
 
@@ -50,7 +50,7 @@ https://jsonlint.com/
 
 ## Jekyll as a blog API
 
-More interesting maybe is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the **data** folder create a file called blog.json and follow the same instructions as before. Here we want to use the **content** of a post as well, which contains the Liquid template language, resulting in HTML tags in your output. Therefore you need to use the **jsonify** filter here.
+More interesting maybe is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the **data** folder create a file called blog.json and follow the same instructions as before. Here we want to use the **content** of a post as well, which contains the Liquid templating language, resulting in HTML tags in your output. Therefore you need to use the **jsonify** filter here.
 
 ## Publishing the Jekyll site on CloudCannon
 
