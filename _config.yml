@@ -43,7 +43,6 @@ defaults:
       type: "books"
     values:
       layout: layout-books
-      permalink: /books/:title/
   -
     scope:
       path: ""
