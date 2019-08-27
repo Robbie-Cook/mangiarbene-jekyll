@@ -50,4 +50,3 @@ defaults:
       type: "recipes"
     values:
       layout: layout-recipes
-      permalink: /recipes/:title/

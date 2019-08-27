@@ -19,7 +19,7 @@ kitchen:
     {%- for book in books -%}
         {%- if kitchen == book.kitchen -%}
         <div class="book">
-        <a href="{{ book.url }}">
+        <a href="{{ book.title | slugify }}">
             <h3>
                 <span>{{ book.year}}</span> {{ book.title }}
             </h3> 

@@ -4,8 +4,8 @@
 @charset "utf-8";
 
 $sans: "museo sans", Helvetica, Arial, sans-serif;
-$mono: "Fira Mono";
-$serif: "rufina";
+$mono: "Fira Mono", monospace;
+$serif: "rufina", serif;
 $fontsize:   18px;
 $smaller:  $fontsize * 0.875;
 $bigger:  $fontsize * 1.125;
