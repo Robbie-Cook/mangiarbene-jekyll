@@ -3,19 +3,20 @@ layout: null
 ---
 
 [ 
-    {% for recipe in site.posts %}
+    {% for post in site.posts %}
         {
-            "title": "{{ recipe.title }}",
-            "category": "{{ recipe.category }}",
-            "date": "{{ recipe.date }}",
-            "url": "{{ recipe.url }}",{% assign p = recipe.book | slugify %}{% assign my_recipe = "" | split: "" %}{% for booktitle in site.books %}{% assign detitel = booktitle.title | slugify %}{% if p == detitel %}{% assign itemtitle = "" | split: "" %}{% assign itemtitle = itemtitle | push: booktitle %}{% assign my_recipe = my_recipe | push: itemtitle %} {% endif %}{% endfor %}
+            "title": "{{ post.title }}",
+            "category": "{{ post.category }}",
+            "date": "{{ post.date }}",
+            "author": "{{ post.author }}",
+            "url": "{{ post.url }}",{% assign p = post.book | slugify %}{% assign my_post = "" | split: "" %}{% for booktitle in site.books %}{% assign detitel = booktitle.title | slugify %}{% if p == detitel %}{% assign itemtitle = "" | split: "" %}{% assign itemtitle = itemtitle | push: booktitle %}{% assign my_post = my_post | push: itemtitle %} {% endif %}{% endfor %}
             "books"       : [ 
-                {% for b in recipe.books %}"{{ b }}"{% unless forloop.last %},{% endunless %}{% endfor %}
+                {% for b in post.books %}"{{ b }}"{% unless forloop.last %},{% endunless %}{% endfor %}
             ],
-            "recipes"       : [ 
-                {% for r in recipe.recipes %}"{{ r }}"{% unless forloop.last %},{% endunless %}{% endfor %}
+            "posts"       : [ 
+                {% for r in post.posts %}"{{ r }}"{% unless forloop.last %},{% endunless %}{% endfor %}
             ],
-            "content"  : {{ recipe.content | jsonify }}
+            "content"  : {{ post.content | jsonify }}
 
         }{% unless forloop.last %},{% endunless %}{% endfor %}
 
