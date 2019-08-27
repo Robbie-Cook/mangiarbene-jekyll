@@ -4,7 +4,6 @@ author: Sally Clarke
 publisher: Francis Lincoln
 year: 2015
 kitchen: english
-link: Bol.com
 book_url: https://www.harpercollins.com/9780060175832/chez-panisse-cafe-cookbook/
 link: HarperCollins
 index: 1
