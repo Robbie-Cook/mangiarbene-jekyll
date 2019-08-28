@@ -17,7 +17,7 @@ quote: Science in the Kitchen and the Art of Eating Well
 {%- endcapture -%}
 
 {%- capture numberOfRecipes -%}
-{%- assign recipes = site.data.recipes | sort: "index" -%}
+{%- assign recipes = site.recipes | sort: "index" -%}
 {%- for recipe in recipes -%}
     {% if forloop.last %}{{ recipe.index }}{% endif %}
 {%- endfor -%}
@@ -61,7 +61,7 @@ quote: Science in the Kitchen and the Art of Eating Well
 {%- assign max = numberOfRecipes -%}
 {%- assign diff = max | minus: min -%}
 {%- assign randomNumber = site.time | date: "%s" | modulo: diff | plus: min -%}
-{%- for recipe in site.data.recipes -%}
+{%- for recipe in site.recipes -%}
     {%- if recipe.index == randomNumber -%}
     <a href="/recipes/{{ recipe.title | slugify }}">
         <h3>{{ recipe.title }} {{ recipe.index }}</h3>

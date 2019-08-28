@@ -26,7 +26,7 @@ layout: page
 </div>
 <p>Recipes</p>
 <div class="book-links">
-    {%- for recipe in site.data.recipes -%}
+    {%- for recipe in site.recipes -%}
     {%- if recipe.book == page.title -%}
     <a href="/recipes/{{ recipe.title | slugify }}">
     <h5>{{ recipe.title }} {{ recipe.index }}</h5>
