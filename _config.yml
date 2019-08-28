@@ -5,9 +5,9 @@ livereload: true
 reload_port: 5678
 
 title: MangiarBene
-email: 
-description: 
-baseurl:  
+email: pieter@roozen.nl
+description: Jekyll version of Jekyll/React API endpoint demo 
+baseurl: https://trim-seahorse.cloudvent.net/
 url:  
 absolute_url:  
 
