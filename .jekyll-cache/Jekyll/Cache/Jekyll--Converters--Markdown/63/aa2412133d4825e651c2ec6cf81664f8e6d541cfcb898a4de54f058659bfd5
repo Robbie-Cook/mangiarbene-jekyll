@@ -1,4 +1,4 @@
-I"�<p>One of the best so called <strong>unusual use cases of Jekyll</strong> is learning the basics of web development: HTML, CSS and JavaScript. But as the JavaScript part is growing in your application the need of a package manager like npm comes around and with that we reach the limits of using Jekyll. Although not impossible to integrate with npm, the production environment might become too complicated using two different compilers at the same time. Yet we don’t have to say goodbye to Jekyll at this point at all.</p>
+I"Z<p>One of the best so called <strong>unusual use cases of Jekyll</strong> is learning the basics of web development: HTML, CSS and JavaScript. But as the JavaScript part is growing in your application the need of a package manager like npm comes around and with that we reach the limits of using Jekyll. Although not impossible to integrate with npm, the production environment might become too complicated using two different compilers at the same time. Yet we don’t have to say goodbye to Jekyll at this point at all.</p>
 
 <blockquote>
   <p>It is very well possible to use Jekyll in creating API endpoints that can be consumed by other website generators. In this demo I will show the combination with React. That way you are completely free in your development, while enjoying the bennefits of a simple, static and blog-aware Jekyll application, this time as a real backend.</p>
@@ -63,7 +63,7 @@ https://jsonlint.com/
 
 <h2 id="using-the-api-in-react">Using the API in React</h2>
 
-<p>Consuming the api’s in React makes it possible to develop an almost similar website:</p>
+<p>Hosting the Jekyll website – which includes the API endpoints – on either GitHub or CloudCannon makes it easy to change the content en see how this is in sync with the OPA that consumes the content, in this demo developed in React:</p>
 
 <p><a href="https://api.roozen.nl" target="_blank" rel="noopener noreferrer">
 https://api.roozen.nl

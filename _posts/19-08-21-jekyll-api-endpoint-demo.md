@@ -72,7 +72,7 @@ Now we can use the created Jekyll API endpoints. As you can see they are part of
 
 ## Using the API in React
 
-Consuming the api's in React makes it possible to develop an almost similar website:
+Hosting the Jekyll website – which includes the API endpoints – on either GitHub or CloudCannon makes it easy to change the content en see how this is in sync with the OPA that consumes the content, in this demo developed in React:
 
 <a href="https://api.roozen.nl" target="_blank" rel="noopener noreferrer">
 https://api.roozen.nl
