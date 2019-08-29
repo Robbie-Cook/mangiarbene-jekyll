@@ -1,6 +1,6 @@
 ---
 index: 19
-title: Paddenstoelensoep
+title: Mushroom soup
 product: champignons
 book: Jamie's dinners
 page: 149
