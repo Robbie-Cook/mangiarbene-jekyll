@@ -16,7 +16,7 @@ One of the best so called **unusual use cases of Jekyll** is learning the basics
 
 We start with a simple Jekyll website called **MangiarBene**, which in this case is the actual website you are visiting right now. It constraints of two collections of **15 cookbooks** and **48 recipes** as well as a **blog** from which this actual post is the 'latest'.
 
-You can go to the [homepage](/) of **MangiarBene** now, if you want and see how the website is structured. Finally we can go to a different OPA website (in React), which I developed for this demo, that just uses the content from **MangiarBene** as JSON data. But let me explain first.
+You can go to the [homepage](/) of **MangiarBene** now, if you want and see how the website is structured. Finally we can go to a different SPA website (in React), which I developed for this demo, that just uses the content from **MangiarBene** as JSON data. But let me explain first.
 
 ## Many to many relationships
 
@@ -72,7 +72,7 @@ Now we can use the created Jekyll API endpoints. As you can see they are part of
 
 ## Using the API in React
 
-Hosting the Jekyll website – which includes the API endpoints – on either GitHub or CloudCannon makes it easy to change the content en see how this is in sync with the OPA that consumes the content, in this demo developed in React:
+Hosting the Jekyll website – which includes the API endpoints – on either GitHub or CloudCannon makes it easy to change the content en see how this is in sync with the SPA that consumes the content, in this demo developed in React:
 
 <a href="https://api.roozen.nl" target="_blank" rel="noopener noreferrer">
 https://api.roozen.nl
