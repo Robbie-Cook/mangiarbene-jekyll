@@ -2,7 +2,7 @@
 index: 22
 title: Harissa
 product: paprika
-book: Jeruzalem
+book: Ottolenghi
 page: 301
 dish: basics
 tags:
