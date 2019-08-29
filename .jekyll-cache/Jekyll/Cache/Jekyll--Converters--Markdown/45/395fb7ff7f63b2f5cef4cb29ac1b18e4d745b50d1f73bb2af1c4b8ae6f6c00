@@ -1,4 +1,4 @@
-I"]<div class="recipes"><p class="dish-title">starter</p>
+I"]<div class="recipes"><p class="dish-title">starter</p>
     <div class="dish"><div class="recipe">
             <a href="/recipes/ceasar-salad">
                 <h3 class="rood">Ceasar salad 8</h3> 
@@ -45,12 +45,12 @@
                 </h5>
             </div>
         </div><div class="recipe">
-            <a href="/recipes/paddenstoelensoep">
-                <h3 class="rood">Paddenstoelensoep 19</h3> 
+            <a href="/recipes/mushroom-soup">
+                <h3 class="rood">Mushroom soup 19</h3> 
             </a>
             <div class="credits">
                 <h5>
-                    champignons 
+                    mushrooms 
                     <span>
                     <a href="/books/jamie-s-dinners">
                         Jamie's dinners
@@ -581,8 +581,8 @@
                 <h5>
                     paprika 
                     <span>
-                    <a href="/books/jeruzalem">
-                        Jeruzalem
+                    <a href="/books/ottolenghi">
+                        Ottolenghi
                         <!-- <b>301</b> -->
                     </a>
                     </span>
@@ -596,8 +596,8 @@
                 <h5>
                     lemon 
                     <span>
-                    <a href="/books/jeruzalem">
-                        Jeruzalem
+                    <a href="/books/ottolenghi">
+                        Ottolenghi
                         <!-- <b>303</b> -->
                     </a>
                     </span>
@@ -686,8 +686,8 @@
                 <h5>
                     green pepper 
                     <span>
-                    <a href="/books/jeruzalem">
-                        Jeruzalem
+                    <a href="/books/ottolenghi">
+                        Ottolenghi
                         <!-- <b>301</b> -->
                     </a>
                     </span>

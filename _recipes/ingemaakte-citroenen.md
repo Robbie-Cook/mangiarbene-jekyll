@@ -2,7 +2,7 @@
 index: 21
 title: Ingemaakte citroenen
 product: lemon
-book: Jeruzalem
+book: Ottolenghi
 page: 303
 dish: basics
 tags:

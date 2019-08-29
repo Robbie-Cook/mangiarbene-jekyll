@@ -1,7 +1,7 @@
 ---
 index: 19
 title: Mushroom soup
-product: champignons
+product: mushrooms
 book: Jamie's dinners
 page: 149
 dish: starter

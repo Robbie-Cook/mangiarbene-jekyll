@@ -2,7 +2,7 @@
 index: 20
 title: Zhoug
 product: green pepper
-book: Jeruzalem
+book: Ottolenghi
 page: 301
 dish: basics
 tags:
