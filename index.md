@@ -9,6 +9,7 @@ dishes:
 - basics
 quote: Science in the Kitchen and the Art of Eating Well
 ---
+
 {%- capture numberOfBooks -%}
 {%- assign books = site.books | sort: "index" -%}
 {%- for book in books -%}
