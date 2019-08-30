@@ -1,4 +1,4 @@
-I"â<div class="home-img">
+I"Æ<div class="home-img">
     <img src="/img/artisjok.jpg" alt="" />
     <div class="theart">
         <a href="/books/science-in-the-kitchen-and-the-art-of-eating-well">The art of eating well</a>
@@ -29,13 +29,13 @@
     </p></div>
 <!-- recipe of the day -->
 <p class="pl-2em">recipe of the day</p>
-<div class="recipe"><a href="/recipes/lovage-burger">
-        <h3>Lovage burger 11</h3>
+<div class="recipe"><a href="/recipes/ribollita">
+        <h3>Ribollita 45</h3>
     </a></div>
 <!-- book of the day -->
 <p class="pl-2em">book of the day</p>
-<div class="home-book"><a href="/books/the-complete-nose-to-tail">
-        <h3>The complete nose to tail</h3>
+<div class="home-book"><a href="/books/the-family-meal">
+        <h3>The family meal</h3>
     </a></div>
 <!-- database -->
 <p class="pl-2em">database</p>
