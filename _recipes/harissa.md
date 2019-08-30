@@ -1,6 +1,7 @@
 ---
 index: 22
 title: Harissa
+slugify: harissa
 product: paprika
 book: Ottolenghi
 page: 301

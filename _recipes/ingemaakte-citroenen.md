@@ -1,6 +1,7 @@
 ---
 index: 21
 title: Ingemaakte citroenen
+slugify: ingemaakte-citroenen
 product: lemon
 book: Ottolenghi
 page: 303

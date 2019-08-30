@@ -1,6 +1,7 @@
 ---
 index: 8
 title: Ceasar salad
+slugify: ceasar-salad
 product: lettuce
 book: Appetites a cookbook
 page: 23

@@ -7,6 +7,7 @@ layout: null
         {
             "index": "{{ book.index }}",
             "title": "{{ book.title }}",
+            "id": "{{ book.title | slugify }}",
             "author": "{{ book.author }}",
             "publisher": "{{ book.publisher }}",
             "year": "{{ book.year }}",

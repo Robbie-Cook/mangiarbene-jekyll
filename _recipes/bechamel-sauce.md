@@ -1,6 +1,7 @@
 ---
 index: 12
 title: Bechamel sauce
+slugify: bechamel-sauce
 product: milk
 book: Delia's how to cook
 page: 150

@@ -1,6 +1,7 @@
 ---
 index: 38
 title: Aardappelpuree met mierikswortel
+slugify: aardappelpuree-met-mierikswortel
 product: mierikswortel
 book: The naked chef
 page: 141

@@ -1,6 +1,7 @@
 ---
 index: 24
 title: Risotto alla Lodigiana
+slugify: risotto-alla-lodigiana
 product: rice
 book: Made in Italy
 page: 214
