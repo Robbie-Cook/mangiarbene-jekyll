@@ -2,28 +2,28 @@
 index: 38
 title: Aardappelpuree met mierikswortel
 slugify: aardappelpuree-met-mierikswortel
-product: mierikswortel
-book: The naked chef
+product: aardappel 
+book: The Naked Chef 
 page: 141
-dish: aside
+dish: aside 
 tags:
--
+- aardappel
+- mierikswortel
 sub:
--
 fresh:
-  - item:
-    quantity:
-    unit:
+  - item: aardappel
+    quantity: 1
+    unit: kg
 stock:
-  - item:
-    quantity:
-    unit:
+  - item: item
+    quantity: 0
+    unit: g
 basic:
--
+  -
 directions:
--
-info:
-source:
+- Kook
+info: 
+source: 
     title:
     url: 
 ---

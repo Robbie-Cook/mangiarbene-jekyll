@@ -1,14 +1,14 @@
-I"ü\<div class="recipes"><p class="dish-title">starter</p>
+I"ØX<div class="recipes"><p class="dish-title">starter</p>
     <div class="dish"><div class="recipe">
             <a href="/recipes/ceasar-salad">
                 <h3 class="rood">Ceasar salad 8</h3> 
             </a>
             <div class="credits">
                 <h5>
-                    lettuce 
+                    sla 
                     <span>
-                    <a href="/books/appetites-a-cookbook">
-                        Appetites a cookbook
+                    <a href="/books/appetites">
+                        Appetites
                         <!-- <b>23</b> -->
                     </a>
                     </span>
@@ -156,10 +156,10 @@
             </a>
             <div class="credits">
                 <h5>
-                    mierikswortel 
+                    aardappel 
                     <span>
                     <a href="/books/the-naked-chef">
-                        The naked chef
+                        The Naked Chef
                         <!-- <b>141</b> -->
                     </a>
                     </span>
@@ -297,21 +297,6 @@
                     <a href="/books/appetites-a-cookbook">
                         Appetites a cookbook
                         <!-- <b>109</b> -->
-                    </a>
-                    </span>
-                </h5>
-            </div>
-        </div><div class="recipe">
-            <a href="/recipes/gehaktballetjes-met-salie">
-                <h3 class="rood">Gehaktballetjes met salie 14</h3> 
-            </a>
-            <div class="credits">
-                <h5>
-                    rund 
-                    <span>
-                    <a href="/books/delia-s-how-to-cook">
-                        Delia's how to cook
-                        <!-- <b>224</b> -->
                     </a>
                     </span>
                 </h5>
@@ -514,21 +499,6 @@
             </div>
         </div></div><p class="dish-title">basics</p>
     <div class="dish"><div class="recipe">
-            <a href="/recipes/bechamel-sauce">
-                <h3 class="rood">Bechamel sauce 12</h3> 
-            </a>
-            <div class="credits">
-                <h5>
-                    milk 
-                    <span>
-                    <a href="/books/delia-s-how-to-cook">
-                        Delia's how to cook
-                        <!-- <b>150</b> -->
-                    </a>
-                    </span>
-                </h5>
-            </div>
-        </div><div class="recipe">
             <a href="/recipes/bois-boudran-sauce">
                 <h3 class="rood">Bois Boudran-sauce 15</h3> 
             </a>
