@@ -78,9 +78,7 @@ layout: null
 [ 
     {% for book in site.books %}
         {
-            "index"    : "{{ book.index }}",
             "title"    : "{{ book.title }}",
-            "id"       : "{{ book.title | slugify }}",
             "author"   : "{{ book.author }}",
             "publisher": "{{ book.publisher }}",
             "year"     : "{{ book.year }}",
@@ -121,6 +119,31 @@ Finally check if the JSON is valid go to:
 https://jsonlint.com/
 </a>.
 
+{% raw %}
+```html
+[ 
+    {
+        "index": "1",
+        "title": "Candied citrus peel",
+        "id": "candied-citrus-peel",
+        "product": "lemon",
+        "dish": "basics",
+        "url": "/recipes/candied-citrus-peel/",
+        "book"       : [   
+            {
+                "index"    : "1",
+                "title"    : "30 ingredients",
+                "author"   : "Sally Clarke",
+                "content"  : "<p>Britain’s pioneer of seasonal cooking Sally Clarke is back with a new collection of seasonal recipes to mark the 30th birthday year of her legendary Notting Hill restaurant.</p>\n\n<p>Known for pioneering seasonal fine dining in British cuisine, the award winning chef, restaurateur and author has chosen a handful of recipes for each of her favourite 30 ingredients in her stunning new cookery book. The simple idea of cooking with the freshest and best market produce, Sally Clarke’s vision for thirty years, is at the heart of her new book of ninety-five recipes.</p>\n"
+            }
+        ],
+        "page": "160"
+    },
+...
+
+```
+{% endraw %}
+
 
 ## Jekyll as a blog API
 
@@ -134,11 +157,11 @@ layout: null
 [ 
     {% for book in site.books %}
         {
-            "index"    : "{{ book.index }}",
             "title"    : "{{ book.title }}",
             <!-- ... -->
             "content"  : {{ book.content | jsonify }}
-        }{% unless forloop.last %},{% endunless %}{% endfor %}
+        }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
 ]
 ```
 {% endraw %}
