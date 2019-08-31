@@ -7,16 +7,16 @@ book: 30 ingredients
 page: 160
 dish: basics
 tags:
--
+- lemon
 sub:
 -
 fresh:
-  - item:
-    quantity:
+  - item: lemon
+    quantity: 1
     unit:
 stock:
-  - item:
-    quantity:
+  - item: sugar
+    quantity: 1
     unit:
 basic:
 -

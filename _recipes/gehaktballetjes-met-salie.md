@@ -1,54 +1,57 @@
 ---
 index: 14
-title: Ceasar salad
-slugify: ceasar-salad
-product: sla 
-book: Appetites 
+title: Gehaktballetjes met salie
+slugify: gehaktballetjes-met-salie
+product: varken
+book: Delia's how to cook
 page: 224
-dish: main 
+dish: main
 tags:
-- sla
+- varken
 sub:
+- Canneloni met gehakt
 fresh:
-  - item: romainsla
-    quantity: 2
-    unit: 
-  - item: knoflook
-    quantity: 4
-    unit: tenen
-  - item: citroen
+  - item: salie
     quantity: 1
-    unit: 
-  - item: Parmezaanse kaas
+    unit: el
+  - item: peterselie
+    quantity: 2
+    unit: el
+  - item: varkensgehakt
+    quantity: 250
+    unit: g
+  - item: mortadella
     quantity: 100
     unit: g
-  - item: eieren
+  - item: parmezaanse kaas
+    quantity: 40
+    unit: g
+  - item: melk
     quantity: 3
+    unit: el
+  - item: eieren
+    quantity: 1
     unit: 
 stock:
-  - item: ansjovisfilets
-    quantity: 10
-    unit: 
-  - item: olijfolie
-    quantity: 600?
-    unit: ml
-  - item: dijnlonmosterd
-    quantity: 1
+  - item: brood
+    quantity: 75
+    unit: g
+  - item: nootmuskaat
+    quantity: 1/4
     unit: tl
-  - item: worcestersaus
-    quantity: 1/2
-    unit: tl
-  - item: witbrood
-    quantity: 10
-    unit: sneetjes
+  - item: spagetti
+    quantity: 400
+    unit: g
 basic:
 directions:
-- Verwijder het donkere buitenblad van de sla en laat op z'n kop 15 minuten weken in ijswater.
-- Verhit 240 ml olie op laag vuur en verhit 4 schoongemaakte ansjovis met 1 platgeslagen knoflook tot ansjovis oplost in de olie.
-- Bak het witbrood in kleine blokjes mee op iets hoger vuur, tot ze rondom geroosterd zijn. Haal uit de pan, meng met 25 g parmezaanse kaas en breng op smaak met peper en zout.
-- De resterende 6 ansjovisjes met 1 fijngesneden knoflook, mosterd, sap van de citroen, 2 eierdooiers en specerijen in de blender fijnmalen.
-- Hussel de sla in een grote kom met net voldoende van de dressing. Strooi de rest van de kaas er over.
-info: Hussel de sla in een grote kom met net voldoende van de dressing (aanmaken, niet verzuipen!). Voor Ansjovis op zout (verkrijgbaar in Italiaanse delicatessewinkels) is de alom verkrijgbare op olijfoliebasis geen alternatief volgens Rose Gray van The River Cafe.
+- Week het brood in melk en knijp uit.
+- Meng alle ingrediënten met wat peper en zout door de gehakt.
+- Draai 24 balletjes met natte handen ter grootte van een walnoot.
+- Dek af met plasticfolie en laat 30 m in de koelkast opstijven.
+- Bak de balletjes snel met 12 tegelijk.
+- Houd warm in de oven.
+- Serveer met spagetti en tomatensaus.
+info: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem asperiores repudiandae eveniet, facere, modi assumenda odit qui veniam ullam earum repellat nulla pariatur eius. Aliquam et aspernatur minima rem aut.
 
 source:
     title:

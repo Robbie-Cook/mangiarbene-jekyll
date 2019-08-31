@@ -1,9 +1,9 @@
 ---
 index: 12
-title: Bechamelsaus
-slugify: bechamelsaus
+title: Bechamel sauce
+slugify: bechamel-sauce
 product: melk 
-book: Delia's How to Cook 
+book: Delia's how to cook 
 page: 150
 dish: basics 
 tags:
