@@ -24,11 +24,39 @@ In Jekyll it is possible to relate collections and posts from the content of the
 
 **if recipe.book == page.title**
 
+{% raw %}
+```html
+<div class="book-links">
+    {%- for recipe in site.recipes -%}
+    {%- if recipe.book == page.title -%}
+    <a href="/recipes/{{ recipe.title | slugify }}">
+    <h5>{{ recipe.title }} {{ recipe.index }}</h5>
+    </a>
+    {%- endif -%}
+    {%- endfor -%}    
+</div>
+```
+{% endraw %}
+
 This way, we can get all the recipes of the collection recipes, along with all the data of that recipe and add it to a certain book of the collection books.
 
 Likewise we can add the data of a book to a recipe:
 
 **if book.title == page.book**
+
+{% raw %}
+```html
+<div class="recipe-box_credits">
+    {%- for book in site.books -%}
+    {%- if book.title == page.book -%}
+        <h6>{{  book.title }}</h6>    
+        <p>{{  book.author }}</p>     
+        <p>{{  book.content | truncatewords: 20 }} <span>Read more ></span></p>     
+    {%- endif -%}
+    {%- endfor -%}           
+</div>
+```
+{% endraw %}
 
 Both result in a data schema that is similar to the many-to-many-relationships used in non-relational databases, like MongoDB. So what if in Jekyll we could use this technique to create a JSON file that contains the same structure, and make it available to the internet? And we sure can! 
 
@@ -42,6 +70,52 @@ In Liquid you can eleminate the last comma, with the **unless forloop.last** sta
 
 The solution is to create a new empty array, while using the push method to gather the desired content. This way we get rid of the conditional statement. 
 
+{% raw %}
+```html
+---
+layout: null
+---
+[ 
+    {% for book in site.books %}
+        {
+            "index"    : "{{ book.index }}",
+            "title"    : "{{ book.title }}",
+            "id"       : "{{ book.title | slugify }}",
+            "author"   : "{{ book.author }}",
+            "publisher": "{{ book.publisher }}",
+            "year"     : "{{ book.year }}",
+            "kitchen"  : "{{ book.kitchen }}",
+            "link"     : "{{ book.link }}",
+            "book_url" : "{{ book.book_url }}",
+            {% assign p = book.title | slugify %}
+            {% assign my_recipe = "" | split: "" %}
+            {% for recipetitle in site.recipes %}
+            {% assign detitel = recipetitle.book | slugify %}
+            {% if p == detitel %}
+            {% assign itemtitle = "" | split: "" %}
+            {% assign itemtitle = itemtitle | push: recipetitle %}
+            {% assign my_recipe = my_recipe | push: itemtitle %}
+            {% endif %}
+            {% endfor %}
+            "recipes"  : [ 
+                {% for therecipe in my_recipe %}  
+                {
+                    "index"   : "{{ therecipe[0].index }}",
+                    "title"   : "{{ therecipe[0].title }}",
+                    "page"    : "{{ therecipe[0].page }}",
+                    "product" : "{{ therecipe[0].product }}",
+                    "dish"    : "{{ therecipe[0].dish }}"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            "text"  : "{{ book.text }}",
+            "content"  : {{ book.content | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]
+```
+{% endraw %}
+
 Finally check if the JSON is valid go to: 
 <a href="https://jsonlint.com/" target="_blank" rel="noopener noreferrer">
 https://jsonlint.com/
@@ -51,6 +125,25 @@ https://jsonlint.com/
 ## Jekyll as a blog API
 
 More interesting maybe is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the **data** folder create a file called blog.json, and follow the same instructions as before. Here we want to use the **content** of a post as well, which contains the Liquid templating language, resulting in HTML tags in your output. Therefore you need to use the **jsonify** filter here.
+
+{% raw %}
+```html
+---
+layout: null
+---
+[ 
+    {% for book in site.books %}
+        {
+            "index"    : "{{ book.index }}",
+            "title"    : "{{ book.title }}",
+            <!-- ... -->
+            "content"  : {{ book.content | jsonify }}
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+]
+```
+{% endraw %}
+
+
 
 ## Publishing the Jekyll site on CloudCannon
 
