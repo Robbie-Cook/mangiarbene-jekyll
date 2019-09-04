@@ -5,7 +5,9 @@ layout: null
 [ 
     {% for post in site.posts %}
         {
+            "index": "{{ forloop.index }}",
             "title": "{{ post.title }}",
+            "id": "{{ post.title | slugify }}",
             "category": "{{ post.category }}",
             "date": "{{ post.date }}",
             "author": "{{ post.author }}",
