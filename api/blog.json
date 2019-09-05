@@ -13,8 +13,8 @@ layout: null
             "author": "{{ post.author }}",
             "source": "{{ post.source }}",
             "source_url": "{{ post.source_url }}",
-            "url": "{{ post.url }}",{% assign p = post.book | slugify %}{% assign my_post = "" | split: "" %}{% for booktitle in site.books %}{% assign detitel = booktitle.title | slugify %}{% if p == detitel %}{% assign itemtitle = "" | split: "" %}{% assign itemtitle = itemtitle | push: booktitle %}{% assign my_post = my_post | push: itemtitle %} {% endif %}{% endfor %}
-            "books" : "{{ post.book }}",
+            "url": "{{ post.url }}",            
+            "book" : "{{ post.book }}",
             "content"  : {{ post.content | jsonify }}
         }{% unless forloop.last %},{% endunless %}{% endfor %}
 
