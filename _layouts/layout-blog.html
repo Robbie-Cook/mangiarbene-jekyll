@@ -11,29 +11,5 @@ layout: page
   </div>
 </div>
 <div class="blog-links">
-  {%- if page.books -%}
-  <p>Books</p>
-  {%- for blog_book in page.books -%}
-  {%- for book in site.books -%}
-  {%- if blog_book == book.title -%}
-  <a href='/books/{{ book.title | slugify}}'>
-      <h5>{{ book.title }}</h5>
-  </a>
-  {%- endif -%}
-  {%- endfor -%}
-  {%- endfor -%}
-  {%- endif -%}
-  <br>
-  {%- if page.recipes -%}
-  <p>Recipes</p>
-  {%- for blog_recipe in page.recipes -%}
-  {%- for recipe in site.recipes -%}
-  {%- if blog_recipe == recipe.title -%}
-  <a href='/recipes/{{ recipe.title | slugify}}'>
-      <h5>{{ recipe.title }} {{ recipe.index }}</h5>
-  </a>
-  {%- endif -%}
-  {%- endfor -%}
-  {%- endfor -%}
-  {%- endif -%}
+  <p>{{Books}}</p>
 </div>

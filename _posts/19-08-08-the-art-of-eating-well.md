@@ -1,8 +1,7 @@
 ---
 layout: layout-blog
 category: Mangiarbene
-books: 
-- Science in the Kitchen and the Art of Eating Well
+book: Science in the Kitchen and the Art of Eating Well
 author: University of Toronto Press
 source: University of Toronto Press
 source_url: "https://utorontopress.com/us/science-in-the-kitchen-and-the-art-of-eating-well-4"

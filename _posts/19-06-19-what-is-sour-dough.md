@@ -1,11 +1,7 @@
 ---
 layout: layout-blog
 category: Mangiarbene
-books: 
-- The complete nose to tail
-recipes:
-- Mother
-- White sourdough loaf
+book: The complete nose to tail
 author: Wikipedia
 source: Wikipedia
 source_url: "https://en.wikipedia.org/wiki/Sourdough"
