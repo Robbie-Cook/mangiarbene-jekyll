@@ -13,20 +13,7 @@ layout: null
             "year"     : "{{ book.year }}",
             "kitchen"  : "{{ book.kitchen }}",
             "link"     : "{{ book.link }}",
-            "book_url" : "{{ book.book_url }}",{% assign p = book.title | slugify %}{% assign my_recipe = "" | split: "" %}{% for recipetitle in site.recipes %}{% assign detitel = recipetitle.book | slugify %}{% if p == detitel %}            {% assign itemtitle = "" | split: "" %}            {% assign itemtitle = itemtitle | push: recipetitle %}         {% assign my_recipe = my_recipe | push: itemtitle %} {% endif %}{% endfor %}
-            "recipes"  : [ {% for therecipe in my_recipe %}  
-                {
-                    "index"   : "{{ therecipe[0].index }}",
-                    "title"   : "{{ therecipe[0].title }}",
-                    "page"    : "{{ therecipe[0].page }}",
-                    "product" : "{{ therecipe[0].product }}",
-                    "dish"    : "{{ therecipe[0].dish }}"
-                }{% unless forloop.last %},{% endunless %}{% endfor %}
-            ],
-            "recipesId": [ {% for therecipe in my_recipe %}  
-                "{{ therecipe[0].title }}"{% unless forloop.last %},{% endunless %}{% endfor %}
-            ],
-            "text"  : "{{ book.text }}",
+            "book_url" : "{{ book.book_url }}",
             "content"  : {{ book.content | jsonify }}
         }{% unless forloop.last %},{% endunless %}{% endfor %}
         
