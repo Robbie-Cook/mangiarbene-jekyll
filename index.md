@@ -63,7 +63,7 @@ quote: Science in the Kitchen and the Art of Eating Well
 {%- assign diff = max | minus: min -%}
 {%- assign randomNumber = site.time | date: "%s" | modulo: diff | plus: min -%}
 {%- for recipe in site.recipes -%}
-    {%- if recipe.index == randomNumber -%}
+    {%- if recipe.index == 4 -%}
     <a href="/recipes/{{ recipe.title | slugify }}">
         <h3>{{ recipe.title }} {{ recipe.index }}</h3>
     </a>
@@ -78,7 +78,7 @@ quote: Science in the Kitchen and the Art of Eating Well
 {%- assign diff = max | minus: min -%}
 {%- assign randomNumber = site.time | date: "%s" | modulo: diff | plus: min -%}
 {%- for book in site.books -%}
-    {%- if book.index == randomNumber -%}
+    {%- if book.index == 4 -%}
     <a href="/books/{{ book.title | slugify }}">
         <h3>{{ book.title }}</h3>
     </a>
