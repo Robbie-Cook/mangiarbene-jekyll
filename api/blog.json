@@ -15,6 +15,7 @@ layout: null
             "source_url": "{{ post.source_url }}",
             "url": "{{ post.url }}",
             "book" : "{{ post.book }}",
+            "bookId" : "{{ post.book | slugify }}",
             "content"  : {{ post.content | jsonify }}
         }{% unless forloop.last %},{% endunless %}{% endfor %}
 
