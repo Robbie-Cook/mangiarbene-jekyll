@@ -34,7 +34,7 @@ In my former life I was a graphic designer, specialised in designing books, art 
 
 <br/>
 <div class="home-img_vangogh">
-    <img src="/public/img/van-gogh-00.jpg" alt="">   
+    <img src="/public/img/van-gogh-00.jpg" alt="">
 </div>
 
 ## My next step
@@ -68,6 +68,11 @@ Basically, API's are used to make the same content available to different applic
 ## MangiarBene
 
 For this demo I designed a simple Jekyll website about Cookbooks (what else...? :-) called **MangiarBene**, dedicated to the famous Italian businessman and writer Pellegrino Artusi (1820–1911), and which in this case is the actual website you are visiting right now. It consists of two collections: one of **15 cookbooks** and another of **48 recipes** as well as a **blog** from which this actual post is the 'latest'.
+
+<div class="home-img_websites">
+    <img src="/public/img/jekyll.jpg" alt="">
+    <img src="/public/img/react.jpg" alt="">
+</div>
 
 You can go to the [homepage](/) of **MangiarBene** now, if you want, and see how the website is structured. 
 
