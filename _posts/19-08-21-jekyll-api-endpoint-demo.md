@@ -8,15 +8,74 @@ source: ""
 source_url: ""
 ---
 
-One of the best so called **unusual use cases of Jekyll** is learning the basics of web development: HTML, CSS and JavaScript. But as the JavaScript part is growing in your application, the need of a package manager like npm comes around, and with that we reach the limits of using Jekyll. Although not impossible to integrate with npm, the production environment might become too complicated, using two different compilers at the same time. Yet we don't have to say goodbye to Jekyll at this point at all. 
+> One of the best so called **unconventional use cases of Jekyll** is learning the basics of web development: HTML, CSS and JavaScript. But as the JavaScript part is growing in your application, the need of a package manager like npm comes around, and with that we reach the limits of using Jekyll. Although not impossible to integrate with npm, the production environment might become too complicated, using two different compilers at the same time. Yet we don't have to say goodbye to Jekyll at this point at all. 
 
 >It is very well possible to use Jekyll in creating API endpoints, that can be consumed by other website generators. In this demo I will show the combination with React. That way you are completely free in your development, while enjoying the bennefits of a simple, static and blog-aware Jekyll application. This time as a real backend.
 
+<br/>
+
+# Hello,
+
+<div class="home-img_pieter">
+    <img src="/img/pieter0.jpg" alt="">   
+</div>
+
+**...my name is Pieter Roozen and I live in The Hague, the Netherlands. I am 65 years old, father of 4 and partner of Ruth. I love skitouring and sailing and I bake sourdough bread on a dayly basis.**
+
+<br/>
+
+<div class="home-img_vangogh">
+    <img src="/img/museums.jpg" alt="">   
+</div>
+
+## My former life as a designer
+
+In my former life I was a graphic designer, specialised in designing books, art catalogues and museum concepts for the 'big' Dutch museums. Well, Dutch museums aren't that big, but the Van Gogh Museum is famous anough. Among other, our design agency was for more than 15 years in full service for the VGM. We contributed to all the major pioneerwork in presenting a modern museum to a broad audience, including the automation of text content and color management of the museum's reproduction output.
+
+<br/>
+<div class="home-img_vangogh">
+    <img src="/img/van-gogh-00.jpg" alt="">   
+</div>
+
+## My next step
+
+At my age I could retire and make bicycle tours along the Dutch coast, sail around the world, or take long holliday trips. But I decided to learn web development.
+
+## Jekyll
+
+At this point I found Jekyll very usefull in learning the basics of HTML, CSS and JavaScript. We all know why: Jekyll is simple, fast and secure and very well suited for presentational websites like portfolio's, blogs or even museum websites. In combination with the <a href="https://cloudcannon.com/" target="_blank" rel="noopener noreferrer">**CloudCannon**</a> CMS many would find it a superior alternative for Wordpress, Drupal or other PHP frameworks like Laravel. I think this applies to all situations where the user does not need to realtime interacting with a  RESTfull backend.
+
+Of course the portfolio website of my design agency <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was also made in Jekyll.
+
+## Jekyll separates content from logic
+
+The reason why I love Jekyll is because it has a very elegant way of separating content from logic, including the HTML. You can use the Markdown language to write coded content without writing the code yourself. In fact I recognized that it is very similar to the way in 'the early days', where we used text content written in Word in combination with the QuarkXpress DTP software.
+
+So it all feels very intuïtive for an old school graphic designer, like me.
+
+## RESTfull api's
+
+These days, API's to transfer data around the web are very popular. API's are RESTfull if you can do all the HTTP requests like GET, PUT, POST and DELETE, but very often you only need the GET request as in to present your content to the user. Drupal and even Wordpress, which I already mentioned before, recently came with plugins for RESTfull API solutions.
+
+## How about Jekyll?
+
+So how about Jekyll, as it is very well suited in seperating content from the logic? And yes, you definitly can do! 
+
+This is where my talk is all about.
+
+Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language. But let me be clear: you cannot make Jekyll RESTfull, because it is static. Nevertheless it is very well possible to create a so called API endpoint, and consume the data in an other application.
+
 ## MangiarBene
 
-We start with a simple Jekyll website called **MangiarBene**, which in this case is the actual website you are visiting right now. It constraints of two collections of **15 cookbooks** and **48 recipes** as well as a **blog** from which this actual post is the 'latest'.
+For this demo I designed a simple Jekyll website about Cookbooks (what else...? :-) called **MangiarBene**, dedicated to the famous Italian businessman and writer Pellegrino Artusi (1820–1911), and which in this case is the actual website you are visiting right now. It consists of two collections: one of **15 cookbooks** and another of **48 recipes** as well as a **blog** from which this actual post is the 'latest'.
 
-You can go to the [homepage](/) of **MangiarBene** now, if you want, and see how the website is structured. Finally we can go to a different SPA website (in React), which I developed for this demo, that just uses the content from **MangiarBene** as JSON data. But let me explain first.
+You can go to the [homepage](/) of **MangiarBene** now, if you want, and see how the website is structured. 
+
+Subsequently I developed a second SPA website (in React), that just uses the content from **MangiarBene** as JSON data. You could also examin this at <a href="https://api.roozen.nl" target="_blank" rel="noopener noreferrer">
+https://api.roozen.nl
+</a>. You will see that it is identical, only the background color is different.
+
+But let me explain first.
 
 ## Many to many relationships
 
@@ -62,7 +121,13 @@ Both result in a data schema that is similar to the many-to-many-relationships u
 
 ## Constructing the API endpoints
 
-Create a folder called **api** with files for **books.json** and **recipes.json**. In the front matter block we just set the layout to null and that's it. Now we can construct a JSON file and establish the same relations as we did before in creating the pages for books, recipes and posts.
+Let's create a folder called **api** with files for **books.json** and **recipes.json**. In the front matter block we just set the layout to null and that's it. Now we can construct a JSON file and establish the same relations as we did before in creating the pages for books, recipes and posts.
+
+The form of the JSON is very mutch dependent of the language in which the data are consumed. In the case of React the best advise is to keep the JSON tree as flat as possible. This pattern is called **denormalisation** is well known in non-relational databases as MongoDB. In this case we would 'connect' the **recipes** data with the **books** data using a **bookId** instead of calling all the data of each book as nested in the **recipes** object.
+
+## Nested structures
+
+With Jekyll we could establish every structure of the JSON we want, also deeply nested ones.
 
 There is only one problem here (fortunatly with a simple solution). In order to achieve valid JSON, the last iteration cannot end with a comma. Since the if-statement works as a filter, and therefore not all iterations will become valid, a comma cannot be avoided here. Let me explain.
 
@@ -144,7 +209,6 @@ https://jsonlint.com/
 ```
 {% endraw %}
 
-
 ## Jekyll as a blog API
 
 More interesting maybe is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the **data** folder create a file called blog.json, and follow the same instructions as before. Here we want to use the **content** of a post as well, which contains the Liquid templating language, resulting in HTML tags in your output. Therefore you need to use the **jsonify** filter here.
@@ -189,8 +253,15 @@ Now we can use the created Jekyll API endpoints. As you can see they are part of
 ## Using the API in React
 
 Hosting the Jekyll website – which includes the API endpoints – on either GitHub or CloudCannon makes it easy to change the content, and see how this is in sync with the SPA that consumes the content, in this demo developed in React:
-
 <a href="https://api.roozen.nl" target="_blank" rel="noopener noreferrer">
 https://api.roozen.nl
 </a>
 
+## Other use cases
+
+You can even use Jekyll to load a MongoDB database, which can be done by using a script in JavaScript and load different kinds of JSON files and structures at the same time or by just loading one JSON file directly. Here is a link to the documentation of <a href="https://docs.mongodb.com/manual/reference/program/mongoimport/" target="_blank" rel="noopener noreferrer">
+MongoDB</a>.
+
+That's all there is to it.
+
+So now just use your imagination. There is more you can do with Jekyll, than with Jekyll on its own!
