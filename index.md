@@ -24,7 +24,7 @@ quote: Science in the Kitchen and the Art of Eating Well
 {%- endfor -%}
 {%- endcapture -%}
 <div class="home-img_artisjok">
-    <img src="/img/artisjok.jpg" alt="">
+    <img src="/public/img/artisjok.jpg" alt="">
     <div class="theart">
         <a href='/books/{{ page.quote | slugify }}'>The art of eating well</a>
     </div>       

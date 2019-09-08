@@ -17,7 +17,7 @@ source_url: ""
 # Hello,
 
 <div class="home-img_pieter">
-    <img src="/img/pieter0.jpg" alt="">   
+    <img src="/public/img/pieter0.jpg" alt="">   
 </div>
 
 **...my name is Pieter Roozen and I live in The Hague, the Netherlands. I am 65 years old, father of 4 and partner of Ruth. I love skitouring and sailing and I bake sourdough bread on a daily basis.**
@@ -25,7 +25,7 @@ source_url: ""
 <br/>
 
 <div class="home-img_vangogh">
-    <img src="/img/museums.jpg" alt="">   
+    <img src="/public/img/museums.jpg" alt="">   
 </div>
 
 ## My former life as a designer
@@ -34,7 +34,7 @@ In my former life I was a graphic designer, specialised in designing books, art 
 
 <br/>
 <div class="home-img_vangogh">
-    <img src="/img/van-gogh-00.jpg" alt="">   
+    <img src="/public/img/van-gogh-00.jpg" alt="">   
 </div>
 
 ## My next step
