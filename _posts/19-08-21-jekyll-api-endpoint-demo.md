@@ -20,7 +20,7 @@ source_url: ""
     <img src="/img/pieter0.jpg" alt="">   
 </div>
 
-**...my name is Pieter Roozen and I live in The Hague, the Netherlands. I am 65 years old, father of 4 and partner of Ruth. I love skitouring and sailing and I bake sourdough bread on a dayly basis.**
+**...my name is Pieter Roozen and I live in The Hague, the Netherlands. I am 65 years old, father of 4 and partner of Ruth. I love skitouring and sailing and I bake sourdough bread on a daily basis.**
 
 <br/>
 
@@ -30,7 +30,7 @@ source_url: ""
 
 ## My former life as a designer
 
-In my former life I was a graphic designer, specialised in designing books, art catalogues and museum concepts for the 'big' Dutch museums. Well, Dutch museums aren't that big, but the Van Gogh Museum is famous anough. Among other, our design agency was for more than 15 years in full service for the VGM. We contributed to all the major pioneerwork in presenting a modern museum to a broad audience, including the automation of text content and color management of the museum's reproduction output.
+In my former life I was a graphic designer, specialised in designing books, art catalogues and museum concepts for the 'big' Dutch museums. Well, Dutch museums aren't that big, but the Van Gogh Museum is famous anough. Among other, our design agency was for more than 15 years in full service for the VGM. We contributed to all the major pioneer work in presenting a modern museum to a broad audience, including the automation of text content and color management of the museum's reproduction output.
 
 <br/>
 <div class="home-img_vangogh">
@@ -43,7 +43,7 @@ At my age I could retire and make bicycle tours along the Dutch coast, sail arou
 
 ## Jekyll
 
-At this point I found Jekyll very usefull in learning the basics of HTML, CSS and JavaScript. We all know why: Jekyll is simple, fast and secure and very well suited for presentational websites like portfolio's, blogs or even museum websites. In combination with the <a href="https://cloudcannon.com/" target="_blank" rel="noopener noreferrer">**CloudCannon**</a> CMS many would find it a superior alternative for Wordpress, Drupal or other PHP frameworks like Laravel. I think this applies to all situations where the user does not need to realtime interacting with a  RESTfull backend.
+At this point I found Jekyll very usefull in learning the basics of HTML, CSS and JavaScript. We all know why: Jekyll is simple, fast and secure and very well suited for presentational websites like portfolio's, blogs or even museum websites. In combination with the <a href="https://cloudcannon.com/" target="_blank" rel="noopener noreferrer">**CloudCannon**</a> CMS many would find it a superior alternative for Wordpress, Drupal or other PHP frameworks like Laravel. I think this would apply to all situations where the user does not need to realtime interacting with a  RESTfull backend.
 
 Of course the portfolio website of my design agency <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was also made in Jekyll.
 
@@ -55,7 +55,7 @@ So it all feels very intuïtive for an old school graphic designer, like me.
 
 ## RESTfull api's
 
-These days, API's to transfer data around the web are very popular. API's are RESTfull if you can do all the HTTP requests like GET, PUT, POST and DELETE, but very often you only need the GET request as in to present your content to the user. Drupal and even Wordpress, which I already mentioned before, recently came with plugins for RESTfull API solutions.
+These days, API's to transfer data around the web are very popular. API's are RESTfull if you can do all the HTTP requests like GET, PUT, POST and DELETE, but very often you only need the GET request in order to present your content to the user. Drupal and even Wordpress, which I already mentioned before, recently came with plugins for RESTfull API solutions.
 
 ## How about Jekyll?
 
@@ -211,7 +211,7 @@ https://jsonlint.com/
 
 ## Jekyll as a blog API
 
-More interesting maybe is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the **data** folder create a file called blog.json, and follow the same instructions as before. Here we want to use the **content** of a post as well, which contains the Liquid templating language, resulting in HTML tags in your output. Therefore you need to use the **jsonify** filter here.
+More interesting maybe is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the **data** folder create a file called blog.json, and follow the same instructions as before. Here we want to use the **content** of a post as well, while using Markdown text-to-HTML conversion, resulting in HTML tags in your output. Therefore you need to use the **jsonify** filter here.
 
 {% raw %}
 ```html
