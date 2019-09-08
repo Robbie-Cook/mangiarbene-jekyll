@@ -63,7 +63,7 @@ So how about Jekyll, as it is very well suited in seperating content from the lo
 
 This is where my talk is all about.
 
-Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language. But let me be clear: you cannot make Jekyll RESTfull, because it is static. Nevertheless it is very well possible to create a so called API endpoint, and consume the data in an other application.
+Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language. But let me be clear: obviously you cannot make Jekyll RESTfull, because it is static. Nevertheless it is very well possible to create a so called API endpoint, and consume the data in an other application.
 
 ## MangiarBene
 
