@@ -1,7 +1,7 @@
 /*------------------------------------*\
   #PAGES-HOME   
 \*------------------------------------*/
-.home-img {
+.home-img_artisjok {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
@@ -28,6 +28,25 @@
 			font-weight: 400;
 			color: $brand;
 		}
+	}
+}
+.home-img_pieter {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 2em;
+	img {
+		width: 200px;
+		border-radius: 50%;
+	}
+}
+.home-img_vangogh {
+	margin-left: calc(-200% + 769px);
+	margin-right: calc(-200% + 769px);
+	margin-bottom: 2em;
+	img {
+		width: 100%;
 	}
 }
 .home-quote {

@@ -23,7 +23,7 @@ quote: Science in the Kitchen and the Art of Eating Well
     {% if forloop.last %}{{ recipe.index }}{% endif %}
 {%- endfor -%}
 {%- endcapture -%}
-<div class="home-img">
+<div class="home-img_artisjok">
     <img src="/img/artisjok.jpg" alt="">
     <div class="theart">
         <a href='/books/{{ page.quote | slugify }}'>The art of eating well</a>
