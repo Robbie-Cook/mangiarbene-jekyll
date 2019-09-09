@@ -275,6 +275,10 @@ https://api.roozen.nl
 You could even use Jekyll to load a MongoDB database, which can be done by using a script in JavaScript and load different kinds of JSON files and structures at the same time or by just loading one JSON file directly. Here is a link to the documentation of <a href="https://docs.mongodb.com/manual/reference/program/mongoimport/" target="_blank" rel="noopener noreferrer">
 MongoDB</a>.
 
+## Final thoughts
+
+And last but not least: If  a collection of JSON objects is already available, you can use it in Jekyll as data, just like any other JSON of YAML file and produce the API endpoint from there.
+
 That's all there is to it.
 
 So now just use your imagination. There is more you can do with Jekyll, than with Jekyll on its own!
