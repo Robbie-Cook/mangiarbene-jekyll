@@ -59,7 +59,9 @@ So it all feels very intuïtive for an old school graphic designer, like me.
 
 ## RESTfull api's
 
-These days, API's to transfer data around the web are very popular. API's are RESTfull if you can do all the HTTP requests like GET, PUT, POST and DELETE, but very often you only need the GET request in order to present your content to the user. Drupal and even Wordpress, which I already mentioned before, recently came with plugins for RESTfull API solutions.
+These days, API's to transfer data around the web are very popular. API's are RESTfull if you can do all the HTTP requests like GET, PUT, POST and DELETE, but in many cases you only need the GET request in order to present your content to the user. 
+
+Also Drupal and even Wordpress, which I already mentioned before, recently came with plugins for RESTfull API solutions.
 
 ## How about Jekyll?
 
@@ -68,6 +70,8 @@ So how about Jekyll, as it is very well suited in seperating content from the lo
 This is where my talk is all about.
 
 Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language. But let me be clear: obviously you cannot make Jekyll RESTfull, because it is static. Nevertheless it is very well possible to create a so called API endpoint, and consume the data in an other application.
+
+I know that there are different solutions out there, to use fake online API' for testing, like <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">**JSONplaceholder**</a>. But you still have to code your content and nobody likes that. With Jekyll, on the other hand, you can write content just like an editor.
 
 ## MangiarBene
 
@@ -268,7 +272,7 @@ https://api.roozen.nl
 
 ## Other use cases
 
-You can even use Jekyll to load a MongoDB database, which can be done by using a script in JavaScript and load different kinds of JSON files and structures at the same time or by just loading one JSON file directly. Here is a link to the documentation of <a href="https://docs.mongodb.com/manual/reference/program/mongoimport/" target="_blank" rel="noopener noreferrer">
+You could even use Jekyll to load a MongoDB database, which can be done by using a script in JavaScript and load different kinds of JSON files and structures at the same time or by just loading one JSON file directly. Here is a link to the documentation of <a href="https://docs.mongodb.com/manual/reference/program/mongoimport/" target="_blank" rel="noopener noreferrer">
 MongoDB</a>.
 
 That's all there is to it.
