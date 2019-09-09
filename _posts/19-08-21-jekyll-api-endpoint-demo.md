@@ -27,16 +27,18 @@ source_url: ""
 <br/>
 
 <div class="home-img_vangogh">
-    <img src="/public/img/museums.jpg" alt="">   
+    <img src="/public/img/studio.jpg" alt="">   
 </div>
 
 ## My former life as a designer
 
-In my former life I was a graphic designer, specialised in designing books, art catalogues and museum concepts for the 'big' Dutch museums. Well, Dutch museums aren't that big, but the Van Gogh Museum is famous anough. Among other, our design agency was for more than 15 years in full service for the VGM. We contributed to all the major pioneer work in presenting a modern museum to a broad audience, including the automation of text content and color management of the museum's reproduction output.
+In my former life I was a graphic designer, specialised in designing books, art catalogues and museum concepts for the 'big' Dutch museums. Well, Dutch museums aren't that big, but the Van Gogh Museum is famous anough. 
+
+Among other, our design agency <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was for more than 15 years in full service for the <a href="https://roozen.nl/projecten/van-gogh-museum" target="_blank" rel="noopener noreferrer">**Van Gogh Museum**</a>. We contributed to all the major pioneer work in presenting a modern museum to a broad audience, including the automation of text content and color management of the museum's reproduction output.
 
 <br/>
 <div class="home-img_vangogh">
-    <img src="/public/img/van-gogh-00.jpg" alt="">
+    <img src="/public/img/museums.jpg" alt="">
 </div>
 
 ## My next step
