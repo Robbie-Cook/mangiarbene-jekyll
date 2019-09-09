@@ -67,12 +67,24 @@ quote: Science in the Kitchen and the Art of Eating Well
     <a href="/recipes/{{ recipe.title | slugify }}">
         <h3>{{ recipe.title }} {{ recipe.index }}</h3>
     </a>
+    <div class="credits">
+        <h5>
+            {{ recipe.product }}
+            <span>
+                <a href="/books/{{recipe.book | slugify}}">
+                &nbsp;{{recipe.book}}
+                </a>
+            </span>
+        </h5>
+    </div>         
     {%- endif -%}
 {%- endfor -%}
+
+
 </div>
 <!-- book of the day -->
 <p class="pl-2em">book of the day</p>
-<div class="home-book">
+<div class="book">
 {%- assign min = 0 -%}
 {%- assign max = numberOfBooks -%}
 {%- assign diff = max | minus: min -%}
@@ -80,8 +92,11 @@ quote: Science in the Kitchen and the Art of Eating Well
 {%- for book in site.books -%}
     {%- if book.index == 4 -%}
     <a href="/books/{{ book.title | slugify }}">
-        <h3>{{ book.title }}</h3>
+        <h3><span>{{book.year}}</span>&nbsp;{{ book.title }}</h3>
     </a>
+    <div class="credits">
+        <h5>{{book.author}}</h5>
+    </div>   
     {%- endif -%}
 {%- endfor -%}
 </div>
