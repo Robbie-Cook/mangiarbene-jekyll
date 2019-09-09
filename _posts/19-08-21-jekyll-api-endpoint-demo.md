@@ -45,7 +45,7 @@ At my age I could retire and make bicycle tours along the Dutch coast, sail arou
 
 ## Jekyll
 
-At this point I found Jekyll very usefull in learning the basics of HTML, CSS and JavaScript. We all know why: Jekyll is simple, fast and secure and very well suited for presentational websites like portfolio's, blogs or even museum websites. In combination with the <a href="https://cloudcannon.com/" target="_blank" rel="noopener noreferrer">**CloudCannon**</a> CMS many would find it a superior alternative for Wordpress, Drupal or other PHP frameworks like Laravel. I think this would apply to all situations where the user does not need to realtime interacting with a  RESTfull backend.
+At this point I found Jekyll very usefull in learning the basics of HTML, CSS and JavaScript. We all know why: Jekyll is simple, fast and secure and very well suited for presentational websites like portfolio's, blogs or even museum websites. In combination with the <a href="https://cloudcannon.com/" target="_blank" rel="noopener noreferrer">**CloudCannon**</a> CMS many would find it even a superior alternative for Wordpress, Drupal or other PHP frameworks like Laravel. I think this would apply to all situations where the user does not need to realtime interact with a  RESTfull backend.
 
 Of course the portfolio website of my design agency <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was also made in Jekyll.
 
