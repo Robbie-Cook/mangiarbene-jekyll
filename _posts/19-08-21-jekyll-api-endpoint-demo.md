@@ -8,6 +8,8 @@ source: ""
 source_url: ""
 ---
 
+#### Talk at the Jekyll video conference 2019
+
 > One of the best so called **unconventional use cases of Jekyll** is learning the basics of web development: HTML, CSS and JavaScript. But as the JavaScript part is growing in your application, the need of a package manager like npm comes around, and with that we reach the limits of using Jekyll. Although not impossible to integrate with npm, the production environment might become too complicated, using two different compilers at the same time. Yet we don't have to say goodbye to Jekyll at this point at all. 
 
 >It is very well possible to use Jekyll in creating API endpoints, that can be consumed by other website generators. In this demo I will show the combination with React. That way you are completely free in your development, while enjoying the bennefits of a simple, static and blog-aware Jekyll application. This time as a real backend.

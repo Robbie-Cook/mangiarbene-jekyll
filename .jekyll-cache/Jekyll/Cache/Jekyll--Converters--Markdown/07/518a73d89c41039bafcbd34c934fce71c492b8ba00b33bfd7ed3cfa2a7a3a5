@@ -1,0 +1,51 @@
+I"‹<div class="blog">
+<p class="post-chapeau">latest</p>
+
+    <div class="blog-post">
+    <a href="/development/2019/08/21/jekyll-api-endpoint-demo.html">
+        <h3>Jekyll API endpoint</h3>
+    </a>
+    <p class="summary">
+        Development
+        <span class="date">
+        August 21, 2019
+        </span>
+    </p>
+    <h3 id="my-contribution-to-the-jekyll-conference-2019">My contribution to the Jekyll conference 2019</h3>
+
+    <a href="/development/2019/08/21/jekyll-api-endpoint-demo.html">
+        <p>Read more...</p>
+    </a>
+    </div>
+
+</div>
+
+<p class="post-chapeau">archive</p>
+<div class="blog">
+
+    <div class="blog-post">
+    <a href="/mangiarbene/2019/08/08/the-art-of-eating-well.html">
+        <h3>The Art Of Eating Well</h3>
+    </a>
+    <p class="summary">
+        Mangiarbene
+        <span class="date">
+        August 08, 2019
+        </span>
+    </p>
+    </div>
+
+    <div class="blog-post">
+    <a href="/mangiarbene/2019/06/19/what-is-sour-dough.html">
+        <h3>What Is Sour Dough</h3>
+    </a>
+    <p class="summary">
+        Mangiarbene
+        <span class="date">
+        June 19, 2019
+        </span>
+    </p>
+    </div>
+
+</div>
+:ET
