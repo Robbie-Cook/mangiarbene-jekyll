@@ -47,13 +47,17 @@ At my age I could retire and make bicycle tours along the Dutch coast, sail arou
 
 ## Jekyll
 
-At this point I found Jekyll very usefull in learning the basics of HTML, CSS and JavaScript. We all know why: Jekyll is simple, fast and secure and very well suited for presentational websites like portfolio's, blogs or even museum websites. In combination with the <a href="https://cloudcannon.com/" target="_blank" rel="noopener noreferrer">**CloudCannon**</a> CMS many would find it even a superior alternative for Wordpress, Drupal or other PHP frameworks like Laravel. I think this would apply to all situations where the user does not need to realtime interact with a  RESTfull backend.
+At this point I found Jekyll very usefull in learning the basics of HTML, CSS and JavaScript. We all know why: Jekyll is simple, fast and secure and very well suited for presentational websites like portfolio's, blogs or even museum websites. 
+
+In combination with the <a href="https://cloudcannon.com/" target="_blank" rel="noopener noreferrer">**CloudCannon CMS**</a> many would find it even a superior alternative for Wordpress, Drupal or other PHP frameworks like Laravel. I think this would apply to all situations where the user does not need to realtime interact with a  RESTfull backend.
 
 Of course the portfolio website of my design agency <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was also made in Jekyll.
 
 ## Jekyll separates content from logic
 
-The reason why I love Jekyll is because it has a very elegant way of separating content from logic, including the HTML. You can use the Markdown language to write coded content without writing the code yourself. In fact I recognized that it is very similar to the way in 'the early days', where we used text content written in Word in combination with the QuarkXpress DTP software.
+The reason why I love Jekyll is because it has a very elegant way of separating content from logic, including the HTML. You can use the Markdown language to write coded content without writing the code yourself. 
+
+In fact I recognized that it is very similar to the way in 'the early days', where we used text content written in Word in combination with the QuarkXpress DTP software.
 
 So it all feels very intuïtive for an old school graphic designer, like me.
 
@@ -67,7 +71,7 @@ Also Drupal and even Wordpress, which I already mentioned before, recently came 
 
 So how about Jekyll, as it is very well suited in seperating content from the logic? And yes, you definitly can do! 
 
-This is where my talk is all about.
+This is where my JekyllConf 2019 talk is all about.
 
 Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language. But let me be clear: obviously you cannot make Jekyll RESTfull, because it is static. Nevertheless it is very well possible to create a so called API endpoint, and consume the data in an other application.
 
