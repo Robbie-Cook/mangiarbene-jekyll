@@ -40,7 +40,7 @@ quote: Science in the Kitchen and the Art of Eating Well
     </p>
 </div>
 <hr>
-<br>
+<p style="margin-bottom: 2em;"></p>
 <!-- latest post -->
 <p class="pl-2em">latest post</p>
 <div class="home-post">
