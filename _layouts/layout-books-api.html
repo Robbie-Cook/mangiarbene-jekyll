@@ -4,16 +4,16 @@ layout: null
 
 [ 
         {
-            index    : "{{ page.index }}",
-            title    : "{{ page.title }}",
-            id       : "{{ page.title | slugify }}",
-            author   : "{{ page.author }}",
-            publisher: "{{ page.publisher }}",
-            year     : "{{ page.year }}",
-            kitchen  : "{{ page.kitchen }}",
-            link     : "{{ page.link }}",
-            book_url : "{{ page.book_url }}",
-            content  : {{ page.content | jsonify }}
+            "index"    : "{{ page.index }}",
+            "title"    : "{{ page.title }}",
+            "id"       : "{{ page.title | slugify }}",
+            "author"   : "{{ page.author }}",
+            "publisher": "{{ page.publisher }}",
+            "year"     : "{{ page.year }}",
+            "kitchen"  : "{{ page.kitchen }}",
+            "link"     : "{{ page.link }}",
+            "book_url" : "{{ page.book_url }}",
+            "content"  : {{ page.content | jsonify }}
         }
         
 ]

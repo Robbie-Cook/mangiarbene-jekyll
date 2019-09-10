@@ -39,7 +39,7 @@ collections:
     permalink: /recipes/:path/
   books-api:
     output: true
-    permalink: /api/books/:path/
+    permalink: /api/books/:path.json
 
 defaults:
   -
