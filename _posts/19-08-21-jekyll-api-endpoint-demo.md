@@ -10,7 +10,7 @@ source_url: ""
 
 #### Talk at the Jekyll video conference 2019
 
-> One of the best so called **unconventional use cases of Jekyll** is learning the basics of web development: HTML, CSS and JavaScript. But as the JavaScript part is growing in your application, the need of a package manager like npm comes around, and with that we reach the limits of using Jekyll. Although not impossible to integrate with npm, the production environment might become too complicated, using two different compilers at the same time. Yet we don't have to say goodbye to Jekyll at this point at all. 
+> One of the best so called **unconventional use cases of Jekyll** is learning the basics of web development: HTML, CSS and JavaScript. At least in my case as a book designer with a non development background. But if your JavaScript part is growing in your application, you might be attempted to use React or other single page applications in JavaScript. Although it is not impossible to integrate React in Jekyll, it doesn’t make much sense to use two website generators at the same time. Aside from the caveats in development you will encounter. Yet we don’t have to say goodbye to Jekyll at this point at all.
 
 >It is very well possible to use Jekyll in creating API endpoints, that can be consumed by other website generators. In this demo I will show the combination with React. That way you are completely free in your development, while enjoying the bennefits of a simple, static and blog-aware Jekyll application. This time as a real backend.
 
@@ -73,7 +73,9 @@ So how about Jekyll, as it is very well suited in seperating content from the lo
 
 This is where my JekyllConf 2019 talk is all about.
 
-Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language. But let me be clear: obviously you cannot make Jekyll RESTfull, because it is static. Nevertheless it is very well possible to create a so called API endpoint, and consume the data in an other application.
+Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language. But let me be clear: obviously you cannot make Jekyll RESTfull, because it is static. 
+
+Nevertheless it is very well possible to create a so called API endpoint, and consume the data in an other application. Specially when you have a limited amount of data, or posts like in presentational websites or when you need a fake API in a proof-of-concept (POC).
 
 I know that there are different solutions out there, to use fake online API' for testing, like <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">**JSONplaceholder**</a>. But you still have to code your content and nobody likes that. With Jekyll, on the other hand, you can write content just like an editor.
 
@@ -96,9 +98,7 @@ But let me explain first.
 
 ## Many to many relationships
 
-In Jekyll it is possible to relate collections and posts from the content of the YAML front matter blocks. We can call the recipes of a book, using the condition:
-
-**if recipe.book == page.title**
+In Jekyll it is possible to relate collections and posts from the content of the YAML front matter blocks. We can call the recipes of a book:
 
 {% raw %}
 ```html
@@ -117,8 +117,6 @@ In Jekyll it is possible to relate collections and posts from the content of the
 This way, we can get all the recipes of the collection recipes, along with all the data of that recipe and add it to a certain book of the collection books.
 
 Likewise we can add the data of a book to a recipe:
-
-**if book.title == page.book**
 
 {% raw %}
 ```html
@@ -140,7 +138,50 @@ Both result in a data schema that is similar to the many-to-many-relationships u
 
 Let's create a folder called **api** with files for **books.json** and **recipes.json**. In the front matter block we just set the layout to null and that's it. Now we can construct a JSON file and establish the same relations as we did before in creating the pages for books, recipes and posts.
 
-The form of the JSON is very mutch dependent of the language in which the data are consumed. In the case of React the best advise is to keep the JSON tree as flat as possible. This pattern is called **denormalisation** is well known in non-relational databases as MongoDB. In this case we would 'connect' the **recipes** data with the **books** data using a **bookId** instead of calling all the data of each book as nested in the **recipes** object.
+{% raw %}
+```html
+---
+layout: null
+---
+[ 
+  {% assign recipes = site.recipes | sort: "index" %}
+  {% for recipe in recipes %}
+      {
+          "index": "{{ recipe.index }}",
+          "title": "{{ recipe.title }}",
+          "id": "{{ recipe.slugify }}",
+          "product": "{{ recipe.product }}",
+          "dish": "{{ recipe.dish }}",
+          "url": "{{ recipe.url }}",
+          "bookId"  : "{{ recipe.book | slugify }}",
+          "bookTitle"  : "{{ recipe.book }}",          
+          "page": "{{ recipe.page }}"
+      }{% unless forloop.last %},{% endunless %}{% endfor %}
+]
+```
+{% endraw %}
+
+The form of the JSON is very mutch dependent of the language in which the data are consumed. In the case of React the best advise is to keep the JSON tree as flat as possible. This pattern,  called **denormalisation**, is well known in non-relational databases as MongoDB. In this case we would 'connect' the **recipes** data with the **books** data using a **bookId** instead of calling all the data of each book as nested in the **recipes** object.
+
+{% raw %}
+```html
+
+[
+    {
+    index: "1",
+    title: "Candied citrus peel",
+    id: "candied-citrus-peel",
+    product: "lemon",
+    dish: "basics",
+    url: "/recipes/candied-citrus-peel/",
+    bookId: "30-ingredients",
+    bookTitle: "30 ingredients",
+    page: "160"
+    },
+...
+
+```
+{% endraw %}
 
 ## Nested structures
 
@@ -201,53 +242,9 @@ Finally check if the JSON is valid go to:
 https://jsonlint.com/
 </a>.
 
-{% raw %}
-```html
-[ 
-    {
-        "index": "1",
-        "title": "Candied citrus peel",
-        "id": "candied-citrus-peel",
-        "product": "lemon",
-        "dish": "basics",
-        "url": "/recipes/candied-citrus-peel/",
-        "book"       : [   
-            {
-                "index"    : "1",
-                "title"    : "30 ingredients",
-                "author"   : "Sally Clarke",
-                "content"  : "<p>Britain’s pioneer of seasonal cooking Sally Clarke is back with a new collection of seasonal recipes to mark the 30th birthday year of her legendary Notting Hill restaurant.</p>\n\n<p>Known for pioneering seasonal fine dining in British cuisine, the award winning chef, restaurateur and author has chosen a handful of recipes for each of her favourite 30 ingredients in her stunning new cookery book. The simple idea of cooking with the freshest and best market produce, Sally Clarke’s vision for thirty years, is at the heart of her new book of ninety-five recipes.</p>\n"
-            }
-        ],
-        "page": "160"
-    },
-...
-
-```
-{% endraw %}
-
 ## Jekyll as a blog API
 
-More interesting maybe is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the **data** folder create a file called blog.json, and follow the same instructions as before. Here we want to use the **content** of a post as well, while using Markdown text-to-HTML conversion, resulting in HTML tags in your output. Therefore you need to use the **jsonify** filter here.
-
-{% raw %}
-```html
----
-layout: null
----
-[ 
-    {% for book in site.books %}
-        {
-            "title"    : "{{ book.title }}",
-            <!-- ... -->
-            "content"  : {{ book.content | jsonify }}
-        }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-]
-```
-{% endraw %}
-
-
+More interesting maybe is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the **data** folder create a file called blog.json, and follow the same instructions as before. Here we want to use the **content** of a post as well, while using Markdown text-to-HTML conversion, resulting in HTML tags in your output. Therefore you need to use the **jsonify** filter here. {% raw %}```{{ book.content | jsonify }}```{% endraw %}
 
 ## Publishing the Jekyll site on CloudCannon
 

@@ -11,7 +11,7 @@ layout: null
           "id": "{{ recipe.slugify }}",
           "product": "{{ recipe.product }}",
           "dish": "{{ recipe.dish }}",
-          "url": "{{ recipe.url }}",{% assign p = recipe.book | slugify %}{% assign my_recipe = "" | split: "" %}{% for booktitle in site.books %}{% assign detitel = booktitle.title | slugify %}{% if p == detitel %}{% assign itemtitle = "" | split: "" %}{% assign itemtitle = itemtitle | push: booktitle %}{% assign my_recipe = my_recipe | push: itemtitle %} {% endif %}{% endfor %}
+          "url": "{{ recipe.url }}",
           "bookId"  : "{{ recipe.book | slugify }}",
           "bookTitle"  : "{{ recipe.book }}",          
           "page": "{{ recipe.page }}"
