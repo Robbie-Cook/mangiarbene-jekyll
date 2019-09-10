@@ -37,6 +37,9 @@ collections:
   recipes:
     output: true
     permalink: /recipes/:path/
+  books-api:
+    output: true
+    permalink: /api/books/:path/
 
 defaults:
   -
@@ -51,3 +54,9 @@ defaults:
       type: "recipes"
     values:
       layout: layout-recipes
+  -
+    scope:
+      path: ""
+      type: "books-api"
+    values:
+      layout: layout-books-api

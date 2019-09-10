@@ -22,7 +22,7 @@ source_url: ""
     <img src="/public/img/pieter0.jpg" alt="">   
 </div>
 
-**...my name is Pieter Roozen and I live in The Hague, the Netherlands. I am 65 years old, father of 4 and partner of Ruth. I love skitouring and sailing and I bake sourdough bread on a daily basis.**
+**...my name is Pieter Roozen. I am a graphic designer and I live in The Hague, the Netherlands. I am 65 years old, father of 4 and partner of Ruth. I love skitouring and sailing and I bake sourdough bread on a daily basis.**
 
 <br/>
 
@@ -30,28 +30,9 @@ source_url: ""
     <img src="/public/img/studio.jpg" alt="">   
 </div>
 
-## My former life as a designer
+## Studio Roozen
 
-In my former life I was a graphic designer, specialised in designing books, art catalogues and museum concepts for the 'big' Dutch museums. Well, Dutch museums aren't that big, but the Van Gogh Museum is famous anough. 
-
-Among other, our design agency <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was for more than 15 years in full service for the <a href="https://roozen.nl/projecten/van-gogh-museum" target="_blank" rel="noopener noreferrer">**Van Gogh Museum**</a>. We contributed to all the major pioneer work in presenting a modern museum to a broad audience, including the automation of text content and color management of the museum's reproduction output.
-
-<br/>
-<div class="home-img_vangogh">
-    <img src="/public/img/museums.jpg" alt="">
-</div>
-
-## My next step
-
-At my age I could retire and make bicycle tours along the Dutch coast, sail around the world, or take long holliday trips. But I decided to learn web development.
-
-## Jekyll
-
-At this point I found Jekyll very usefull in learning the basics of HTML, CSS and JavaScript. We all know why: Jekyll is simple, fast and secure and very well suited for presentational websites like portfolio's, blogs or even museum websites. 
-
-In combination with the <a href="https://cloudcannon.com/" target="_blank" rel="noopener noreferrer">**CloudCannon CMS**</a> many would find it even a superior alternative for Wordpress, Drupal or other PHP frameworks like Laravel. I think this would apply to all situations where the user does not need to realtime interact with a  RESTfull backend.
-
-Of course the portfolio website of my design agency <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was also made in Jekyll.
+Our design agency **Studio Roozen** (closed in 2015) was specialised in designing books, art catalogues and museum concepts for Dutch museums. Among other, more than 15 years in full service for the <a href="https://roozen.nl/projecten/van-gogh-museum" target="_blank" rel="noopener noreferrer">**Van Gogh Museum**</a>. Of course the portfolio website of <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was made in Jekyll.
 
 ## Jekyll separates content from logic
 
@@ -61,11 +42,11 @@ In fact I recognized that it is very similar to the way in 'the early days', whe
 
 So it all feels very intuïtive for an old school graphic designer, like me.
 
-## RESTfull api's
+## Restful api's
 
-These days, API's to transfer data around the web are very popular. API's are RESTfull if you can do all the HTTP requests like GET, PUT, POST and DELETE, but in many cases you only need the GET request in order to present your content to the user. 
+These days, API's to transfer data around the web are very popular. API's are restful if you can do all the HTTP requests like GET, PUT, POST and DELETE, but in many cases you only need the GET request in order to present your content to the user. 
 
-Also Drupal and even Wordpress, which I already mentioned before, recently came with plugins for RESTfull API solutions.
+Also Drupal and even Wordpress, which I already mentioned before, recently came with plugins for restful API solutions.
 
 ## How about Jekyll?
 
@@ -73,7 +54,7 @@ So how about Jekyll, as it is very well suited in seperating content from the lo
 
 This is where my JekyllConf 2019 talk is all about.
 
-Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language. But let me be clear: obviously you cannot make Jekyll RESTfull, because it is static. 
+**Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language. But let me be clear: obviously in Jekyll you can only use the GET method, because it is static.**
 
 Nevertheless it is very well possible to create a so called API endpoint, and consume the data in an other application. Specially when you have a limited amount of data, or posts like in presentational websites or when you need a fake API in a proof-of-concept (POC).
 
@@ -132,11 +113,15 @@ Likewise we can add the data of a book to a recipe:
 ```
 {% endraw %}
 
-Both result in a data schema that is similar to the many-to-many-relationships used in non-relational databases, like MongoDB. So what if in Jekyll we could use this technique to create a JSON file that contains the same structure, and make it available to the internet? And we sure can! 
+Both result in a data schema that is similar to the many-to-many-relationships used in databases. So what if in Jekyll we could use this technique to create a JSON file that contains the same structure, and make it available to the internet? And we sure can! 
 
 ## Constructing the API endpoints
 
-Let's create a folder called **api** with files for **books.json** and **recipes.json**. In the front matter block we just set the layout to null and that's it. Now we can construct a JSON file and establish the same relations as we did before in creating the pages for books, recipes and posts.
+So we need JSON files. Well let's create them in Jekyll!
+
+First we need a folder called **api** with files for **books.json** and **recipes.json**, so the url extention will result in ```/api/books.json``` and ```/api/recipes.json```. 
+
+In the front matter block we just set the layout to null and that's it. Now we can construct the JSON object and establish the same relations as we did before in creating the pages for books, recipes and posts.
 
 {% raw %}
 ```html
@@ -156,12 +141,24 @@ layout: null
           "bookId"  : "{{ recipe.book | slugify }}",
           "bookTitle"  : "{{ recipe.book }}",          
           "page": "{{ recipe.page }}"
+      },
+]
+```
+{% endraw %}
+
+There is only one problem here. The JSON object code block ends with a comma, so the last recipe ends also with a comma. JSON, however, disallows trailing commas. Now, in Liquid, you can eleminate the last comma, with the **unless forloop.last** statement. 
+
+{% raw %}
+```html
+          "page": "{{ recipe.page }}"
       }{% unless forloop.last %},{% endunless %}{% endfor %}
 ]
 ```
 {% endraw %}
 
-The form of the JSON is very mutch dependent of the language in which the data are consumed. In the case of React the best advise is to keep the JSON tree as flat as possible. This pattern,  called **denormalisation**, is well known in non-relational databases as MongoDB. In this case we would 'connect' the **recipes** data with the **books** data using a **bookId** instead of calling all the data of each book as nested in the **recipes** object.
+## A flat JSON tree
+
+The form of the JSON is very mutch dependent of the language in which the data are consumed. In the case of React the best advise is to keep the JSON tree as flat as possible. This pattern,  called **denormalisation**, is well known in both relational and non-relational databases. In this case we would 'connect' the **recipes** data with the **books** data using a **bookId** instead of calling all the data of each book as nested in the **recipes** object.
 
 {% raw %}
 ```html
@@ -187,11 +184,15 @@ The form of the JSON is very mutch dependent of the language in which the data a
 
 With Jekyll we could establish every structure of the JSON we want, also deeply nested ones.
 
-There is only one problem here (fortunatly with a simple solution). In order to achieve valid JSON, the last iteration cannot end with a comma. Since the if-statement works as a filter, and therefore not all iterations will become valid, a comma cannot be avoided here. Let me explain.
+In this case we have to do some more effort to get rid of the trailing comma in the last JSON object code block.
 
-In Liquid you can eleminate the last comma, with the **unless forloop.last** statement. But this wil not work in case the last forloop is not valid to the condition. In other words, the last forloop which is valid to the condition might not be the last forloop of the forloop as a whole. Resulting in the last comma.
+Since the if-statement works as a filter, and therefore not all iterations will become valid, a comma cannot be avoided here. 
 
-The solution is to create a new empty array, while using the push method to gather the desired content. This way we get rid of the conditional statement. 
+Let me explain.
+
+Eleminating the last comma, with the **unless forloop.last** statement will not work here, in case the last iteration is not valid to the condition. In other words, the last iteration that is valid to the condition might not be the last of the forloop as a whole. Resulting in the last comma.
+
+The solution is to use the push method to a fresh empty array, in order to create a new array with the desired content. This way we don't need the conditional statement anymore, because all iterations will be valid. 
 
 {% raw %}
 ```html
