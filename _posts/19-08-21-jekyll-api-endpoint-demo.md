@@ -123,6 +123,8 @@ First we need a folder called **api** with files for **books.json** and **recipe
 
 In the front matter block we just set the layout to null and that's it. Now we can construct the JSON object and establish the same relations as we did before in creating the pages for books, recipes and posts.
 
+###### /api/books.json
+
 {% raw %}
 ```html
 ---
@@ -160,6 +162,8 @@ There is only one problem here. The JSON object code block ends with a comma, so
 
 The form of the JSON is very mutch dependent of the language in which the data are consumed. In the case of React the best advise is to keep the JSON tree as flat as possible. This pattern,  called **denormalisation**, is well known in both relational and non-relational databases. In this case we would 'connect' the **recipes** data with the **books** data using a **bookId** instead of calling all the data of each book as nested in the **recipes** object.
 
+###### https://trim-seahorse.cloudvent.net/api/recipes.json
+
 {% raw %}
 ```html
 
@@ -193,6 +197,8 @@ Let me explain.
 Eleminating the last comma, with the **unless forloop.last** statement will not work here, in case the last iteration is not valid to the condition. In other words, the last iteration that is valid to the condition might not be the last of the forloop as a whole. Resulting in the last comma.
 
 The solution is to use the push method to a fresh empty array, in order to create a new array with the desired content. This way we don't need the conditional statement anymore, because all iterations will be valid. 
+
+###### /api/books.json
 
 {% raw %}
 ```html
@@ -247,6 +253,61 @@ https://jsonlint.com/
 
 More interesting maybe is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the **data** folder create a file called blog.json, and follow the same instructions as before. Here we want to use the **content** of a post as well, while using Markdown text-to-HTML conversion, resulting in HTML tags in your output. Therefore you need to use the **jsonify** filter here. {% raw %}```{{ book.content | jsonify }}```{% endraw %}
 
+## Let's take it to the next level
+
+The blog API will grow over time and may at some point contain hundreds of blog posts. With respect to the API design in this demo, this might exceed the performance boundries of JavaScript and the application might crash. What can we do? 
+
+Well, let's take this project to the next level!
+
+The first step is to minimize the content of ```/api/blog.json``` at the **MangiarBene** app. From each blog post object in fact we only need ```post.title```, ```post.category``` and ```post.date```. Doing so, we get rid of the huge text block in ```post.content```. Next we need a solution for the individual pages of each blog post. 
+
+Now provide a folder ```_writings``` and copy the post files from the ```_posts``` folder. Here we need some refacturing. We don't need to call the date in the title anymore, and we should change the file extention to ```.json```. In the ```_config.yml``` file we need to call the ```_writings``` collection and set the default layout like so:
+
+###### _config.yml
+{% raw %}
+```html
+collections:
+  writings:
+    output: true
+    permalink: /api/blog/:path.json
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "writings"
+    values:
+      layout: layout-writings
+```
+{% endraw %}
+
+
+Doing so, we will lose all the tipical behavoir of the post format in Jekyll, such as the date format and the support for categories and tags. But in the targeted JavaScript environment this would not work anyway. Also in JavaScript you can deal with these topics even more easy than in Jekyll :-). 
+
+
+###### https://trim-seahorse.cloudvent.net/api/blog/jekyll-api-endpoint-demo.json
+{% raw %}
+```html
+{
+index: "",
+title: "Jekyll API endpoint demo",
+id: "jekyll-api-endpoint-demo",
+date: "2019-08-21 00:00:00 +0000",
+author: "Pieter Roozen",
+category: "Development",
+book: "",
+source: "",
+source_url: "",
+content: "#### Talk at the Jekyll video conference 2019 > One of the best
+...
+```
+{% endraw %}
+
+As you can see, in the content the Markdown tags are still existant, because in Jekyll only .md-files will convert them to valid HTML. But as I mentioned before, this can be don in React as well, see 
+<a href="https://github.com/rexxars/react-markdown" target="_blank" rel="noopener noreferrer">
+react-markdown
+</a>.
+
 ## Publishing the Jekyll site on CloudCannon
 
 Publish the result on Github and Cloudcannon, which in this case I already did, obviously.
@@ -283,4 +344,4 @@ And last but not least: If  a collection of JSON objects is already available, y
 
 That's all there is to it.
 
-So now just use your imagination. There is more you can do with Jekyll, than with Jekyll on its own!
+So now just use your imagination. There is lot more you can do with Jekyll, than with Jekyll on its own!
