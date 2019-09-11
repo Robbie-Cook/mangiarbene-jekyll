@@ -289,7 +289,7 @@ Doing so, we will lose all the tipical behavoir of the post format in Jekyll, su
 {% raw %}
 ```html
 {
-index: "",
+index: "1",
 title: "Jekyll API endpoint demo",
 id: "jekyll-api-endpoint-demo",
 date: "2019-08-21 00:00:00 +0000",

@@ -2,7 +2,7 @@
 layout: null
 ---
 {
-    "index"    : "{{ page.index }}",
+    "index"    : "{{ foreloop.index }}",
     "title"    : "{{ page.title }}",
     "id"       : "{{ page.title | slugify }}",
     "date"   : "{{ page.date }}",
