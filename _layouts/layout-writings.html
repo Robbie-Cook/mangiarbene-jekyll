@@ -1,0 +1,15 @@
+---
+layout: null
+---
+{
+    "index"    : "{{ page.index }}",
+    "title"    : "{{ page.title }}",
+    "id"       : "{{ page.title | slugify }}",
+    "date"   : "{{ page.date }}",
+    "author"  : "{{ page.author }}",
+    "category": "{{ page.category }}",
+    "book"     : "{{ page.book }}",
+    "source"     : "{{ page.source }}",
+    "source_url" : "{{ page.source_url }}",
+    "content"  : {{ page.content | jsonify }}
+}
