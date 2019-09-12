@@ -1,0 +1,500 @@
+I"N0<h4 id="markdown-kramdown">Markdown kramdown</h4>
+<ul>
+  <li><a href="#headers">Headers</a></li>
+  <li><a href="#emphasis">Emphasis</a></li>
+  <li><a href="#extra">Extra</a></li>
+  <li><a href="#marks">Marks</a></li>
+  <li><a href="#links">Links</a></li>
+  <li><a href="#images">Images</a></li>
+  <li><a href="#code-and-syntax-highlighting">Code and syntax highlighting</a></li>
+  <li><a href="#lists">Lists</a></li>
+  <li><a href="#tables">Tables</a></li>
+  <li><a href="#blockquotes">Blockquotes</a></li>
+  <li><a href="#horizontals">Horizontals</a></li>
+  <li><a href="#definition-lists">Definition lists</a></li>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#link-to-me">Link to me</a></li>
+</ul>
+
+<hr />
+
+<h1 id="headers">Headers</h1>
+
+<h1 id="an-h1-header">An h1 header</h1>
+<h2 id="an-h2-header">An h2 header</h2>
+<h3 id="an-h3-header">An h3 header</h3>
+<h4 id="an-h4--italic-header">An h4  <em>italic</em> header</h4>
+<h5 id="an-h5-bold-header">An h5 <strong>bold</strong> header</h5>
+<h6 id="an-h6-header">An h6 header</h6>
+
+<p>Alternatively, for H1 and H2, an underline-ish style:</p>
+
+<h1 id="an-h1-header-1">An h1 header</h1>
+
+<h2 id="an-h2-header-1">An h2 header</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+# An h1 header
+## An h2 header 
+### An h3 header
+#### An h4  *italic* header 
+##### An h5 **bold** header 
+###### An h6 header 
+
+&lt;br&gt;
+
+---
+
+# Emphasis
+
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p><em>italic</em></p>
+  </li>
+  <li>
+    <p><em>italic</em></p>
+  </li>
+  <li>
+    <p><strong>bold</strong></p>
+  </li>
+  <li>
+    <p><strong>bold</strong></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">monospace</code></p>
+  </li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+1. *italic*
+
+2. _italic_
+
+3. **bold** 
+
+4. __bold__ 
+
+5. `monospace`
+
+
+&lt;br&gt;
+
+---
+
+# Extra
+
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p><del>linethrough</del></p>
+  </li>
+  <li>
+    <p><em class="oranje">italic kleur</em></p>
+  </li>
+  <li>
+    <p><em class="lighter">italic lighter</em></p>
+  </li>
+  <li>
+    <p><code id="papier" class="papier highlighter-rouge">code papier</code></p>
+  </li>
+  <li>
+    <p><a href="test.html" rel="something">link something</a></p>
+  </li>
+  <li>
+    <p><strong class="reverse">reverse</strong></p>
+  </li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+6. ~~linethrough~~
+
+7. *kleur*{:.oranje} 
+
+8. *italic lighter*{:.lighter} 
+
+9. `code papier`{:#papier}{:.papier}
+
+10. [link something](test.html){:rel='something'} 
+
+11. **reverse**{:.reverse}
+
+
+&lt;br&gt;
+
+---
+
+# Marks
+
+
+</code></pre></div></div>
+
+<p>‘quote’</p>
+
+<p>“quote”</p>
+
+<p>superscript 2^(nd) 2^o C</p>
+
+<p>sentence with footnote.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>– afbreekstreepje –</p>
+
+<p>— gedachtenstreepje —</p>
+
+<p>Unicode is supported: ☺</p>
+
+<p>Font-awesome supported:
+<span class="fa-stack fa">
+  <i class="fa fa-github fa-stack-2x"></i>
+</span></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+'quote'
+
+"quote"
+
+superscript 2^(nd) 2^o C
+
+sentence with footnote.[^1]
+
+[^1]: &lt;small&gt;This is a footnote.&lt;/small&gt;
+
+-- afbreekstreepje --
+
+--- gedachtenstreepje ---
+
+Unicode is supported: ☺
+
+Font-awesome supported:
+&lt;span class="fa-stack fa"&gt;
+  &lt;i class="fa fa-github fa-stack-2x"&gt;&lt;/i&gt;
+&lt;/span&gt;
+
+
+&lt;br&gt;
+
+---
+
+# Links
+
+</code></pre></div></div>
+
+<p>paragraph link <a href="#link-to-me">Link to me</a></p>
+
+<p>external link <a href="http://blog.publysher.nl/">Publysher blog</a></p>
+
+<p>sentence with footnote.<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+paragraph link [Link to me](#link-to-me)
+
+external link [Publysher blog](http://blog.publysher.nl/)
+
+sentence with footnote.[^2]
+
+(text footnote at page end)
+
+[^2]: &lt;small&gt;Here is the text of the footnote itself.&lt;/small&gt;
+
+
+&lt;br&gt;
+
+---
+
+# Images
+
+</code></pre></div></div>
+
+<p><img src="../img/stencyl/step9-1.png" alt="alt text" title="No More Lives Triggered?" /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+![alt text](../img/stencyl/step9-1.png "No More Lives Triggered?")
+
+
+&lt;br&gt;
+
+---
+
+# Code and syntax highlighting
+
+python code highlighting
+(use tildes instead of backticks!) 
+
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">time</span>
+<span class="c1"># Quick, count to ten!
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+   <span class="c1"># (but not *too* quick)
+</span>   <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+   <span class="k">print</span> <span class="n">i</span>
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python code highlighting
+
+~~~python
+import time
+# Quick, count to ten!
+for i in range(10):
+    # (but not *too* quick)
+    time.sleep(0.5)
+    print i
+</code></pre></div></div>
+
+<p><br /></p>
+
+<hr />
+
+<h1 id="lists">Lists</h1>
+
+<h6 id="unordered-lists-ul-look-like">Unordered lists (ul) look like:</h6>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+* this one
+* that one
+* the other one
+
+  * this one
+  * that one
+  * the other one
+
+*  Overview
+   *  Philosophy
+   *  Inline HTML
+   *  Automatic Escaping for Special Characters
+
+</code></pre></div></div>
+
+<ul>
+  <li>this one</li>
+  <li>that one</li>
+  <li>
+    <p>the other one</p>
+
+    <ul>
+      <li>this one</li>
+      <li>that one</li>
+      <li>the other one</li>
+    </ul>
+  </li>
+  <li>Overview
+    <ul>
+      <li>Philosophy</li>
+      <li>Inline HTML</li>
+      <li>Automatic Escaping for Special Characters</li>
+    </ul>
+  </li>
+</ul>
+
+<h6 id="ordered-lists-ol-look-like">Ordered lists (ol) look like:</h6>
+
+<p>(In this example, leading and trailing spaces are shown with with dots: ⋅)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+1. First ordered list item
+2. Another item
+   * Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+   1. Ordered sub-list
+4. And another item.
+
+   You can have properly indented paragraphs within list items. 
+
+   Note that this line is separate, but within the same paragraph.
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+
+</code></pre></div></div>
+
+<ol>
+  <li>First ordered list item</li>
+  <li>Another item
+    <ul>
+      <li>Unordered sub-list.</li>
+    </ul>
+  </li>
+  <li>Actual numbers don’t matter, just that it’s a number
+    <ol>
+      <li>Ordered sub-list</li>
+    </ol>
+  </li>
+  <li>
+    <p>And another item.</p>
+
+    <p>You can have properly indented paragraphs within list items.</p>
+
+    <p>Note that this line is separate, but within the same paragraph.</p>
+  </li>
+</ol>
+
+<ul>
+  <li>Unordered list can use asterisks</li>
+  <li>Or minuses</li>
+  <li>Or pluses</li>
+</ul>
+
+<p><br /></p>
+
+<hr />
+
+<h1 id="tables">Tables</h1>
+
+<p>Colons can be used to align columns.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tables</th>
+      <th style="text-align: center">Are</th>
+      <th style="text-align: right">Cool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>col 3 is</td>
+      <td style="text-align: center">right-aligned</td>
+      <td style="text-align: right">$1600</td>
+    </tr>
+    <tr>
+      <td>col 2 is</td>
+      <td style="text-align: center">centered</td>
+      <td style="text-align: right">$12</td>
+    </tr>
+    <tr>
+      <td>zebra stripes</td>
+      <td style="text-align: center">are neat</td>
+      <td style="text-align: right">$1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don’t need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+</code></pre></div></div>
+
+<p><br /></p>
+
+<hr />
+
+<h1 id="block-quotes">Block quotes</h1>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&gt; Block quotes are
+&gt; written like so.
+&gt;
+&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+&gt; Molestias consequatur _temporibus_ accusantium iure, provident 
+&gt; accusamus nisi incidunt cum a quibusdam enim labore sequi harum, 
+&gt; nesciunt vero eligendi dolore modi aliquid?.
+
+</code></pre></div></div>
+
+<blockquote>
+  <p>Block quotes are
+written like so.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Molestias consequatur <em>temporibus</em> accusantium iure, provident 
+accusamus nisi incidunt cum a quibusdam enim labore sequi harum, 
+nesciunt vero eligendi dolore modi aliquid?.</p>
+</blockquote>
+
+<p><br /></p>
+
+<hr />
+
+<h1 id="definition-lists">Definition <em class="oranje">lists</em></h1>
+
+<p>Definition lists can have more than one definition associated with one term:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Apple
+ : Pomaceous fruit of plants of the genus Malus in the family Rosaceae.
+ : An American computer company.
+
+Orange
+:   The fruit of an evergreen tree of the genus Citrus.
+You can also associate more than one term to a definition:
+
+Term 1
+Term 2
+:   Definition a
+
+Term 3
+:   Definition b
+If a definition is preceded by a blank line, Markdown Extra will wrap the definition in &lt;p&gt; tags in the HTML output. For example, this:
+
+</code></pre></div></div>
+
+<dl>
+  <dt>Apple</dt>
+  <dd>Pomaceous fruit of plants of the genus Malus in the family Rosaceae.</dd>
+  <dd>An American computer company.</dd>
+  <dt>Orange</dt>
+  <dd>The fruit of an evergreen tree of the genus Citrus.
+You can also associate more than one term to a definition:</dd>
+  <dt>Term 1</dt>
+  <dt>Term 2</dt>
+  <dd>Definition a</dd>
+  <dt>Term 3</dt>
+  <dd>Definition b
+If a definition is preceded by a blank line, Markdown Extra will wrap the definition in &lt;p&gt; tags in the HTML output. For example, this:</dd>
+</dl>
+
+<p><br /></p>
+
+<hr />
+
+<h1 id="overview">Overview</h1>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### *Overview*{:.oranje}
+
+Lorem **ipsum** dolor sit amet, ~~consectetur~~ adipisicing elit. Laborum `modi ipsam`{:.papier}, iusto enim *doloremque*{:.lighter} numquam, adipisci *voluptates*{:.oranje} dolorem voluptatem "pariatur" minus soluta culpa 'possimus' libero [Publysher blog](http://blog.publysher.nl/) nesciunt debitis, repellendus.
+
+</code></pre></div></div>
+
+<h3 id="overview-1"><em class="oranje">Overview</em></h3>
+
+<p>Lorem <strong>ipsum</strong> dolor sit amet, <del>consectetur</del> adipisicing elit. Laborum <code class="papier highlighter-rouge">modi ipsam</code>, iusto enim <em class="lighter">doloremque</em> numquam, adipisci <em class="oranje">voluptates</em> dolorem voluptatem “pariatur” minus <strong class="reverse">reverse</strong> soluta culpa ‘possimus’ libero <a href="http://blog.publysher.nl/">Publysher blog</a> nesciunt debitis, repellendus.</p>
+
+<p><br /></p>
+
+<hr />
+
+<h1 id="link-to-me">Link to me</h1>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p><small>Here is the text of the footnote itself.</small> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p><small>Here is the text of the footnote itself.</small> <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

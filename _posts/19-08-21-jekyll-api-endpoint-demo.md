@@ -46,7 +46,7 @@ So it all feels very intuitive for an old school graphic designer, like me.
 
 These days, API's to transfer data around the web are very popular. API's are restful if you can do HTTP requests like GET, PUT, POST and DELETE, but in many cases you only need the GET request in order to present your content to the user. 
 
-Recently content management frameworks like Drupal and even Wordpress, also came with plugins for restful API solutions.
+Also content management frameworks like Drupal and even Wordpress, came with restful API solutions.
 
 ## How about Jekyll?
 
@@ -60,7 +60,7 @@ Typically, Jekyll is used because it is simple, safe, blog aware and fast, but t
 
 ## Perfect match
 
-In fact, all together, this makes Jekyll a perfect match when we use it's content as API used in applications with more functionality. Or what, if you have a limited amount of data and you need a fake API in a proof-of-concept (POC).
+In fact, all together, this makes Jekyll a perfect match when we use it's content as API used in applications with more functionality, like React. Or what, if you have a limited amount of data and you need a fake API in a proof-of-concept (POC).
 
 I know that there are different solutions out there to use fake online API's for testing, like <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">**JSONplaceholder**</a>. But you still have to code your content and nobody likes that. With Jekyll, on the other hand, you can write content just like an editor.
 
