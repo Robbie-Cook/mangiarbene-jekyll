@@ -1,5 +1,5 @@
 ---
-title: Jekyll API endpoint
+title: Jekyll as an API endpoint
 layout: layout-blog
 category: Development
 url: "https://trim-seahorse.cloudvent.net"
@@ -8,7 +8,7 @@ source: ""
 source_url: ""
 ---
 
-#### Talk at the Jekyll video conference 2019
+#### Talk at the JekyllConf 2019
 
 > One of the best so called **unconventional use cases of Jekyll** is learning the basics of web development: HTML, CSS and JavaScript. At least in my case as a book designer with a non development background. But if the JavaScript part is growing in your application, you might be attempted to use React or other single page applications in JavaScript. Although it is not impossible to integrate React in Jekyll, it doesn’t make much sense to use two website generators at the same time. Even aside from the issues in development you may encounter. Yet we don’t have to say goodbye to Jekyll at this point at all.
 
