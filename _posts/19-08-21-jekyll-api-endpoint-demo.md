@@ -56,7 +56,7 @@ This is where my JekyllConf 2019 talk is all about.
 
 **Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language.**
 
-Typically, Jekyll is used because it is simple, safe, blog aware and fast, but the functionality is limited. Especially useful for presentational websites, blogs or even museum websites. Futhermore, obviously in Jekyll you can only use the GET method here because the application is static.
+Typically, Jekyll is used because it is simple, safe, blog aware and fast, but the functionality is limited. Especially useful for presentational websites, blogs or even museum websites. Furthermore, obviously in Jekyll you can only use the GET method here because the application is static.
 
 ## Perfect match
 
@@ -80,6 +80,8 @@ You can go to the [homepage](/) of **MangiarBene** now, if you want, and see how
 Subsequently I developed a second SPA website (in React), that just uses the content from **MangiarBene** as JSON data. You could also examen this at <a href="https://api.roozen.nl" target="_blank" rel="noopener noreferrer">
 https://api.roozen.nl
 </a>. You will see that it is identical, only the background color is different.
+
+The Jekyll website is hosted at CloudCannon and the React site is hosted at a Dutch hosting company.
 
 But let me explain first.
 
@@ -309,16 +311,20 @@ content: "#### Talk at the Jekyll video conference 2019 > One of the best
 ```
 {% endraw %}
 
-As you can see, in the content the Markdown tags are still existant, because in Jekyll only .md-files will convert them to valid HTML. But as I mentioned before, this can be don in React as well, see 
+As you can see, in the content the Markdown tags are still existant, because in Jekyll only .md-files will convert them to valid HTML. But as I mentioned before, this can be done in React as well, see 
 <a href="https://github.com/rexxars/react-markdown" target="_blank" rel="noopener noreferrer">
 react-markdown
 </a>.
 
 ## Publishing the Jekyll site on CloudCannon
 
-Publish the result on Github and Cloudcannon, which in this case I already did, obviously.
+Now we can Publish the result on Github and Cloudcannon, which in this case I already did, obviously.
 
-Now we can use the created Jekyll API endpoints. As you can see they are part of this actual website.
+You will find the repositories on 
+<a href="https://github.com/Pietermachiel" target="_blank" rel="noopener noreferrer">GitHub</a>.
+
+
+Subsequently, we can use the created Jekyll API endpoints. As you can see they are part of this actual website.
 
 <a href="https://trim-seahorse.cloudvent.net/api/recipes.json" target="_blank" rel="noopener noreferrer">
 /api/recipes.json
@@ -346,8 +352,12 @@ MongoDB</a>.
 
 ## Final thoughts
 
-And last but not least: If  a collection of JSON objects is already available, you can use it in Jekyll as data, just like any other JSON of YAML file and produce the API endpoint from there.
+If a collection of JSON objects is already available, you can use it in Jekyll as data, just like any other JSON of YAML file and produce the API endpoint from there. 
+
+And in order to mind the performance boundaries of JavaScript, as mentioned before, we could also think of pagination, indexation and search solutions. 
 
 That's all there is to it.
+
+I hope my talk was inspiring for other developers. Let them wrap their minds around this item, to bring more beautiful solutions with Jekyll Api endpoints. 
 
 So now just use your imagination. There is lot more you can do with Jekyll, than with Jekyll on its own!
