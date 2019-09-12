@@ -22,7 +22,7 @@ source_url: ""
     <img src="/public/img/pieter0.jpg" alt="">   
 </div>
 
-**...my name is Pieter Roozen. I am a graphic designer and I live in The Hague, the Netherlands. I am 65 years old, father of 4 and partner of Ruth. I love ski touring and sailing and I bake sourdough bread on a daily basis.**
+**...my name is Pieter Roozen. I am a graphic designer and I live in The Hague, the Netherlands. I am the father of 4 and partner of Ruth. I love ski touring and sailing and I bake sourdough bread on a daily basis.**
 
 <br/>
 
@@ -32,7 +32,7 @@ source_url: ""
 
 ## Studio Roozen
 
-Our design agency **Studio Roozen** (closed in 2015) was specialized in designing books, art catalogues and museum concepts for Dutch museums. Among others, more than 15 years in full service for the <a href="https://roozen.nl/projecten/van-gogh-museum" target="_blank" rel="noopener noreferrer">**Van Gogh Museum**</a>. Of course the portfolio website of <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was made in Jekyll.
+Our design agency **Studio Roozen** was specialized in designing books, art catalogues and museum concepts for Dutch museums. Among others, more than 15 years in full service for the <a href="https://roozen.nl/projecten/van-gogh-museum" target="_blank" rel="noopener noreferrer">**Van Gogh Museum**</a>. In 2015 I started working as a freelancer again. Of course the portfolio website of <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was made in Jekyll.
 
 ## Jekyll separates content from logic
 
@@ -44,9 +44,9 @@ So it all feels very intuitive for an old school graphic designer, like me.
 
 ## Restful api's
 
-These days, API's to transfer data around the web are very popular. API's are restful if you can do all the HTTP requests like GET, PUT, POST and DELETE, but in many cases you only need the GET request in order to present your content to the user. 
+These days, API's to transfer data around the web are very popular. API's are restful if you can do HTTP requests like GET, PUT, POST and DELETE, but in many cases you only need the GET request in order to present your content to the user. 
 
-Also Drupal and even Wordpress, which I already mentioned before, recently came with plugins for restful API solutions.
+Recently content management frameworks like Drupal and even Wordpress, also came with plugins for restful API solutions.
 
 ## How about Jekyll?
 
@@ -54,11 +54,17 @@ So how about Jekyll, as it is very well suited in separating content from the lo
 
 This is where my JekyllConf 2019 talk is all about.
 
-**Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language. But let me be clear: obviously in Jekyll you can only use the GET method here because the application is static.**
+**Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language.**
 
-Basically we can create a JSON API endpoint, and consume the data in an other application. Especially when you have a limited amount of data, or posts like in presentational websites or when you need a fake API in a proof-of-concept (POC).
+Typically, Jekyll is used because it is simple, safe, blog aware and fast, but the functionality is limited. Especially useful for presentational websites, blogs or even museum websites. Futhermore, obviously in Jekyll you can only use the GET method here because the application is static.
+
+## Perfect match
+
+In fact, all together, this makes Jekyll a perfect match when we use it's content as API used in applications with more functionality. Or what, if you have a limited amount of data and you need a fake API in a proof-of-concept (POC).
 
 I know that there are different solutions out there to use fake online API's for testing, like <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">**JSONplaceholder**</a>. But you still have to code your content and nobody likes that. With Jekyll, on the other hand, you can write content just like an editor.
+
+But let's get started now.
 
 ## MangiarBene
 
