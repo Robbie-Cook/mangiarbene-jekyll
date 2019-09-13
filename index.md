@@ -13,7 +13,7 @@ quote: Science in the Kitchen and the Art of Eating Well
 {%- capture numberOfBooks -%}
 {%- assign books = site.books | sort: "index" -%}
 {%- for book in books -%}
-    {% if forloop.last %}{{ book.index }}{% endif %}
+    {% if forloop.last %}{{ forloop.index }}{% endif %}
 {%- endfor -%}
 {%- endcapture -%}
 

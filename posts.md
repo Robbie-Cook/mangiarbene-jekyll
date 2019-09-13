@@ -1,9 +1,9 @@
 ---
-title: blog
+title: posts
 layout: page
 nav: true
 weight: 3
-permalink: /blog/
+permalink: /posts/
 ---
 
 <div class="blog">
