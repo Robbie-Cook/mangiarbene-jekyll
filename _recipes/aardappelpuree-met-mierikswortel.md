@@ -6,24 +6,4 @@ product: aardappel
 book: The naked chef 
 page: 141
 dish: aside 
-tags:
-- aardappel
-- mierikswortel
-sub:
-fresh:
-  - item: aardappel
-    quantity: 1
-    unit: kg
-stock:
-  - item: item
-    quantity: 0
-    unit: g
-basic:
-  -
-directions:
-- Kook
-info: 
-source: 
-    title:
-    url: 
 ---

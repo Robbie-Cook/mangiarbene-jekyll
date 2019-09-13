@@ -7,7 +7,6 @@ kitchen: usa
 book_url: "https://www.harpercollins.com/9780062409959/"
 link: HarperCollins
 index: 2
-text: "Anthony Bourdain"
 ---
 
 Anthony Bourdain (1956-2018) is a man of many appetites. And for many years, first as a chef, later as a world-traveling chronicler of food and culture on his CNN series Parts Unknown, he has made a profession of understanding the appetites of others. These days, however, if he's cooking, it's for family and friends.
