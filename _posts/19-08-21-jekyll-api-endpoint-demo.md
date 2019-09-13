@@ -87,36 +87,34 @@ But let me explain first.
 
 ## Many to many relationships
 
-In Jekyll it is possible to relate collections and posts from the content of the YAML front matter blocks. We can call the recipes of a book:
+In Jekyll it is possible to relate collections and posts from the content of the YAML front matter blocks. We can call the **recipes** and ad the book data to each recipe:
 
 {% raw %}
 ```html
 <div class="book-links">
-    {%- for recipe in site.recipes -%}
-    {%- if recipe.book == page.title -%}
+    {% for recipe in site.recipes %}
+    {% if recipe.book == page.title %}
     <a href="/recipes/{{ recipe.title | slugify }}">
     <h5>{{ recipe.title }} {{ recipe.index }}</h5>
     </a>
-    {%- endif -%}
-    {%- endfor -%}    
+    {% endif %}
+    {% endfor %}    
 </div>
 ```
 {% endraw %}
 
-This way, we can get all the recipes of the collection recipes, along with all the data of that recipe and add it to a certain book of the collection books.
-
-Likewise we can add the data of a book to a recipe:
+Likewise we can call the **books** and add the recipes that belong to a book:
 
 {% raw %}
 ```html
 <div class="recipe-box_credits">
-    {%- for book in site.books -%}
-    {%- if book.title == page.book -%}
-        <h6>{{  book.title }}</h6>    
-        <p>{{  book.author }}</p>     
-        <p>{{  book.content | truncatewords: 20 }} <span>Read more ></span></p>     
-    {%- endif -%}
-    {%- endfor -%}           
+    {% for recipe in site.recipes %}
+    {% if recipe.book == page.title %}
+    <a href="/recipes/{{ recipe.title | slugify }}">
+    <h5>{{ recipe.title }} {{ recipe.index }}</h5>
+    </a>
+    {% endif %}
+    {% endfor %}   
 </div>
 ```
 {% endraw %}
@@ -354,7 +352,7 @@ MongoDB</a>.
 
 If a collection of JSON objects is already available, you can use it in Jekyll as data, just like any other JSON of YAML file and produce the API endpoint from there. 
 
-And in order to mind the performance boundaries of JavaScript, as mentioned before, we could also think of pagination, indexation and search solutions. 
+And in order to respect the performance boundaries of JavaScript, as mentioned before, we could also think of pagination, indexation and search solutions. 
 
 That's all there is to it.
 
