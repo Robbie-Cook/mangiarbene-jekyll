@@ -12,7 +12,7 @@ source_url: ""
 
 > One of the best so called **unconventional use cases of Jekyll** is learning the basics of web development: HTML, CSS and JavaScript. At least in my case as a book designer with a non development background. But if the JavaScript part is growing in your application, you might be attempted to use React or other single page applications in JavaScript. Although it is not impossible to integrate React in Jekyll, it doesn’t make much sense to use two website generators at the same time. Even aside from the issues in development you may encounter. Yet we don’t have to say goodbye to Jekyll at this point at all.
 
->It is in fact very well possible to use Jekyll in creating API endpoints that can be consumed by other website generators. In this demo I will show the combination with React. That way you are completely free in your development, while enjoying the benefits of a simple, static and blog-aware Jekyll application. This time as a real backend.
+>It is actually very well possible to use Jekyll in creating API endpoints that can be consumed by other website generators. In this demo I will show the combination with React. That way you are completely free in your development, while enjoying the benefits of a simple, static and blog-aware Jekyll application. This time as a real backend.
 
 <br/>
 
@@ -22,7 +22,7 @@ source_url: ""
     <img src="/public/img/pieter0.jpg" alt="">   
 </div>
 
-**...my name is Pieter Roozen. I am a graphic designer and I live in The Hague, the Netherlands. I am the father of 4 and partner of Ruth. I love ski touring and sailing and I bake sourdough bread on a daily basis.**
+**...my name is Pieter Roozen. I am a graphic designer based in The Hague, the Netherlands. I am the father of 4 and partner of Ruth. I love ski touring and sailing and I bake sourdough bread on a daily basis.**
 
 <br/>
 
@@ -32,13 +32,13 @@ source_url: ""
 
 ## Studio Roozen
 
-Our design agency **Studio Roozen** was specialized in designing books, art catalogues and museum concepts for Dutch museums. Among others, more than 15 years in full service for the <a href="https://roozen.nl/projecten/van-gogh-museum" target="_blank" rel="noopener noreferrer">**Van Gogh Museum**</a>. In 2015 I started working as a freelancer again. Of course the portfolio website of <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was made in Jekyll.
+Our design agency **Studio Roozen** specialized in designing books, art catalogues and museum concepts for Dutch museums. Among others, in full service for the <a href="https://roozen.nl/projecten/van-gogh-museum" target="_blank" rel="noopener noreferrer">**Van Gogh Museum**</a> for more than 15 years. In 2015 I started working as a freelancer again. Of course the portfolio website of <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was made in Jekyll.
 
 ## Jekyll separates content from logic
 
-The reason why I love Jekyll is because it has a very elegant way of separating content from logic, including the HTML. You can use Markdown to write coded content without writing HTML code yourself. 
+The reason why I love Jekyll is because it has a very elegant manner of separating content from logic, including HTML. You can use Markdown to write coded content without writing HTML code yourself. 
 
-In fact I recognized that it is very similar to the way in 'the early days', when we used text content written in Word in combination with QuarkXpress DTP software.
+In fact I noticed that it functions similary to the way in 'the early days', we would use text content written in Word in combination with QuarkXpress DTP software.
 
 So it all feels very intuitive for an old school graphic designer, like me.
 
@@ -50,19 +50,17 @@ Also content management frameworks like Drupal and even Wordpress, came with res
 
 ## How about Jekyll?
 
-So how about Jekyll, as it is very well suited in separating content from the logic? And yes, it is in fact very well possible to create a JSON API endpoint with Jekyll! 
-
-This is where my JekyllConf 2019 talk is all about.
+So how about Jekyll, since it is very good at separating content from the logic? And yes, it is in fact very well possible to create a JSON API endpoint with Jekyll! 
 
 **Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language.**
 
-Typically, Jekyll is used because it is simple, safe, blog aware and fast, but the functionality is limited. Especially useful for presentational websites, blogs or even museum websites. Furthermore, obviously in Jekyll you can only use the GET method here because the application is static.
+Typically, Jekyll is used because it is simple, safe, blog aware and fast. However, its functionality is limited. It is specially useful for presentational websites, blogs or even museum websites. Furthermore, obviously in Jekyll you can only use the GET method here because the application is static.
 
 ## Perfect match
 
-In fact, all together, this makes Jekyll a perfect match when we use it's content as API used in applications with more functionality, like React. Or what, if you have a limited amount of data and you need a fake API in a proof-of-concept (POC).
+In fact, taken all together, this makes Jekyll a perfect match when we use it's content as API used in applications with more functionality, like React. Or what, if you have a limited amount of data and you need a fake API in a proof-of-concept (POC).
 
-I know that there are different solutions out there to use fake online API's for testing, like <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">**JSONplaceholder**</a>. But you still have to code your content and nobody likes that. With Jekyll, on the other hand, you can write content just like an editor.
+I know that there are different solutions out there to use fake online API's for testing, like <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">**JSONplaceholder**</a>. But you still have to code your content and nobody likes doing that. With Jekyll, on the other hand, you can write content just like an editor.
 
 But let's get started now.
 
@@ -119,7 +117,7 @@ Likewise we can call the **books** and add the recipes that belong to a book:
 ```
 {% endraw %}
 
-Both result in a data schema that is similar to the many-to-many-relationships used in databases. So what if in Jekyll we could use this technique to create a JSON file that contains the same structure, and make it available to the internet? And we sure can! 
+Both result in a data schema that is similar to the many-to-many-relationships used in databases. So what if in Jekyll we could use this technique to create a JSON file that contains the same structure, and make it available to the internet? And indeed we can! 
 
 ## Constructing the API endpoints
 
@@ -127,7 +125,7 @@ So we need JSON files. Well let's create them in Jekyll!
 
 First we need a folder called **api** with files for **books.json** and **recipes.json**, so the url extension will result in ```/api/books.json``` and ```/api/recipes.json```. 
 
-In the front matter block we just set the layout to null and that's it. Now we can construct the JSON object and establish the same relations as we did before in creating the pages for books, recipes and posts.
+In the front matter block we just set the layout to ```null``` and that's it. Now we can construct the JSON object and establish the same relations as we did before in creating the pages for books, recipes and posts.
 
 ###### /api/books.json
 
@@ -154,7 +152,7 @@ layout: null
 ```
 {% endraw %}
 
-There is only one problem here. The JSON object code block ends with a comma, so the last recipe ends also with a comma. JSON, however, disallows trailing commas. Now, in Liquid, you can eliminate the last comma, with the **unless forloop.last** statement. 
+There is only one problem here. The JSON object code block ends with a comma, so the last recipe also will end with a comma. JSON, however, disallows trailing commas. Now, in Liquid, you can eliminate the last comma, with the **unless forloop.last** statement. 
 
 {% raw %}
 ```html
@@ -166,7 +164,7 @@ There is only one problem here. The JSON object code block ends with a comma, so
 
 ## A flat JSON tree
 
-The form of JSON is very much dependent of the language in which the data is consumed. In the case of React the best advise is to keep the JSON tree as flat as possible. This pattern,  called **denormalization**, is well known in both relational and non-relational databases. In this case we would 'connect' the **recipes** data with the **books** data using a **bookId** instead of calling all the data of each book as nested in the **recipes** object.
+The form of JSON is very much dependent of the language in which the data is consumed. In the case of React the best advise is to keep the JSON tree as flat as possible. This pattern, called **denormalization**, is well known in both relational and non-relational databases. In this case we would 'connect' the **recipes** data with the **books** data using a **bookId** rather than nesting all the data of each book in the **recipes** object.
 
 ###### https://trim-seahorse.cloudvent.net/api/recipes.json
 
@@ -192,7 +190,7 @@ The form of JSON is very much dependent of the language in which the data is con
 
 ## Nested structures
 
-With Jekyll we can establish every structure of JSON we want, also deeply nested ones.
+With Jekyll we can establish whatever structure of JSON we might want, also deeply nested ones.
 
 In this case we have to do some more effort to get rid of the trailing comma in the last JSON object code block.
 
@@ -261,7 +259,7 @@ More interesting maybe is the fact that we can use the same technique to create 
 
 ## Let's take it to the next level
 
-The blog API will grow over time and may at some point contain hundreds of blog posts. With respect to the API design in this demo, this might exceed the performance boundaries of JavaScript and the application might crash. What can we do? 
+The blog API will grow over time and may at some point contain hundreds of blog posts. With respect to the API design in this demo, this might exceed the performance boundaries of JavaScript and the application might crash. What can we do to prevent this? 
 
 Well, let's take this project to the next level!
 
@@ -288,7 +286,7 @@ defaults:
 {% endraw %}
 
 
-Doing so, we will lose all the typical behavior of the post format in Jekyll, such as the date format and the support for categories and tags. But in the targeted JavaScript environment this would not work anyway. Also in JavaScript you can deal with these topics even more easy than in Jekyll :-). 
+In doing so, we will lose all the typical behavior of the post format in Jekyll, such as the date format and the support for categories and tags. But in the targeted JavaScript environment this would not work anyway. Besides, in JavaScript you can deal with these topics even more easy than in Jekyll :-). 
 
 
 ###### https://trim-seahorse.cloudvent.net/api/blog/jekyll-api-endpoint-demo.json
@@ -322,7 +320,7 @@ You will find the repositories on
 <a href="https://github.com/Pietermachiel" target="_blank" rel="noopener noreferrer">GitHub</a>.
 
 
-Subsequently, we can use the created Jekyll API endpoints. As you can see they are part of this actual website.
+Subsequently, we can use the created Jekyll API endpoints. As you can see they are part of the Jekyll website.
 
 <a href="https://trim-seahorse.cloudvent.net/api/recipes.json" target="_blank" rel="noopener noreferrer">
 /api/recipes.json
@@ -356,6 +354,6 @@ And in order to respect the performance boundaries of JavaScript, as mentioned b
 
 That's all there is to it.
 
-I hope my talk was inspiring for other developers. Let them wrap their minds around this item, to bring more beautiful solutions with Jekyll Api endpoints. 
+I hope my talk was inspiring for other developers. Let them wrap their minds around this item, use their imagination, and create more beautiful solutions with Jekyll Api endpoints. 
 
-So now just use your imagination. There is lot more you can do with Jekyll, than with Jekyll on its own!
+There is lot more you can do with Jekyll, than with Jekyll on its own!
