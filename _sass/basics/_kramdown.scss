@@ -477,26 +477,32 @@
     }
   }
   .home-img_vangogh {
-    margin-left: -100px;
-    margin-right: -100px;
-    margin-bottom: 2em;
-    img {
-      width: 100%;
+    @media screen and (min-width: $on-palm){  
+      margin-left: -100px;
+      margin-right: -100px;
+      margin-bottom: 2em;
+      img {
+        width: 100%;
+      }
     }
   }
   .home-img_websites {
-    margin-left: -100px;
-    margin-right: -100px;
-    margin-bottom: 2em;
-    margin-top: 2em;
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
+    margin-bottom: 2em;
     img {
       width: calc(50% - 20px);
       border: 1px solid gray;
-    }
-  }
+    }    
+    @media screen and (min-width: $on-palm){  
+      margin-left: -100px;
+      margin-right: -100px;
+      margin-top: 2em;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
 
+    }
+  }   
 } 
 
