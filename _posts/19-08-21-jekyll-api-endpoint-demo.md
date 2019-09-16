@@ -32,7 +32,7 @@ source_url: ""
 
 ## Studio Roozen
 
-Our design agency **Studio Roozen** specialized in designing books, art catalogues and museum concepts for Dutch museums. Among others, in full service for the <a href="https://roozen.nl/projecten/van-gogh-museum" target="_blank" rel="noopener noreferrer">**Van Gogh Museum**</a> for more than 15 years. In 2015 I started working as a freelancer again. Of course the portfolio website of <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was made in Jekyll.
+I am owner at **Studio Roozen** specialized in designing books, art catalogues and museum concepts for Dutch museums. Among others, in full service for the <a href="https://roozen.nl/projecten/van-gogh-museum" target="_blank" rel="noopener noreferrer">**Van Gogh Museum**</a> for more than 15 years. In 2015 I started working as a freelancer again. Of course the portfolio website of <a href="https://roozen.nl" target="_blank" rel="noopener noreferrer">**Studio Roozen**</a> was made in Jekyll.
 
 ## Jekyll separates content from logic
 
@@ -50,7 +50,9 @@ Also content management frameworks like Drupal and even Wordpress, came with res
 
 ## How about Jekyll?
 
-So how about Jekyll, since it is very good at separating content from the logic? And yes, it is in fact very well possible to create a JSON API endpoint with Jekyll! 
+So how about Jekyll, since it is very good at separating content from the logic? But Jekyll is static, so you can only use the GET method here. Not a big problem, because you don't need to do all the CRUD operations in one and the same application. That is where we use CloudCannon for, don't we?
+
+It is in fact very well possible to create a JSON API endpoint with Jekyll!
 
 **Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language.**
 
