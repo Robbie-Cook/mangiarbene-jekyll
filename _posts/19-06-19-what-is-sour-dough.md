@@ -1,6 +1,5 @@
 ---
-date: 19-06-19
-layout: layout-writings
+layout: layout-blog
 category: Mangiarbene
 book: The complete nose to tail
 author: Wikipedia
