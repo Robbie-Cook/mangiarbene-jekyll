@@ -335,6 +335,7 @@ Subsequently, we can use the created Jekyll API endpoints. As you can see they a
 <a href="https://trim-seahorse.cloudvent.net/api/blog.json" target="_blank" rel="noopener noreferrer">
 /api/blog.json
 </a>
+<br>
 <a href="https://trim-seahorse.cloudvent.net/api/blog/jekyll-api-endpoint-demo.json" target="_blank" rel="noopener noreferrer">
 /api/blog/jekyll-api-endpoint-demo.json.json
 </a>
