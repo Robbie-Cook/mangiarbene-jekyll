@@ -335,6 +335,10 @@ Subsequently, we can use the created Jekyll API endpoints. As you can see they a
 <a href="https://trim-seahorse.cloudvent.net/api/blog.json" target="_blank" rel="noopener noreferrer">
 /api/blog.json
 </a>
+<a href="https://trim-seahorse.cloudvent.net/api/blog/jekyll-api-endpoint-demo.json" target="_blank" rel="noopener noreferrer">
+/api/blog/jekyll-api-endpoint-demo.json.json
+</a>
+
 
 ## Using the API in React
 
@@ -355,7 +359,5 @@ If a collection of JSON objects is already available, you can use it in Jekyll a
 And in order to respect the performance boundaries of JavaScript, as mentioned before, we could also think of pagination, indexation and search solutions. 
 
 That's all there is to it.
-
-I hope my talk was inspiring for other developers. Let them wrap their minds around this item, use their imagination, and create more beautiful solutions with Jekyll Api endpoints. 
 
 There is lot more you can do with Jekyll, than with Jekyll on its own!
