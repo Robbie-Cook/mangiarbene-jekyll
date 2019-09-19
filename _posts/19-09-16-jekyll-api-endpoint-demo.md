@@ -44,19 +44,17 @@ So it all feels very intuitive for an old school graphic designer, like me.
 
 ## Restful api's
 
-These days, API's to transfer data around the web are very popular. API's are restful if you can do HTTP requests like GET, PUT, POST and DELETE, but in many cases you only need the GET request in order to present your content to the user. 
+These days, APIs to transfer content around the web are very popular, because APIs are faster in delivering content than conventional database systems. Even the two most popular PHP frameworks Wordpress and Drupal came with REST API plugin solutions.
 
-Also content management frameworks like Drupal and even Wordpress, came with restful API solutions.
+APIs are RESTful if you can do HTTP requests like GET, PUT, POST and DELETE.
 
 ## How about Jekyll?
 
-So how about Jekyll, since it is very good at separating content from the logic? But Jekyll is static, so you can only use the GET method here. Not a big problem, because you don't need to do all the CRUD operations in one and the same application. That is where we use CloudCannon for, don't we?
-
-It is in fact very well possible to create a JSON API endpoint with Jekyll!
+So how about Jekyll, since it is very good at separating content from the logic? But Jekyll is static, so you can only use the GET method here. Not a big problem, because you don't need to do all the CRUD operations in one and the same application. 
 
 **Basically, API's are used to make the same content available to different applications in a form that can be parsed in the desired language.**
 
-Typically, Jekyll is used because it is simple, safe, blog aware and fast. However, its functionality is limited. It is specially useful for presentational websites, blogs or even museum websites. Furthermore, obviously in Jekyll you can only use the GET method here because the application is static.
+Typically, Jekyll is used because it is simple, safe, blog aware and fast. However, its functionality is limited. It is specially useful for presentational websites, blogs or even museum websites.
 
 ## Perfect match
 
@@ -68,7 +66,7 @@ But let's get started now.
 
 ## MangiarBene
 
-For this demo I designed a simple Jekyll website about Cookbooks (what else...? :-) called **MangiarBene**, dedicated to the famous Italian businessman and writer Pellegrino Artusi (1820–1911), and which in this case is the actual website you are visiting right now. It consists of two collections: one of **15 cookbooks** and another of **48 recipes** as well as a **blog** from which this actual post is the 'latest'.
+For this demo I designed a simple Jekyll website about Cookbooks called **MangiarBene**, dedicated to the famous Italian businessman and writer Pellegrino Artusi (1820–1911), and which is – as we speak – the actual website you are visiting right now. It consists of two collections: one of **15 cookbooks** and another of **48 recipes** as well as a **blog** from which this actual post is the 'latest'.
 
 <div class="home-img_websites">
     <img src="/public/img/jekyll.jpg" alt="">
