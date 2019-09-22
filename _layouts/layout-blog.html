@@ -11,8 +11,11 @@ layout: page
   </div>
 </div>
 <div class="blog-links">
+  {% if page.book %}
   <b>book</b>
+  <br><br>
   <a href="/books/{{ page.book | slugify }}">
     <p>{{ page.book}}</p>
   </a>
+  {% endif %}
 </div>
