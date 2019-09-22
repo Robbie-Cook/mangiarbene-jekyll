@@ -11,5 +11,5 @@ layout: null
     "book"     : "{{ page.book }}",
     "source"     : "{{ page.source }}",
     "source_url" : "{{ page.source_url }}",
-    "content"  : {{ page.content | jsonify }}
+    "content"  : {{ page.content | markdownify | jsonify }}
 }

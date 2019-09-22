@@ -1,4 +1,4 @@
-I"/N<h4 id="talk-at-the-jekyllconf-2019">Talk at the JekyllConf 2019</h4>
+I"�L<h4 id="talk-at-the-jekyllconf-2019">Talk at the JekyllConf 2019</h4>
 
 <blockquote>
   <p>One of the best so called <strong>unconventional use cases of Jekyll</strong> is learning the basics of web development: HTML, CSS and JavaScript. At least in my case as a book designer with a non development background. But if the JavaScript part is growing in your application, you might be attempted to use React or other single page applications in JavaScript. Although it is not impossible to integrate React in Jekyll, it doesn’t make much sense to use two website generators at the same time. Even aside from the issues in development you may encounter. Yet we don’t have to say goodbye to Jekyll at this point at all.</p>
@@ -38,19 +38,17 @@
 
 <h2 id="restful-apis">Restful api’s</h2>
 
-<p>These days, API’s to transfer data around the web are very popular. API’s are restful if you can do HTTP requests like GET, PUT, POST and DELETE, but in many cases you only need the GET request in order to present your content to the user.</p>
+<p>These days, APIs to transfer content around the web are very popular, because APIs are faster in delivering content than conventional database systems. Even the two most popular PHP frameworks Wordpress and Drupal came with REST API plugin solutions.</p>
 
-<p>Also content management frameworks like Drupal and even Wordpress, came with restful API solutions.</p>
+<p>APIs are RESTful if you can do HTTP requests like GET, PUT, POST and DELETE.</p>
 
 <h2 id="how-about-jekyll">How about Jekyll?</h2>
 
-<p>So how about Jekyll, since it is very good at separating content from the logic? But Jekyll is static, so you can only use the GET method here. Not a big problem, because you don’t need to do all the CRUD operations in one and the same application. That is where we use CloudCannon for, don’t we?</p>
-
-<p>It is in fact very well possible to create a JSON API endpoint with Jekyll!</p>
+<p>So how about Jekyll, since it is very good at separating content from the logic? But Jekyll is static, so you can only use the GET method here. Not a big problem, because you don’t need to do all the CRUD operations in one and the same application.</p>
 
 <p><strong>Basically, API’s are used to make the same content available to different applications in a form that can be parsed in the desired language.</strong></p>
 
-<p>Typically, Jekyll is used because it is simple, safe, blog aware and fast. However, its functionality is limited. It is specially useful for presentational websites, blogs or even museum websites. Furthermore, obviously in Jekyll you can only use the GET method here because the application is static.</p>
+<p>Typically, Jekyll is used because it is simple, safe, blog aware and fast. However, its functionality is limited. It is specially useful for presentational websites, blogs or even museum websites.</p>
 
 <h2 id="perfect-match">Perfect match</h2>
 
@@ -62,7 +60,7 @@
 
 <h2 id="mangiarbene">MangiarBene</h2>
 
-<p>For this demo I designed a simple Jekyll website about Cookbooks (what else…? :-) called <strong>MangiarBene</strong>, dedicated to the famous Italian businessman and writer Pellegrino Artusi (1820–1911), and which in this case is the actual website you are visiting right now. It consists of two collections: one of <strong>15 cookbooks</strong> and another of <strong>48 recipes</strong> as well as a <strong>blog</strong> from which this actual post is the ‘latest’.</p>
+<p>For this demo I designed a simple Jekyll website about Cookbooks called <strong>MangiarBene</strong>, dedicated to the famous Italian businessman and writer Pellegrino Artusi (1820–1911), and which is – as we speak – the actual website you are visiting right now. It consists of two collections: one of <strong>15 cookbooks</strong> and another of <strong>48 recipes</strong> as well as a <strong>blog</strong> from which this actual post is the ‘latest’.</p>
 
 <div class="home-img_websites">
     <img src="/public/img/jekyll.jpg" alt="" />
@@ -138,8 +136,6 @@ layout: null
       },
 ]
 </code></pre></div></div>
-
-<p>Here we add a bookId in order to create a flat JSON tree as is the preferred way to do this in React.</p>
 
 <p>There is only one problem here. The JSON object code block ends with a comma, so the last recipe also will end with a comma. JSON, however, disallows trailing commas. Now, in Liquid, you can eliminate the last comma, with the <strong>unless forloop.last</strong> statement.</p>
 
@@ -235,7 +231,7 @@ https://jsonlint.com/
 
 <h2 id="jekyll-as-a-blog-api">Jekyll as a blog API</h2>
 
-<p>More interesting perhaps is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the <strong>data</strong> folder create a file called blog.json, and follow the same instructions as before. Here we want to use the <strong>content</strong> of a post as well, while using Markdown text-to-HTML conversion, resulting in HTML tags in your output. Therefore you need to use the <strong>jsonify</strong> filter here. <code class="highlighter-rouge">{{ book.content | jsonify }}</code></p>
+<p>More interesting maybe is the fact that we can use the same technique to create a blog API from the Jekyll data. Now in the <strong>data</strong> folder create a file called blog.json, and follow the same instructions as before. Here we want to use the <strong>content</strong> of a post as well, while using Markdown text-to-HTML conversion, resulting in HTML tags in your output. Therefore you need to use the <strong>jsonify</strong> filter here. <code class="highlighter-rouge">{{ book.content | jsonify }}</code></p>
 
 <h2 id="lets-take-it-to-the-next-level">Let’s take it to the next level</h2>
 
@@ -305,6 +301,10 @@ react-markdown
 <br />
 <a href="https://trim-seahorse.cloudvent.net/api/blog.json" target="_blank" rel="noopener noreferrer">
 /api/blog.json
+</a>
+<br />
+<a href="https://trim-seahorse.cloudvent.net/api/blog/jekyll-api-endpoint-demo.json" target="_blank" rel="noopener noreferrer">
+/api/blog/jekyll-api-endpoint-demo.json.json
 </a></p>
 
 <h2 id="using-the-api-in-react">Using the API in React</h2>
@@ -326,8 +326,6 @@ MongoDB</a>.</p>
 <p>And in order to respect the performance boundaries of JavaScript, as mentioned before, we could also think of pagination, indexation and search solutions.</p>
 
 <p>That’s all there is to it.</p>
-
-<p>I hope my talk was inspiring for other developers. Let them wrap their minds around this item, use their imagination, and create more beautiful solutions with Jekyll Api endpoints.</p>
 
 <p>There is lot more you can do with Jekyll, than with Jekyll on its own!</p>
 :ET
