@@ -11,5 +11,9 @@ layout: page
   </div>
 </div>
 <div class="blog-links">
-  <p>{{Books}}</p>
+  <p>book</p>
+  <p>{{ page.book }}</p>
+  <a href="/books/{{ page.title | slugify }}">
+    <p>{{ page.title }}</p>
+  </a>
 </div>
