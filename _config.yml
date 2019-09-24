@@ -7,8 +7,8 @@ reload_port: 5678
 title: MangiarBene
 email: pieter@roozen.nl
 description: Jekyll version of Jekyll/React API endpoint demo 
-baseurl: 
-url:  
+baseurl: ""
+url: "https://https://reverent-austin-abd2e3.netlify.com/"
 absolute_url:  
 
 google_analytics: 
