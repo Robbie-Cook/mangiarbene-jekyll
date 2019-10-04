@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 {
     "lang": "en",
     "dir": "",
@@ -5,9 +9,9 @@
     "short_name": "Mangiarbene",
     "icons": [
       {
-        "src": "\/img\/artisjok.png",
+        "src": "/img/artisjok.png",
         "sizes": "192x192",
-        "type": "image\/png"
+        "type": "image/png"
       }
     ],
     "theme_color": "#1a1a1a",
