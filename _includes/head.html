@@ -1,19 +1,53 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.head %}{{ page.head | append: ' | ' }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta name="og:title" content="{{ site.title | escape }}">
-  <meta name="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta name="og:site_name" content="{{ site.url }}">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta name="twitter:site" content="">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    {% if page.head %}{{ page.head | append: " | " }}{% else %}{{
+      site.title | escape
+    }}{% endif %}
+  </title>
+  <meta
+    name="description"
+    content="{{
+      page.excerpt
+        | default: site.description
+        | strip_html
+        | normalize_whitespace
+        | truncate: 160
+        | escape
+    }}"
+  />
+  <meta name="og:title" content="{{ site.title | escape }}" />
+  <meta
+    name="og:description"
+    content="{{
+      page.excerpt
+        | default: site.description
+        | strip_html
+        | normalize_whitespace
+        | truncate: 160
+        | escape
+    }}"
+  />
+  <meta name="og:site_name" content="{{ site.url }}" />
+  <meta name="twitter:title" content="" />
+  <meta
+    name="twitter:description"
+    content="{{
+      page.excerpt
+        | default: site.description
+        | strip_html
+        | normalize_whitespace
+        | truncate: 160
+        | escape
+    }}"
+  />
+  <meta name="twitter:site" content="" />
   <meta name="theme-color" content="#000000" />
   <meta name="background-color" content="red" />
   <link rel="apple-touch-icon" sizes="192x192" href="/img/logo192.png" />
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json" />
   <script async>
     if ("serviceWorker" in navigator) {
       if (navigator.serviceWorker.controller) {
@@ -21,21 +55,33 @@
       } else {
         // Register the service worker
         navigator.serviceWorker
-          .register("{{ site.baseurl }}/serviceworker.js", {
+          .register("/serviceworker.js", {
             scope: "./"
           })
-          .then(function (reg) {
-            console.log("Service worker has been registered for scope: " + reg.scope);
+          .then(function(reg) {
+            console.log(
+              "Service worker has been registered for scope: " + reg.scope
+            );
           });
       }
     }
   </script>
-<!-- jQuery 3.4.1 -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async></script>
-<!-- main.css -->
-  <link rel="stylesheet" href="/css/main.css?{{site.time | date: '%s%N'}}" rel="stylesheet">
-<!-- font-awesome.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
-<!-- typekit -->
-  <link rel="stylesheet" href="https://use.typekit.net/xyv8bqb.css">
+  <!-- jQuery 3.4.1 -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    async
+  ></script>
+  <!-- main.css -->
+  <link
+    rel="stylesheet"
+    href="/css/main.css?{{ site.time | date: '%s%N' }}"
+    rel="stylesheet"
+  />
+  <!-- font-awesome.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css"
+  />
+  <!-- typekit -->
+  <link rel="stylesheet" href="https://use.typekit.net/xyv8bqb.css" />
 </head>
